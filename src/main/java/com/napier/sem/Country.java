@@ -1,46 +1,18 @@
 package com.napier.sem;
-
 import java.sql.*;
+public class Country {
 
-/**
- * Represents an employee
- */
-public class Country
-{
-    /**
-     * country code
-     */
-    public String code_num;
+    private String country_code;
 
-    /**
-     * Country name
-     */
     private String country_name;
 
-    /**
-     * Continent
-     */
-    private String continent;
-
-    /**
-     * region
-     */
     private String region;
 
-    /**
-     * Country population
-     */
     private int population;
 
-    /**
-     * Country's capital name
-     */
-    private int capital;
+    private String continent;
 
-
-    /**
-     * start of main
-     */
+    private String capital;
     public static void main(String[] args)
     {
         // Create new Application
@@ -50,18 +22,21 @@ public class Country
         a.connect();
 
         // Get Country
-        Country country = a.getCountry("AFG");
+        Country ct = a.getCountry(1);
         // Display results
-        a.displayCountry(country);
+        a.displayCountry(ct);
 
 
         // Disconnect from database
         a.disconnect();
     }
+
     /**
      * Connection to MySQL database.
      */
     private Connection con = null;
+
+
 
     /**
      * Connect to the MySQL database.
@@ -89,7 +64,7 @@ public class Country
                 Thread.sleep(30000);
                 // Connect to database
                 con = DriverManager.getConnection("jdbc:mysql://db:3306/world?useSSL=false", "root", "example");
-                System.out.println("Successfully connected to world.sql from country.java");
+                System.out.println("Successfully connected to world.sql");
                 break;
             }
             catch (SQLException sqle)
@@ -122,32 +97,32 @@ public class Country
             }
         }
     }
-    public Country getCountry(String CodeID)
+
+    public Country getCountry(int ct_capital)
     {
         try
-        {
+        {   System.out.println("Country Information for Capital: "+ct_capital);
             // Create an SQL statement
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =
                     "SELECT Code, Name, Continent, Region, Population, Capital "
                             + "FROM country "
-                            + "WHERE Code = " + CodeID;
+                            + "WHERE Capital = " + ct_capital;
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
             if (rset.next())
             {
-                System.out.println("Found Matching Country Code");
-                Country country = new Country();
-                country.code_num = rset.getString("Country Code");
-                country.country_name = rset.getString("Country Name");
-                country.continent = rset.getString("Continent");
-                country.region = rset.getString("Region");
-                country.population = rset.getInt("Country Population");
-                country.capital = rset.getInt("Country Capital");
-                return country;
+                Country ct = new Country();
+                ct.country_code = rset.getString("Code");
+                ct.country_name= rset.getString("Name");
+                ct.continent = rset.getString("Continent");
+                ct.region= rset.getString("Region");
+                ct.population= rset.getInt("Population");
+                ct.capital=rset.getString("Capital");
+                return ct;
             }
             else
                 return null;
@@ -155,22 +130,24 @@ public class Country
         catch (Exception e)
         {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get Country details");
+            System.out.println("Failed to get country details");
             return null;
         }
     }
 
-    public void displayCountry(Country country)
+    public void displayCountry(Country ct)
     {
-        if (country != null)
+        if (ct != null)
         {
             System.out.println(
-                    country.code_num + " "
-                            + country.country_name + "\n"
-                            + country.continent + "\n"
-                            + country.region + "\n"
-                            + "Population:" + country.population + "\n"
-                            + country.capital + "\n");
+                    "Country code:" + ct.country_code + "\n"
+                            +"Country name:" + ct.country_name + "\n "
+                            +"Continent: "+ ct.continent + "\n"
+                            +"Region: "+ ct.region + "\n"
+                            + "Population:" + ct.population + "\n"
+                            +"Capital:" + ct.capital + "\n"
+            );
         }
     }
+
 }
