@@ -36,29 +36,29 @@ A report request for population information is sent to sale department.
 ## MAIN SUCCESS SCENARIO
 
 1. Sale department request population information of the world.
-2. HR advisor extracts all information of the world.
-3. HR advisor provides report to Sale Department.
+   1. HR advisor extracts all information of the world.
+   2. HR advisor provides report to Sale Department.
 
 
 1. Sale department request population information of the continent.
-2. HR advisor extracts all information of the continent.
-3. HR advisor provides report to Sale Department.
+   1. HR advisor extracts all information of the continent.
+   2. HR advisor provides report to Sale Department.
 
-1.Sale department request population information of the region.
-2.HR advisor extracts all information of the region.
-3.HR advisor provides report to Sale Department.
+2.Sale department request population information of the region.
+   2. HR advisor extracts all information of the region.
+   3. HR advisor provides report to Sale Department.
+   
+3.Sale department request population information of the country. 
+   1. HR advisor extracts all information of the country.
+   2. HR advisor provides report to Sale Department.
 
-1. Sale department request population information of the country.
-2. HR advisor extracts all information of the country.
-3. HR advisor provides report to Sale Department.
+4.Sale department request population information of the district.
+   2. HR advisor extracts all information of the district.
+   3. HR advisor provides report to Sale Department.
 
-1.Sale department request population information of the district.
-2.HR advisor extracts all information of the district.
-3.HR advisor provides report to Sale Department.
-
-1.Sale department request population information of the city.
-2.HR advisor extracts all information of the city.
-3.HR advisor provides report to Sale Department.
+5.Sale department request population information of the city.
+   2. HR advisor extracts all information of the city.
+   3. HR advisor provides report to Sale Department.
 ## EXTENSIONS
 
 3. **Data does not exist**:

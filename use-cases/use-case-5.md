@@ -36,23 +36,23 @@ A report request for sorted population information of capital cities is sent to 
 ## MAIN SUCCESS SCENARIO
 
 1. All the capital cities in the world organised by largest population to smallest.
-   1.1. Sale department requests report of all the capital cities in the world organised by largest population to smallest.
-   1.2. HR advisor extracts required capital cities information from related tables of world database.
-   1.3. HR advisor sorts the extracted data by population in descending order.
-   1.4. HR advisor provides the report to Sale Department.
+   1. Sale department requests report of all the capital cities in the world organised by largest population to smallest.
+   2. HR advisor extracts required capital cities information from related tables of world database.
+   3. HR advisor sorts the extracted data by population in descending order.
+   4. HR advisor provides the report to Sale Department.
 
 
 2. All the capital cities in a continent organised by largest population to smallest.
-   1.1. Sale department requests report of all the capital cities in a  continent organised by largest population to smallest.
-   1.2. HR advisor extracts required capital cities information from related tables of world database.
-   1.3. HR advisor sorts the extracted data by population in descending order.
-   1.4. HR advisor provides the report to Sale Department.
+   1. Sale department requests report of all the capital cities in a  continent organised by largest population to smallest.
+   2. HR advisor extracts required capital cities information from related tables of world database.
+   3. HR advisor sorts the extracted data by population in descending order.
+   4. HR advisor provides the report to Sale Department.
 
 3. All the capital cities in a region organised by largest to smallest.
-   1.1. Sale department requests report of all the capital cities in a  region organised by largest population to smallest.
-   1.2. HR advisor extracts required capital cities information from related tables of world database.
-   1.3. HR advisor sorts the extracted data by population in descending order.
-   1.4. HR advisor provides the report to Sale Department.
+   1. Sale department requests report of all the capital cities in a  region organised by largest population to smallest.
+   2. HR advisor extracts required capital cities information from related tables of world database.
+   3. HR advisor sorts the extracted data by population in descending order.
+   4. HR advisor provides the report to Sale Department.
 
 ## EXTENSIONS
 

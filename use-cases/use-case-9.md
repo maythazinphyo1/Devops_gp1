@@ -36,27 +36,27 @@ A report request for languages information is sent to sale department.
 ## MAIN SUCCESS SCENARIO
 
 1. Sale department request language related to "Chinese" information of the country.
-2. HR advisor extracts all information of the language related to "Chinese" with the largest number to smallest and percentage of the world population.
-3. HR advisor provides report to Sale Department.
+   1. HR advisor extracts all information of the language related to "Chinese" with the largest number to smallest and percentage of the world population.
+   2. HR advisor provides report to Sale Department.
 
 
 
-1. Sale department request language related to "English" information of the country.
-2. HR advisor extracts all information of the language related to "English" with the largest number to smallest and percentage of the world population.
-3. HR advisor provides report to Sale Department.
+2. Sale department request language related to "English" information of the country.
+   1. HR advisor extracts all information of the language related to "English" with the largest number to smallest and percentage of the world population.
+   2. HR advisor provides report to Sale Department.
 
 
-1. Sale department request language related to "Hindi" information of the country.
-2. HR advisor extracts all information of the language related to "Hindi" with the largest number to smallest and percentage of the world population.
-3. HR advisor provides report to Sale Department.
+3. Sale department request language related to "Hindi" information of the country.
+   1. HR advisor extracts all information of the language related to "Hindi" with the largest number to smallest and percentage of the world population.
+   2. HR advisor provides report to Sale Department.
 
-1. Sale department request language related to "Spanish" information of the country.
-2. HR advisor extracts all information of the language related to "Spanish" with the largest number to smallest and percentage of the world population.
-3. HR advisor provides report to Sale Department.
+4. Sale department request language related to "Spanish" information of the country.
+   1. HR advisor extracts all information of the language related to "Spanish" with the largest number to smallest and percentage of the world population.
+   2. HR advisor provides report to Sale Department.
 
-1. Sale department request language related to "Arabic" information of the country.
-2. HR advisor extracts all information of the language related to "Arabic" with the largest number to smallest and percentage of the world population.
-3. HR advisor provides report to Sale Department.
+5. Sale department request language related to "Arabic" information of the country.
+   1. HR advisor extracts all information of the language related to "Arabic" with the largest number to smallest and percentage of the world population.
+   2. HR advisor provides report to Sale Department.
 
 ## EXTENSIONS
 
