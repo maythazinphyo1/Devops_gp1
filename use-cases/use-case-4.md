@@ -1,17 +1,17 @@
-# USE CASE: 1 Produce the report of Top 5 populated cities in the world, continent, region, country and district.
+# USE CASE: 4 Produce the report of Top 10 populated cities in the world, continent, region, country and district.
 
 ## CHARACTERISTIC INFORMATION
 
 ### Goal in Context
 
-As an *HR Advisor*, I want to produce the report of Top 5 populated cities so sale department manager could know which cities are the most populated to open new stores. 
+As a *Sale department manager*, I want to produce the report of Top 10 populated cities so sale department manager could know which cities are the most populated to open new stores. 
 ### Scope
 
 Company.
 
 ### Level
 
-Sub function
+Sub function.
 
 ### Preconditions
 
@@ -19,7 +19,7 @@ We know the city information such as name, country, district and population from
 
 ### Success End Condition
 
-A report is available for sale department manager to check top 5 populated cities in the world, in a specific continent, in a region, in a country and in a district for business decision.
+A report is available for sale department manager to check top 10 populated cities in the world, in a specific continent, in a region, in a country and in a district for business decision.
 
 ### Failed End Condition
 
@@ -27,38 +27,38 @@ No report is produced.
 
 ### Primary Actor
 
-HR Advisor
+Sale department manager
 
 ### Trigger
 
-A report request for population information of top 5 cities is sent to sale department.
+A report request for population information of top 10 cities is sent to sale department.
 
 ## MAIN SUCCESS SCENARIO
 
-1. The top 5 populated cities in the world.
-   1. Sale department requests report about top 5 populated cities in the world.
+1. The top 10 populated cities in the world.
+   1. Sale department requests report about top 10 populated cities in the world.
    2. HR advisor extracts required city information from city table and country table of world database.
-   3. HR advisor sorts the extracted data by population and limited by 5 to get top 5 populated cities in a city.
+   3. HR advisor sorts the extracted data by population and limited by 10 to get top 10 populated cities in a city.
    4. HR advisor provides the report to Sale Department.
-2. The top 5 populated cities in a continent.
-   1. Sale department requests report about top 5 populated cities in a continent.
+2. The top 10 populated cities in a continent.
+   1. Sale department requests report about top 10 populated cities in a continent.
    2. HR advisor extracts city information related with continent from the world database.
-   3. HR advisor sorts the extracted data by population and are limited by 5 to get top 5 populated cities in a continent.
+   3. HR advisor sorts the extracted data by population and are limited by 10 to get top 10 populated cities in a continent.
    4. HR advisor provides the report to Sale Department.
-3. The top 5 populated cities in a region.
-   1. Sale department requests report about top 5 populated cities in a region.
+3. The top 10 populated cities in a region.
+   1. Sale department requests report about top 10 populated cities in a region.
    2. HR advisor extracts city information  from the world database.
-   3. HR advisor sorts the extracted data by population and are limited by 5 to get top 5 populated cities in a region.
+   3. HR advisor sorts the extracted data by population and are limited by 10 to get top 10 populated cities in a region.
    4. HR advisor provides the report to Sale Department.
-4. The top 5 populated cities in a country.
-   1. Sale department requests report about top 5 populated cities in a country.
+4. The top 10 populated cities in a country.
+   1. Sale department requests report about top 10 populated cities in a country.
    2. HR advisor extracts city information related with country from the world database.
-   3. HR advisor sorts the extracted data by population in descending order and are limited by 5 to get top 5 populated cities in a country.
+   3. HR advisor sorts the extracted data by population in descending order and are limited by 10 to get top 10 populated cities in a country.
    4. HR advisor provides the report to Sale Department.
-5. The top 5 populated cities in a district.
-   1. Sale department requests report about top 5 populated cities in a district.
+5. The top 10 populated cities in a district.
+   1. Sale department requests report about top 10 populated cities in a district.
    2. HR advisor extracts city information related with district from the world database.
-   3. HR advisor sorts the extracted data by population in descending order and are limited by 5 to get top 5 populated cities in a district.
+   3. HR advisor sorts the extracted data by population in descending order and are limited by 10 to get top 10 populated cities in a district.
    4. HR advisor provides the report to Sale Department.
 
 

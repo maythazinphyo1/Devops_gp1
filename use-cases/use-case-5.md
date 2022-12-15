@@ -1,4 +1,4 @@
-# USE CASE: 1 Produce the report of all the capital cities in the world, a continent and a region organised by largest population to smallest.
+# USE CASE: 5 Produce the report of all the capital cities in the world, a continent and a region organised by largest population to smallest.
 
 ## CHARACTERISTIC INFORMATION
 

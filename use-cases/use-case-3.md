@@ -12,7 +12,7 @@ Company.
 
 ### Level
 
-Primary.
+Primary task.
 
 ### Preconditions
 
