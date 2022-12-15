@@ -4,7 +4,7 @@
 
 ### Goal in Context
 
-As a *HR Advisor*, I want to produce the report of Top 5 populated cities so sale department manager could know which cities are the most populated to open new stores. 
+As an *HR Advisor*, I want to produce the report of Top 5 populated cities so sale department manager could know which cities are the most populated to open new stores. 
 ### Scope
 
 Company.

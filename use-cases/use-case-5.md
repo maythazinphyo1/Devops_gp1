@@ -4,7 +4,7 @@
 
 ### Goal in Context
 
-As a *HR Advisor*, I want to produce the report of all the capital cities in the world, continent and region organised by largest population to smallest for sale department.
+As an *HR Advisor*, I want to produce the report of all the capital cities in the world, continent and region organised by largest population to smallest for sale department.
 ### Scope
 
 Company.

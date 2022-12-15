@@ -4,7 +4,7 @@
 
 ### Goal in Context
 
-As a *HR Advisor*, I want to produce the report about top 10 populated cities in the world, continent and region so that I can give a report about most populated cities around the world to select the city to open next branch.
+As an *HR Advisor*, I want to produce the report about top 10 populated cities in the world, continent and region so that I can give a report about most populated cities around the world to select the city to open next branch.
 ### Scope
 
 Company.
