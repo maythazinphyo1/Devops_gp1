@@ -40,14 +40,11 @@ A report request for sorted population information of capital cities is sent to 
    2. HR advisor extracts required capital cities information from related tables of world database.
    3. HR advisor sorts the extracted data by population in descending order.
    4. HR advisor provides the report to Sale Department.
-
-
 2. All the capital cities in a continent organised by largest population to smallest.
    1. Sale department requests report of all the capital cities in a  continent organised by largest population to smallest.
    2. HR advisor extracts required capital cities information from related tables of world database.
    3. HR advisor sorts the extracted data by population in descending order.
    4. HR advisor provides the report to Sale Department.
-
 3. All the capital cities in a region organised by largest to smallest.
    1. Sale department requests report of all the capital cities in a  region organised by largest population to smallest.
    2. HR advisor extracts required capital cities information from related tables of world database.
@@ -56,7 +53,7 @@ A report request for sorted population information of capital cities is sent to 
 
 ## EXTENSIONS
 
-3. **Capital name does not exist**:
+**Capital name does not exist**:
     1. HR advisor informs sale department no capital name exists.
 
 ## SUB-VARIATIONS

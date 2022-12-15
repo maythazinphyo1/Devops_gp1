@@ -39,14 +39,10 @@ A report request for population information is sent to sale department.
     1. HR advisor extracts all information of all cities in the world.
     2. HR advisor then calculate the extracted information of population in cities and show result about who are living in cities and who are not living in cities in each continent.
     3. HR advisor provides report to Sale Department.
-
-
 2. The report about the population of people, people who are living in cities, and who are not living in cities in each region
    1. HR advisor extracts all information of all cities in the world.
    2. HR advisor then calculate the extracted information of population in cities and show result about who are living in cities and who are not living in cities in each region.
    3. HR advisor provides report to Sale Department.
-
-
 3. The report about the population of people, people who are living in cities, and who are not living in cities in each country
    1. HR advisor extracts all information of all cities in the world.
    2. HR advisor then calculate the extracted information of population in cities and show result about who are living in cities and who are not living in cities in each country.

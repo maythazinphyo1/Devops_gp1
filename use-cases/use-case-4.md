@@ -40,27 +40,21 @@ A report request for population information of top 5 cities is sent to sale depa
    2. HR advisor extracts required city information from city table and country table of world database.
    3. HR advisor sorts the extracted data by population and limited by 5 to get top 5 populated cities in a city.
    4. HR advisor provides the report to Sale Department.
-
-
 2. The top 5 populated cities in a continent.
    1. Sale department requests report about top 5 populated cities in a continent.
    2. HR advisor extracts city information related with continent from the world database.
    3. HR advisor sorts the extracted data by population and are limited by 5 to get top 5 populated cities in a continent.
    4. HR advisor provides the report to Sale Department.
-
-
 3. The top 5 populated cities in a region.
    1. Sale department requests report about top 5 populated cities in a region.
    2. HR advisor extracts city information  from the world database.
    3. HR advisor sorts the extracted data by population and are limited by 5 to get top 5 populated cities in a region.
    4. HR advisor provides the report to Sale Department.
-
 4. The top 5 populated cities in a country.
    1. Sale department requests report about top 5 populated cities in a country.
    2. HR advisor extracts city information related with country from the world database.
    3. HR advisor sorts the extracted data by population in descending order and are limited by 5 to get top 5 populated cities in a country.
    4. HR advisor provides the report to Sale Department.
-
 5. The top 5 populated cities in a district.
    1. Sale department requests report about top 5 populated cities in a district.
    2. HR advisor extracts city information related with district from the world database.
@@ -70,7 +64,7 @@ A report request for population information of top 5 cities is sent to sale depa
 
 ## EXTENSIONS
 
-3. **City name does not exist**:
+**City name does not exist**:
     1. HR advisor informs sale department no city name exists.
 
 ## SUB-VARIATIONS

@@ -39,14 +39,10 @@ A report request for population information is sent to sale department.
    1. HR advisor extracts all information of all capital cities in the world.
    2. HR advisor sorts the extracted information by population in descending order and select top 10 capital cities.
    3. HR advisor provides report to Sale Department.
-
-
 2. The top 10 populated capital cities in the continent.
    1. HR advisor extracts all information of all capital cities in the continent.
    2. HR advisor sorts the extracted information by population in descending order and select top 10 capital cities.
    3. HR advisor provides report to Sale Department.
-
-
 3. The top 10 populated capital cities in the region.
    1. HR advisor extracts all information of all capital cities in the region.
    2. HR advisor sorts the extracted information by population in descending order and select top 10 capital cities.
@@ -56,6 +52,7 @@ A report request for population information is sent to sale department.
 ## EXTENSIONS
 
 None.
+
 ## SUB-VARIATIONS
 
 None.

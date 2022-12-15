@@ -62,7 +62,7 @@ A report request for population information is sent to sale department.
 
 ## EXTENSIONS
 
-3. **City population information does not exist**:
+**City population information does not exist**:
     1. Sale department manager informs sale department no information exists.
 
 ## SUB-VARIATIONS
