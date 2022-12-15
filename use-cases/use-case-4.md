@@ -19,7 +19,7 @@ We know the city information such as name, country, district and population from
 
 ### Success End Condition
 
-A report is available for sale department manager to check top 10 populated cities in the world, in a specific continent, in a region, in a country and in a district for business decision.
+A report is available for sale department to check top 10 populated cities in the world, in a specific continent, in a region, in a country and in a district for business decision.
 
 ### Failed End Condition
 
@@ -37,29 +37,29 @@ A report request for population information of top 10 cities is sent to sale dep
 
 1. The top 10 populated cities in the world.
    1. Sale department requests report about top 10 populated cities in the world.
-   2. HR advisor extracts required city information from city table and country table of world database.
-   3. HR advisor sorts the extracted data by population and limited by 10 to get top 10 populated cities in a city.
-   4. HR advisor provides the report to Sale Department.
+   2. Sale department manager extracts required city information from city table and country table of world database.
+   3. Sale department manager sorts the extracted data by population and limited by 10 to get top 10 populated cities in a city.
+   4. Sale department manager provides the report to Sale Department.
 2. The top 10 populated cities in a continent.
    1. Sale department requests report about top 10 populated cities in a continent.
-   2. HR advisor extracts city information related with continent from the world database.
-   3. HR advisor sorts the extracted data by population and are limited by 10 to get top 10 populated cities in a continent.
-   4. HR advisor provides the report to Sale Department.
+   2. Sale department manager extracts city information related with continent from the world database.
+   3. Sale department manager sorts the extracted data by population and are limited by 10 to get top 10 populated cities in a continent.
+   4. Sale department manager provides the report to Sale Department.
 3. The top 10 populated cities in a region.
    1. Sale department requests report about top 10 populated cities in a region.
-   2. HR advisor extracts city information  from the world database.
-   3. HR advisor sorts the extracted data by population and are limited by 10 to get top 10 populated cities in a region.
-   4. HR advisor provides the report to Sale Department.
+   2. Sale department manager extracts city information  from the world database.
+   3. Sale department manager the extracted data by population and are limited by 10 to get top 10 populated cities in a region.
+   4. Sale department manager provides the report to Sale Department.
 4. The top 10 populated cities in a country.
    1. Sale department requests report about top 10 populated cities in a country.
-   2. HR advisor extracts city information related with country from the world database.
-   3. HR advisor sorts the extracted data by population in descending order and are limited by 10 to get top 10 populated cities in a country.
-   4. HR advisor provides the report to Sale Department.
+   2. Sale department manager extracts city information related with country from the world database.
+   3. Sale department manager sorts the extracted data by population in descending order and are limited by 10 to get top 10 populated cities in a country.
+   4. Sale department manager provides the report to Sale Department.
 5. The top 10 populated cities in a district.
    1. Sale department requests report about top 10 populated cities in a district.
-   2. HR advisor extracts city information related with district from the world database.
-   3. HR advisor sorts the extracted data by population in descending order and are limited by 10 to get top 10 populated cities in a district.
-   4. HR advisor provides the report to Sale Department.
+   2. Sale department manager extracts city information related with district from the world database.
+   3. Sale department manager sorts the extracted data by population in descending order and are limited by 10 to get top 10 populated cities in a district.
+   4. Sale department manager provides the report to Sale Department.
 
 
 ## EXTENSIONS

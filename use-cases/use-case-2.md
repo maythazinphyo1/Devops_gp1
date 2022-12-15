@@ -4,7 +4,7 @@
 
 ### Goal in Context
 
-As a *Sale department manager*, I want to produce the report about top 10 most populated countries in the world, continent and region so that I can check which countries meet the market requirement.
+As a *HR Advisor*, I want to produce the report about top 10 most populated countries in the world, continent and region so that I can check which countries meet the market requirement.
 
 ### Scope
 
