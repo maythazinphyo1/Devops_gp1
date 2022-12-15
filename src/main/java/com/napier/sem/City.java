@@ -2,12 +2,12 @@ package com.napier.sem;
 
 public class City {
 
-    public String city_name;
+    private String city_name; // city name
 
-    public String city_country;
+    private String city_country;
 
-    public String city_district;
+    private String city_district;
 
-    public int city_population;
+    private int city_population;
 
 }
