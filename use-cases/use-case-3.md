@@ -40,25 +40,27 @@ A report request for population information is sent to sale department.
     1. Sale department request population information for all the cities around the world.
     2. Sale department manager extracts all information of all the cities around in the world.
     3. Sale department manager sorts the extracted information by population in descending.
+    4. Sale department manager provides the report to the sale department.
 2. Report of cities in certain continent sorted by population in descending order
    1. Sale department request population information for all the cities in certain continent.
    2. Sale department manager extracts all information of all the cities in certain continent.
    3. Sale department manager sorts the extracted information by population in descending.
+   4. Sale department manager provides the report to the sale department.
 3. Report of cities in certain region sorted by population in descending order
    1. Sale department request population information for all the cities in certain region.
    2. Sale department manager extracts all information of all the cities in certain region.
    3. Sale department manager sorts the extracted information by population in descending.
+   4. Sale department manager provides the report to the sale department.
 4. Report of cities in certain country sorted by population in descending order
    1. Sale department request population information for all the cities in certain country.
    2. Sale department manager extracts all information of all the cities in certain country.
    3. Sale department manager sorts the extracted information by population in descending.
+   4. Sale department manager provides the report to the sale department.
 5. Report of cities in certain district sorted by population in descending order
    1. Sale department request population information for all the cities in certain district.
    2. Sale department manager extracts all information of all the cities in certain district.
    3. Sale department manager sorts the extracted information by population in descending.
-
-
-
+   4. Sale department manager provides the report to the sale department.
 
 ## EXTENSIONS
 

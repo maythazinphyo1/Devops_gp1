@@ -47,7 +47,7 @@ A report request for population information of top 10 cities is sent to sale dep
    4. Sale department manager provides the report to Sale Department.
 3. The top 10 populated cities in a region.
    1. Sale department requests report about top 10 populated cities in a region.
-   2. Sale department manager extracts city information  from the world database.
+   2. Sale department manager extracts city information related with region from the world database.
    3. Sale department manager the extracted data by population and are limited by 10 to get top 10 populated cities in a region.
    4. Sale department manager provides the report to Sale Department.
 4. The top 10 populated cities in a country.
@@ -65,7 +65,7 @@ A report request for population information of top 10 cities is sent to sale dep
 ## EXTENSIONS
 
 **City name does not exist**:
-    1. HR advisor informs sale department no city name exists.
+    1. Sale department manager informs sale department no city name exists.
 
 ## SUB-VARIATIONS
 
