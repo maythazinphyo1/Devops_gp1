@@ -4,7 +4,7 @@
 
 ### Goal in Context
 
-As a *Sale department manager*, I want to produce the report of Top 10 populated cities so I could know which cities are the most populated to open new stores. 
+As a *Sale department manager*, I want to produce the report of Top 10 most populated cities so that I could know which cities are the most populated to open new stores. 
 ### Scope
 
 Company.
