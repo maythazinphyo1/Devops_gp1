@@ -4,7 +4,7 @@
 
 ### Goal in Context
 
-As an *HR Advisor*, I want to produce the report about top 10 populated cities in the world, continent and region so that I can give a report about most populated cities around the world to select the city to open next branch.
+As an *Department Manager*, I want to produce the report about top 10 populated cities in the world, continent and region so that I can give a report about most populated cities around the world to select the city to open next branch.
 ### Scope
 
 Company.
@@ -19,7 +19,7 @@ We know the population, city, spoken language information about capital cities a
 
 ### Success End Condition
 
-A report is available for sale department manager about most populated cities around the world to select the city to open next branch.
+A report is available for Department manager about most populated cities around the world to select the city to open next branch.
 
 ### Failed End Condition
 
@@ -27,26 +27,26 @@ No report is produced.
 
 ### Primary Actor
 
-HR Advisor
+Department Manager
 
 ### Trigger
 
-A report request for population information is sent to sale department.
+A report request for population information is sent to Department.
 
 ## MAIN SUCCESS SCENARIO
 
 1. The top 10 populated capital cities in the world.
-   1. HR advisor extracts all information of all capital cities in the world.
-   2. HR advisor sorts the extracted information by population in descending order and select top 10 capital cities.
-   3. HR advisor provides report to Sale Department.
+   1. Department Manager extracts all information of all capital cities in the world.
+   2. Department Manager sorts the extracted information by population in descending order and select top 10 capital cities.
+   3. Department Manager provides report to Department.
 2. The top 10 populated capital cities in the continent.
-   1. HR advisor extracts all information of all capital cities in the continent.
-   2. HR advisor sorts the extracted information by population in descending order and select top 10 capital cities.
-   3. HR advisor provides report to Sale Department.
+   1. Department Manager extracts all information of all capital cities in the continent.
+   2. Department Manager sorts the extracted information by population in descending order and select top 10 capital cities.
+   3. Department Manager provides report to Department.
 3. The top 10 populated capital cities in the region.
-   1. HR advisor extracts all information of all capital cities in the region.
-   2. HR advisor sorts the extracted information by population in descending order and select top 10 capital cities.
-   3. HR advisor provides report to Sale Department.
+   1. Department Manager extracts all information of all capital cities in the region.
+   2. Department Manager sorts the extracted information by population in descending order and select top 10 capital cities.
+   3. Department Manager provides report to Department.
 
 
 ## EXTENSIONS
