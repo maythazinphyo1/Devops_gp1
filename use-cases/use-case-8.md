@@ -4,7 +4,7 @@
 
 ### Goal in Context
 
-As an *Department Manager*, I want to produce the report about population of the world,continent,region,country,district and city so that I can support report that which countries meet the market requirement.
+As a *Department Manager*, I want to produce the report about population of the world,continent,region,country,district and city so that I can support report that which countries meet the market requirement.
 ### Scope
 
 Company.
