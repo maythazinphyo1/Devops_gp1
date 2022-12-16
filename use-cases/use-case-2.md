@@ -57,7 +57,7 @@ A report request for population information is sent to the department.
 ## EXTENSIONS
 
 **Country population information does not exist**:
-    1. Department Manager informs sale department no information exists.
+    1. Department Manager informs department no information exists.
 
 ## SUB-VARIATIONS
 
