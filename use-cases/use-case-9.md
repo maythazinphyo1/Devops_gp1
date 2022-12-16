@@ -4,7 +4,7 @@
 
 ### Goal in Context
 
-As an *Department Manager*, I want to produce the report about the range of people who speak Chinese, English, Hindi, Spanish and Arabic from the greatest number to smallest with the percentage of the world population so that I can support report that which countries will meet the market requirement.
+As a *Department Manager*, I want to produce the report about the range of people who speak Chinese, English, Hindi, Spanish and Arabic from the greatest number to smallest with the percentage of the world population so that I can support report that which countries will meet the market requirement.
 ### Scope
 
 Company.
@@ -31,7 +31,7 @@ Department Manager
 
 ### Trigger
 
-A report request for languages information is sent to department.
+A report request for languages information is sent to Department.
 
 ## MAIN SUCCESS SCENARIO
 

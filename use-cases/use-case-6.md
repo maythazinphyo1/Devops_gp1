@@ -4,7 +4,7 @@
 
 ### Goal in Context
 
-As an *Department Manager*, I want to produce the report about top 10 populated cities in the world, continent and region so that I can give a report about most populated cities around the world to select the city to open next branch.
+As a *Department Manager*, I want to produce the report about top 10 populated cities in the world, continent and region so that I can give a report about most populated cities around the world to select the city to open next branch.
 ### Scope
 
 Company.
@@ -19,7 +19,7 @@ We know the population, city, spoken language information about capital cities a
 
 ### Success End Condition
 
-A report is available for department manager about most populated cities around the world to select the city to open next branch.
+A report is available for Department manager about most populated cities around the world to select the city to open next branch.
 
 ### Failed End Condition
 
@@ -31,7 +31,7 @@ Department Manager
 
 ### Trigger
 
-A report request for population information is sent to department.
+A report request for population information is sent to Department.
 
 ## MAIN SUCCESS SCENARIO
 

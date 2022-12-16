@@ -4,7 +4,7 @@
 
 ### Goal in Context
 
-As an *Department Manager*, I want to produce the report about population of the world,continent,region,country,district and city so that I can support report that which countries meet the market requirement.
+As a *Department Manager*, I want to produce the report about population of the world,continent,region,country,district and city so that I can support report that which countries meet the market requirement.
 ### Scope
 
 Company.
@@ -31,7 +31,7 @@ Department Manager
 
 ### Trigger
 
-A report request for population information is sent to department.
+A report request for population information is sent to Department.
 
 ## MAIN SUCCESS SCENARIO
 
@@ -58,7 +58,7 @@ A report request for population information is sent to department.
 ## EXTENSIONS
 
 **Data does not exist**:
-    1. Department Manager informs department that no related data have.
+    1. Department Manager informs Department that no related data have.
 
 ## SUB-VARIATIONS
 

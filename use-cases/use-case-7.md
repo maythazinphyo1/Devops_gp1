@@ -19,7 +19,7 @@ We know the population, city, spoken language information about cities around th
 
 ### Success End Condition
 
-A report is available for department manager about the population of people, people who are living in cities, and who are not living in cities in each continent, region and country.
+A report is available for Department manager about the population of people, people who are living in cities, and who are not living in cities in each continent, region and country.
 
 ### Failed End Condition
 
@@ -31,7 +31,7 @@ Department Manager
 
 ### Trigger
 
-A report request for population information is sent to department.
+A report request for population information is sent to Department.
 
 ## MAIN SUCCESS SCENARIO
 
