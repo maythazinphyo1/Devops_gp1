@@ -70,7 +70,7 @@ public class Test {
                             +"Country name:" + ct.getCountry_name()+ "\n "
                             +"Continent: "+ ct.getContinent() + "\n"
                             +"Region: "+ ct.getRegion() + "\n"
-                            + "Population:" + ct.getPopulation() + "\n"
+                            +"Population:" + ct.getPopulation() + "\n"
                             +"Capital:" + ct.getCapital() + "\n"
             );
         }

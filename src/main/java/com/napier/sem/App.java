@@ -6,12 +6,14 @@ public class App
 {
     public static void main(String[] args)
     {
-        Test ct = new Test(); // create instance for Test class
-
-        // Get Country
-        Country cte = ct.getCountry(1);
-        // Display results
-        ct.displayCountry(cte);
+        /**
+         * Display country information sorted by population
+         */
+        // Create instance for countries_info class
+        countries_info ct = new countries_info();
+        // Get and display country information
+        Country cte = ct.getCountry();
+        //ct.displayCountry(cte);
 
     }
 

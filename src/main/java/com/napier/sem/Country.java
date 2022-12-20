@@ -1,5 +1,9 @@
 package com.napier.sem;
 import java.sql.*;
+
+/**
+ * Represents a country
+ */
 public class Country {
 
     /**
