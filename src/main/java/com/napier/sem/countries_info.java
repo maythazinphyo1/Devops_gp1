@@ -31,10 +31,14 @@ public class countries_info {
                     "SELECT Code, Name, Continent, Region, Population, Capital FROM country ORDER BY Population DESC";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
-            // Return new employee if valid.
+            // Return new country if valid.
             // Check one is returned
-            System.out.println("\n"+"All the countries in the world organised by largest population to smallest"+"\n");
-            System.out.println("Code" + "\t\t" + "Name"+ "\t\t\t\t\t"+ "Population"+ "\n");
+            System.out.println("\n"+"All the countries in the world organised by largest population to smallest");
+            //System.out.println("Code" + "\t\t" + "Name"+ "\t\t\t\t\t"+ "Population"+ "\n");
+            System.out.println("-----------------------------------------------------------------------------");
+            System.out.printf("%5s %35s %20s", "Code", "Country Name", "Population");
+            System.out.println();
+            System.out.println("-----------------------------------------------------------------------------");
             while (rset.next())
             {
                 // get country data
@@ -53,15 +57,20 @@ public class countries_info {
                 String region = ct.getRegion();
                 float population = ct.getPopulation();
                 int capital = ct.getCapital();
+                //System.out.println(code + "\t\t\t" + name +"\t\t\t\t\t\t" + population);
 
-                System.out.println(code + "\t\t\t" + name +"\t\t\t\t\t\t" + population);
+                System.out.format("%5s %35s %20f",
+                        code, name, population);
 
+                System.out.println();
                 //db.disconnect(); // disconnect to the database
 
-                //System.out.println(ct);
                //return ct;
 
             }
+
+            System.out.println("-----------------------------------------------------------------------------");
+
 
                 return null;
         }
