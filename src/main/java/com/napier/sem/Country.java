@@ -2,17 +2,81 @@ package com.napier.sem;
 import java.sql.*;
 public class Country {
 
-    public String country_code;
+    /**
+     * Country code
+     */
+    private String country_code; // country code
 
-    public String country_name;
+    public String getCountry_code() {
+        return country_code;
+    }
 
-    public String region;
+    public void setCountry_code(String country_code) {
+        this.country_code = country_code;
+    }
 
-    public int population;
+    /**
+     * Country name
+     */
+    private String country_name; // country name
+    public String getCountry_name() {
+        return country_name;
+    }
 
-    public String continent;
+    public void setCountry_name(String country_name) {
+        this.country_name = country_name;
+    }
 
-    public int capital;
+    /**
+     * Region
+     */
+    private String region;
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    /**
+     * Country Population
+     */
+    private int population;
+    public int getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(int population) {
+        this.population = population;
+    }
+
+    /**
+     * Continent
+     */
+    private String continent;
+
+    public String getContinent() {
+        return continent;
+    }
+
+    public void setContinent(String continent) {
+        this.continent = continent;
+    }
+
+
+    /**
+     * Capital
+     */
+    private int capital;
+
+    public int getCapital() {
+        return capital;
+    }
+
+    public void setCapital(int capital) {
+        this.capital = capital;
+    }
 
 
 }
