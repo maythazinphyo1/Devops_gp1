@@ -13,7 +13,7 @@ public class city_info {
     Connection con1;
     //--------------------------------------- START GET CITY IN WORLD ------------------------------------------
     /**
-     * method to get country data
+     * method to get city data
      */
     public ArrayList<City> getCity_inWorld() {
         try {
