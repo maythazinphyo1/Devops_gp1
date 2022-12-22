@@ -163,7 +163,12 @@ public class capitalcity_info {
             System.out.printf("%30s %40s %10s ", "Capital City Name", "Country", "Population");
             System.out.println();
             System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
+            // Loop over all capital city in the list
             for (City ct : capitalcityList) {
+
+                if (ct == null)
+                    continue;
 
                 String captial_name = ct.getCity_name();
                 String country_name = ct.getCountry_name();
