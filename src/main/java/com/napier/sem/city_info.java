@@ -232,7 +232,7 @@ public class city_info {
                     String name = ct.getCountry_name();
                     String citydistrict = ct.getCity_district();
                     int population = ct.getCity_population();
-                    System.out.format("%30s %30s %40s %15s",
+                    System.out.format("%35s %40s %40s %15s",
                             cityname, name, citydistrict, population);
 
                     System.out.println();
