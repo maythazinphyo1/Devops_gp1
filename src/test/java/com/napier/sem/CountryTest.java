@@ -60,19 +60,15 @@ public class CountryTest
         countryList.add(ct);
         app.displayCountry(countryList);
     }
-/*
-    @Test
-    void getTopNCountry_inRegionContainsNull()
-    {
-        DB_connect db = new DB_connect();
 
-        Connection con1;
-        db.connect();
-        con1= db.getCon();
-        ArrayList<Country> countryList = new ArrayList<>();
-        countryList = app.getTopNCountry_inRegion("Southeast Asia",10);
-        assertNotNull(countryList);
-    }*/
+
+//    @Test
+//    void getTopNCountry_inRegionContainsNull()
+//    {
+//        ArrayList<Country> countryList = new ArrayList<>();
+//        countryList = app.getTopNCountry_inRegion("Southeast Asia",10);
+//        assertNotNull(countryList);
+//    }
 //End of countries info unit testing
 
 
