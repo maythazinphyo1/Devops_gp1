@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DB_connect {
 
     private Connection con;
-
+//---------------------------- GETTER AND SETTER SECTION ----------------------------------
     /**
         *Generate getter and setter
     */
@@ -20,7 +20,9 @@ public class DB_connect {
 
         this.con = con;
     }
+    //---------------------------- GETTER AND SETTER SECTION ENDED ----------------------------------
 
+    //----------------------------  MYSQL DATABASE SECTION -----------------------------------------
     /**
             * Connect to the MySQL database.
      */
@@ -82,4 +84,5 @@ public class DB_connect {
             }
         }
     }
+    //---------------------------- MYSQL DATABASE SECTION ENDED ---------------------------------------------
 }

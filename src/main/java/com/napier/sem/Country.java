@@ -18,7 +18,7 @@ public class Country {
     //-------------------------------- END OF GET and Set method for COUNTRY CODE ----------------------------------
 
 
-    //-------------------------------- GET and Set method for COUNTRY NAME ----------------------------------
+    //-------------------------------- GET and Set method for COUNTRY NAME ----------------------------------------
     /*** Country name*/
     private String country_name; // country name
     public String getCountry_name() {
@@ -53,7 +53,7 @@ public class Country {
     //-------------------------------- End Of GET and Set method for Population -------------------------------
 
 
-    //-------------------------------- GET and Set method for Continent ----------------------------------
+    //-------------------------------- GET and Set method for Continent ---------------------------------------
     /*** Continent*/
     private String continent;
     public String getContinent() {
@@ -66,7 +66,7 @@ public class Country {
     //-------------------------------- End Of GET and Set method for Continent ----------------------------------
 
 
-    //-------------------------------- GET and Set method for Capital ---------------------------------------
+    //-------------------------------- GET and Set method for Capital -------------------------------------------
     /*** Capital*/
     private int capital;
     public int getCapital() {
