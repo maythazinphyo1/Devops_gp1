@@ -438,13 +438,14 @@ public class city_info {
                 System.out.println();
                 System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
                 for (City ct : cityList) {
-
-                    String cityname = ct.getCity_name();
+                    if (ct == null)
+                        continue;
+                    String city_name = ct.getCity_name();
                     String name = ct.getCountry_name();
-                    String citydistrict = ct.getCity_district();
+                    String city_district = ct.getCity_district();
                     int population = ct.getCity_population();
                     System.out.format("%30s %40s %40s %15s",
-                            cityname, name, citydistrict, population);
+                            city_name, name, city_district, population);
 
                     System.out.println();
                 }

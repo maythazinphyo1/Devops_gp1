@@ -32,7 +32,7 @@ public class CityTest {
     }
 
     @Test
-    void displayCountryContainsNull()
+    void displayCityContainsNull()
     {
         ArrayList<City> cityList = new ArrayList<>();
         cityList.add(null);
@@ -48,8 +48,6 @@ public class CityTest {
         ct.setCountry_name("Japan");
         ct.setCity_district("Tokyo-to");
         ct.setCity_population(7980230);
-
-        cityList.add(ct);
 
         cityList.add(ct);
         city.displayCity(cityList);
