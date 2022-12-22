@@ -15,7 +15,7 @@ public class city_info {
     /**
      * method to get country data
      */
-    public ArrayList<City> getCity() {
+    public ArrayList<City> getCity_inWorld() {
         try {
             // connection to the database
             db.connect();
@@ -54,7 +54,92 @@ public class city_info {
         }
     }
 
-        public void displayCity(ArrayList<City> cityList)
+    //--------------------------------------- START SORT by CONTINENT -----------------------------------
+
+    public ArrayList<City> getCity_inContinent(String continent_name) {
+        try {
+            // connection to the database
+            db.connect();
+            con1 = db.getCon();
+            if (con1 == null) {
+                System.out.println("con is null");
+            }
+            // Create an SQL statement
+            Statement stmt = con1.createStatement();
+            // Create string for SQL statement
+            String strSelect =
+                    "SELECT city.Name, country.Name, city.District, city.Population  FROM city INNER JOIN country ON city.CountryCode = country.Code WHERE country.Continent = '" + continent_name + "' ORDER BY city.Population DESC";
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            //ArrayList Obj created
+            ArrayList<City> cityList = new ArrayList<>();
+            System.out.println("\n" + "All the cities in the " + continent_name + " organised by largest population to smallest");
+
+            while (rset.next()) {
+                // get country data
+                City ct = new City();
+                ct.setCity_name(rset.getString("city.Name"));
+                ct.setCountry_name(rset.getString("country.Name"));
+                ct.setCity_district(rset.getString("city.District"));
+                ct.setCity_population(rset.getInt("city.population"));
+
+
+                cityList.add(ct);
+
+            }
+            return cityList;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get country details");
+            return null;
+        }
+    }
+    //--------------------------------------- ENDED SORT by CONTINENT -------------------------------------
+
+    //--------------------------------------- START SORT by REGION ----------------------------------------
+
+    public ArrayList<City> getCity_inRegion(String region_name) {
+        try {
+            // connection to the database
+            db.connect();
+            con1 = db.getCon();
+            if (con1 == null) {
+                System.out.println("con is null");
+            }
+            // Create an SQL statement
+            Statement stmt = con1.createStatement();
+            // Create string for SQL statement
+            String strSelect =
+                    "SELECT city.Name, country.Name, city.District, city.Population  FROM city INNER JOIN country ON city.CountryCode = country.Code WHERE country.Region = '" + region_name + "' ORDER BY city.Population DESC";
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            //ArrayList Obj created
+            ArrayList<City> cityList = new ArrayList<>();
+            System.out.println("\n" + "All the cities in the " + region_name + " organised by largest population to smallest");
+
+            while (rset.next()) {
+                // get country data
+                City ct = new City();
+                ct.setCity_name(rset.getString("city.Name"));
+                ct.setCountry_name(rset.getString("country.Name"));
+                ct.setCity_district(rset.getString("city.District"));
+                ct.setCity_population(rset.getInt("city.population"));
+
+
+                cityList.add(ct);
+
+            }
+            return cityList;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get country details");
+            return null;
+        }
+    }
+//--------------------------------------- ENDED SORT by REGION ----------------------------------------------------
+
+
+    public void displayCity(ArrayList<City> cityList)
         {
             if (cityList != null)
             {
