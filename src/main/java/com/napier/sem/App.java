@@ -12,15 +12,15 @@ public class App
         // Create instance for countries_info class
         countries_info ct = new countries_info();
         // Get and display country information organized by largest to the smallest population in the world
-        ct.displayCountry(ct.getCountry_inWorld());
+        //ct.displayCountry(ct.getCountry_inWorld());
         // all the countries in a continent organized by largest to the smallest population
-        ct.displayCountry(ct.getCountry_inContinent("Asia"));
+        //ct.displayCountry(ct.getCountry_inContinent("Asia"));
         // all the countries in a region organized by largest to the smallest population
-        ct.displayCountry(ct.getCountry_inRegion("Southeast Asia"));
+        //ct.displayCountry(ct.getCountry_inRegion("Southeast Asia"));
         // The top N populated countries in the world where N is provided by the user.
-        ct.displayCountry(ct.getTopNCountry_inWorld(10));
+        //ct.displayCountry(ct.getTopNCountry_inWorld(10));
         // The top N populated countries in a continent where N is provided by the user.
-        ct.displayCountry(ct.getTopNCountry_inContinent("Asia",10));
+        //ct.displayCountry(ct.getTopNCountry_inContinent("Asia",10));
         // The top N populated countries in a region where N is provided by the user.
         ct.displayCountry(ct.getTopNCountry_inRegion("Southeast Asia",10));
 
