@@ -11,7 +11,7 @@ public class countries_info {
     DB_connect db = new DB_connect();
 
     Connection con1;
-
+    //----------------------------------- SECTION FOR GET COUNTRY ------------------------------------------
     /**
      * method to get country data
      */
@@ -59,7 +59,9 @@ public class countries_info {
             return null;
         }
     }
+    //----------------------------------- SECTION FOR GET COUNTRY ENDED ------------------------------------------
 
+    //----------------------------------- SECTION FOR CONTINENT NAME ---------------------------------------------
     public ArrayList<Country> getCountry_inContinent(String continent_name)
     {
         try
@@ -104,6 +106,9 @@ public class countries_info {
             return null;
         }
     }
+    //----------------------------------- SECTION FOR CONTINENT NAME ENDED ------------------------------------------
+
+    //----------------------------------- SECTION FOR GET DISPLAY ------------------------------------------
     /**
      * method to display country information
      */
@@ -130,4 +135,5 @@ public class countries_info {
         }
         }
     }
+    //----------------------------------- SECTION FOR DISPLAY ENDED ------------------------------------------
 }

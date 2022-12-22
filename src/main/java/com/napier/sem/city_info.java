@@ -135,8 +135,8 @@ public class city_info {
             return null;
         }
     }
-//--------------------------------------- ENDED SORT by REGION ----------------------------------------------------
-//--------------------------------------- START SORT by COUNTRY ----------------------------------------------------
+    //--------------------------------------- ENDED SORT by REGION ----------------------------------------------------
+    //--------------------------------------- START SORT by COUNTRY ----------------------------------------------------
     public ArrayList<City> getCity_inCountry(String country_name) {
         try {
             // connection to the database
