@@ -25,14 +25,14 @@ public class App
 // ------------------------- CITY --------------------------------------------
         city.displayCity(city.getCity_inWorld());
 
-        city.displayCity(city.getCity_inContinent("Asia"));
-
-        city.displayCity(city.getCity_inRegion("Caribbean"));
-
-        // all the countries in a continent organized by largest to the smallest population
-        city.displayCity(city.getCity_inCountry("Japan"));
-
-        city.displayCity(city.getCity_inDistrict("England"));
+//        city.displayCity(city.getCity_inContinent("Asia"));
+//
+//        city.displayCity(city.getCity_inRegion("Caribbean"));
+//
+//        // all the countries in a continent organized by largest to the smallest population
+//        city.displayCity(city.getCity_inCountry("Japan"));
+//
+//        city.displayCity(city.getCity_inDistrict("England"));
     }
 
 

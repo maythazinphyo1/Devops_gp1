@@ -219,7 +219,7 @@ public class city_info {
             if (cityList != null)
             {
                 System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-                System.out.printf("%5s %45s %15s %30s", "City Name", "Country Name", "District", "Population");
+                System.out.printf("%30s %30s %40s %15s", "City Name", "Country Name", "District", "Population");
                 System.out.println();
                 System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
                 for (City ct : cityList) {
