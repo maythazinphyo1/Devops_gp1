@@ -137,7 +137,7 @@ public class city_info {
         }
     }
 //--------------------------------------- ENDED SORT by REGION ----------------------------------------------------
-
+//--------------------------------------- START SORT by COUNTRY ----------------------------------------------------
     public ArrayList<City> getCity_inCountry(String country_name) {
         try {
             // connection to the database
@@ -175,7 +175,8 @@ public class city_info {
             return null;
         }
     }
-
+    //--------------------------------------- ENDED SORT by COUNTRY ----------------------------------------------------
+    //--------------------------------------- START SORT by DISTRICT_NAME ----------------------------------------------------
     public ArrayList<City> getCity_inDistrict(String district_name) {
         try {
             // connection to the database
@@ -213,7 +214,10 @@ public class city_info {
             return null;
         }
     }
+    //--------------------------------------- ENDED SORT by DISTRICT_NAME ----------------------------------------------------
 
+
+//    --------------------------------------- DISPLAY START ------------------------------------------------------------
         public void displayCity(ArrayList<City> cityList)
         {
             if (cityList != null)
@@ -235,6 +239,7 @@ public class city_info {
                 }
             }
         }
+    //    --------------------------------------- DISPLAY END ------------------------------------------------------------
     }
 
 
