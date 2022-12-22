@@ -8,7 +8,9 @@ public class App
     {
 //------------------------------- START FOR COUNTRY INFO ------------------------------------------------------
 
-        /*** Display country information sorted by population*/
+        /**
+         * Display country information sorted by population
+         */
         // Create instance for countries_info class
         countries_info ct = new countries_info();
         // Get and display country information organized by largest to the smallest population in the world
@@ -51,23 +53,28 @@ public class App
         city.displayCity(city.getTopNCity_inCountry("Japan", 10));
         // The top N populated cities in a district where N is provided by the user.
         city.displayCity(city.getTopNCity_inDistrict("England",10));
-    }
 // ----------------------------------- CITY AND TOP POPULATED END --------------------------------------------
 
 
-// ----------------------------------- CAPITAL CITY AND TOP POPULATED START --------------------------------------------
-    //capital cities
-    capitalcity_info capitalcity = new capitalcity_info();
+        // ----------------------------------- CAPITAL CITY AND TOP POPULATED START --------------------------------------------
+        //capital cities
+        capitalcity_info capitalcity = new capitalcity_info();
 
-    //get and display
+        //get and display
         capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inWorld());
 
-    //capital cities in a continent
+        //capital cities in a continent
         capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inContinent("Asia"));
         capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inRegion("Southeast Asia"));
 
 
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED END --------------------------------------------
+
+
+
+    }
+
+
 
 
 }
