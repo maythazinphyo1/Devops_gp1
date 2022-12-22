@@ -24,7 +24,7 @@ public class App
         // The top N populated countries in a continent where N is provided by the user.
         //ct.displayCountry(ct.getTopNCountry_inContinent("Asia",10));
         // The top N populated countries in a region where N is provided by the user.
-        ct.displayCountry(ct.getTopNCountry_inRegion("Southeast Asia",10));
+        //ct.displayCountry(ct.getTopNCountry_inRegion("Southeast Asia",10));
 
 
 //----------------------------------- END OF COUNTRY INFO ------------------------------------------------------
@@ -33,39 +33,39 @@ public class App
         //cities
         city_info city = new city_info();
         // All the cities in the world organised by largest population to smallest.
-        city.displayCity(city.getCity_inWorld());
+        //city.displayCity(city.getCity_inWorld());
         //All the cities in a continent organised by largest population to smallest.
-        city.displayCity(city.getCity_inContinent("Asia"));
+       // city.displayCity(city.getCity_inContinent("Asia"));
         //All the cities in a region organised by largest population to smallest.
-        city.displayCity(city.getCity_inRegion("Caribbean"));
+       // city.displayCity(city.getCity_inRegion("Caribbean"));
         // all the countries in a country organized by largest to the smallest population
-        city.displayCity(city.getCity_inCountry("Japan"));
+       // city.displayCity(city.getCity_inCountry("Japan"));
         //All the cities in a district organised by largest population to smallest.
         city.displayCity(city.getCity_inDistrict("England"));
 
         // The top N populated cities in the world where N is provided by the user.
-        city.displayCity(city.getTopNCity_inWorld(10));
+       // city.displayCity(city.getTopNCity_inWorld(10));
         // The top N populated cities in a continent where N is provided by the user.
-        city.displayCity(city.getTopNCity_inContinent("Asia",10));
+       // city.displayCity(city.getTopNCity_inContinent("Asia",10));
         // The top N populated cities in a region where N is provided by the user.
-        city.displayCity(city.getTopNCity_inRegion("Caribbean",10));
+       // city.displayCity(city.getTopNCity_inRegion("Caribbean",10));
         // The top N populated cities in a country where N is provided by the user.
-        city.displayCity(city.getTopNCity_inCountry("Japan", 10));
+       // city.displayCity(city.getTopNCity_inCountry("Japan", 10));
         // The top N populated cities in a district where N is provided by the user.
-        city.displayCity(city.getTopNCity_inDistrict("England",10));
+       // city.displayCity(city.getTopNCity_inDistrict("England",10));
 // ----------------------------------- CITY AND TOP POPULATED END --------------------------------------------
 
 
         // ----------------------------------- CAPITAL CITY AND TOP POPULATED START --------------------------------------------
         //capital cities
-        capitalcity_info capitalcity = new capitalcity_info();
+       capitalcity_info capitalcity = new capitalcity_info();
 
         //get and display
-        capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inWorld());
+       // capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inWorld());
 
         //capital cities in a continent
-        capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inContinent("Asia"));
-        capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inRegion("Southeast Asia"));
+       // capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inContinent("Asia"));
+     //   capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inRegion("Southeast Asia"));
 
 
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED END --------------------------------------------

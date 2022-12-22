@@ -31,6 +31,28 @@ public class CityTest {
         city.displayCity(cityList);
     }
 
+    @Test
+    void displayCountryContainsNull()
+    {
+        ArrayList<City> cityList = new ArrayList<>();
+        cityList.add(null);
+        city.displayCity(cityList);
+    }
 
+    @Test
+    void displayCity()
+    {
+        ArrayList<City> cityList = new ArrayList<>();
+        City ct = new City();
+        ct.setCity_name("Tokyo");
+        ct.setCountry_name("Japan");
+        ct.setCity_district("Tokyo-to");
+        ct.setCity_population(7980230);
+
+        cityList.add(ct);
+
+        cityList.add(ct);
+        city.displayCity(cityList);
+    }
 
 }

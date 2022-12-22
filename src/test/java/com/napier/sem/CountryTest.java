@@ -2,13 +2,13 @@ package com.napier.sem;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 
+import java.sql.Connection;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class AppTest
+public class CountryTest
 {
     static countries_info app;
 
@@ -60,15 +60,19 @@ public class AppTest
         countryList.add(ct);
         app.displayCountry(countryList);
     }
-
-
+/*
     @Test
     void getTopNCountry_inRegionContainsNull()
     {
+        DB_connect db = new DB_connect();
+
+        Connection con1;
+        db.connect();
+        con1= db.getCon();
         ArrayList<Country> countryList = new ArrayList<>();
         countryList = app.getTopNCountry_inRegion("Southeast Asia",10);
         assertNotNull(countryList);
-    }
+    }*/
 //End of countries info unit testing
 
 
