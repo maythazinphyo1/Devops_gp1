@@ -18,10 +18,22 @@ public class App
      //   ct.displayCountry(ct.getCountry_inContinent("Asia"));
 
         //cities
-        city_info city = new city_info();
+      //  city_info city = new city_info();
 
         //get and display
-        city.displayCity(city.getCity());
+       // city.displayCity(city.getCity());
+
+
+
+        //capital cities
+        capitalcity_info capitalcity = new capitalcity_info();
+
+        //get and display
+        capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inWorld());
+
+        //capital cities in a continent
+        capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inContinent("Asia"));
+        capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inRegion("Southeast Asia"));
 
     }
 
