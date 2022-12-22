@@ -12,6 +12,8 @@ public class countries_info {
 
     Connection con1;
 
+
+    //----------------------------------------Start of Country Info in World---------------------------------------------
     /**
      * method to get country data
      */
@@ -60,7 +62,11 @@ public class countries_info {
         }
     }
 
-    //All the countries in a continent organised by largest population to smallest
+    //----------------------------------------End of Country Info in World---------------------------------------------------
+
+
+
+    //----------------------------------------Start of Country Info in Continent---------------------------------------------
     public ArrayList<Country> getCountry_inContinent(String continent_name)
     {
         try
@@ -105,10 +111,12 @@ public class countries_info {
             return null;
         }
     }
+    //----------------------------------------End of Country Info in Continent---------------------------------------------
 
 
 
-    //All the countries in a region organised by largest population to smallest
+
+    //----------------------------------------Start of Country Info in Region---------------------------------------------
     public ArrayList<Country> getCountry_inRegion(String region_name)
     {
         try
@@ -153,11 +161,14 @@ public class countries_info {
             return null;
         }
     }
+    //----------------------------------------Start of Country Info in Continent---------------------------------------------
 
     /**
      * The top N populated cities in the world
      * where N is provided by the user.
      */
+
+    //----------------------------------------Start of Top N Country Info in World---------------------------------------
     public ArrayList<Country> getTopNCountry_inWorld(int n)
     {
         try
@@ -203,6 +214,12 @@ public class countries_info {
         }
     }
 
+    //----------------------------------------End of Top N Country Info in World---------------------------------------
+
+
+
+    //----------------------------------------Start of Top N Country Info in Continent---------------------------------------
+
     /**
      * * The top N populated cities in a continent
      *   where N is provided by the user.
@@ -243,6 +260,7 @@ public class countries_info {
 
             }
             return countryList_wld;
+
         }
         catch (Exception e)
         {
@@ -251,6 +269,11 @@ public class countries_info {
             return null;
         }
     }
+    //----------------------------------------End of Top N Country Info in Continent---------------------------------------
+
+
+
+    //----------------------------------------Start of Top N Country Info in Region---------------------------------------
 
     /**
      * * The top N populated cities in a region
@@ -300,6 +323,9 @@ public class countries_info {
             return null;
         }
     }
+
+    //----------------------------------------End of Top N Country Info in Region---------------------------------------
+
 
     /**
      * method to display country information
