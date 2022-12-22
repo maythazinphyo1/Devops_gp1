@@ -155,6 +155,55 @@ public class countries_info {
     }
 
     /**
+     * The top N populated cities in the world
+     * where N is provided by the user.
+     */
+    public ArrayList<Country> getTopNCountry_inWorld(int n)
+    {
+        try
+        {
+            // connection to the database
+            db.connect();
+            con1= db.getCon();
+            if (con1==null){
+                System.out.println("con is null");
+            }
+            // Create an SQL statement
+            Statement stmt = con1.createStatement();
+            // Create string for SQL statement
+            String strSelect =
+                    "SELECT Code, Name, Continent, Region, Population, Capital FROM country ORDER BY Population DESC LIMIT "+n;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            //ArrayList Obj created
+            ArrayList<Country> countryList_wld = new ArrayList<>();
+            System.out.println("\n"+"The top "+n+" populated cities in the world where N is provided by the user.");
+
+            while (rset.next())
+            {
+                // get country data
+                Country ct = new Country();
+                ct.setCountry_code(rset.getString("Code"));
+                ct.setCountry_name(rset.getString("Name"));
+                ct.setContinent(rset.getString("Continent"));
+                ct.setRegion(rset.getString("Region"));
+                ct.setPopulation(rset.getInt("Population"));
+                ct.setCapital(rset.getInt("Capital"));
+
+                countryList_wld.add(ct);
+
+            }
+            return countryList_wld;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get country details");
+            return null;
+        }
+    }
+
+    /**
      * method to display country information
      */
     public void displayCountry(ArrayList<Country> countryList)
