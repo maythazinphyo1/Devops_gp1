@@ -332,13 +332,20 @@ public class countries_info {
      */
     public void displayCountry(ArrayList<Country> countryList)
     {
+        // Check countryList is not null
         if (countryList != null)
         {
+            // Print header
             System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
             System.out.printf("%5s %45s %15s %30s %10s %20s", "Code", "Country Name", "Population","Region", "Capital","Continent");
             System.out.println();
             System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
+            // Loop over all country in the list
             for (Country ct : countryList) {
+
+                if (ct == null)
+                    continue;
 
             String code = ct.getCountry_code();
             String name = ct.getCountry_name();
