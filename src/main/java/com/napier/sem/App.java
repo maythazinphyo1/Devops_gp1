@@ -54,4 +54,20 @@ public class App
     }
 // ----------------------------------- CITY AND TOP POPULATED END --------------------------------------------
 
+
+// ----------------------------------- CAPITAL CITY AND TOP POPULATED START --------------------------------------------
+    //capital cities
+    capitalcity_info capitalcity = new capitalcity_info();
+
+    //get and display
+        capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inWorld());
+
+    //capital cities in a continent
+        capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inContinent("Asia"));
+        capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inRegion("Southeast Asia"));
+
+
+// ----------------------------------- CAPITAL CITY AND TOP POPULATED END --------------------------------------------
+
+
 }
