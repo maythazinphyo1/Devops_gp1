@@ -23,7 +23,7 @@ public class App
         //get and display
 
 // ------------------------- CITY --------------------------------------------
-        city.displayCity(city.getCity_inWorld());
+ //       city.displayCity(city.getCity_inWorld());
 
 //        city.displayCity(city.getCity_inContinent("Asia"));
 //
@@ -33,6 +33,17 @@ public class App
 //        city.displayCity(city.getCity_inCountry("Japan"));
 //
 //        city.displayCity(city.getCity_inDistrict("England"));
+
+        // The top N populated cities in the world where N is provided by the user.
+        city.displayCity(city.getTopNCity_inWorld(10));
+        // The top N populated cities in a continent where N is provided by the user.
+        city.displayCity(city.getTopNCity_inContinent("Asia",10));
+        // The top N populated cities in a region where N is provided by the user.
+        city.displayCity(city.getTopNCity_inRegion("Caribbean",10));
+        // The top N populated cities in a country where N is provided by the user.
+        city.displayCity(city.getTopNCity_inCountry("Japan", 10));
+        // The top N populated cities in a district where N is provided by the user.
+        city.displayCity(city.getTopNCity_inDistrict("England",10));
     }
 
 
