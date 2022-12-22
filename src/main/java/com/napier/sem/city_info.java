@@ -11,7 +11,7 @@ public class city_info {
     DB_connect db = new DB_connect();
 
     Connection con1;
-
+    //--------------------------------------- START GET CITY IN WORLD ------------------------------------------
     /**
      * method to get country data
      */
@@ -51,6 +51,7 @@ public class city_info {
             return null;
         }
     }
+    //--------------------------------------- END GET CITY IN WORLD -------------------------------------
 
     //--------------------------------------- START SORT by CONTINENT -----------------------------------
 
