@@ -12,10 +12,12 @@ public class AppTest
 {
     static countries_info app;
 
+
     @BeforeAll
     static void init()
     {
         app = new countries_info();
+
     }
 
     //Test display country method is not null
@@ -29,7 +31,7 @@ public class AppTest
     @Test
     void displayCountryEmpty()
     {
-        ArrayList<Country> countryList = new ArrayList<Country>();
+        ArrayList<Country> countryList = new ArrayList<>();
         app.displayCountry(countryList);
     }
 
@@ -37,7 +39,7 @@ public class AppTest
     @Test
     void displayCountryContainsNull()
     {
-        ArrayList<Country> countryList = new ArrayList<Country>();
+        ArrayList<Country> countryList = new ArrayList<>();
         countryList.add(null);
         app.displayCountry(countryList);
     }
@@ -46,7 +48,7 @@ public class AppTest
     @Test
     void displayCountry()
     {
-        ArrayList<Country> countryList = new ArrayList<Country>();
+        ArrayList<Country> countryList = new ArrayList<>();
         Country ct = new Country();
         ct.setCountry_code("JPN");
         ct.setCountry_name("Japan");
@@ -58,5 +60,19 @@ public class AppTest
         countryList.add(ct);
         app.displayCountry(countryList);
     }
+
+
+    @Test
+    void getTopNCountry_inRegionContainsNull()
+    {
+        ArrayList<Country> countryList = new ArrayList<>();
+        countryList = app.getTopNCountry_inRegion("Southeast Asia",10);
+        assertNotNull(countryList);
+    }
+//End of countries info unit testing
+
+
+
+
 
 }
