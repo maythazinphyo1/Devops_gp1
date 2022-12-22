@@ -1,6 +1,5 @@
 package com.napier.sem;
 
-import javax.swing.table.DefaultTableModel;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -16,7 +15,7 @@ public class countries_info {
     /**
      * method to get country data
      */
-    public Country getCountry()
+    public ArrayList<Country> getCountry()
     {
         try
         {
@@ -33,15 +32,10 @@ public class countries_info {
                     "SELECT Code, Name, Continent, Region, Population, Capital FROM country ORDER BY Population DESC";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
-            // Return new country if valid.
-            // Check one is returned
+            //ArrayList Obj created
             ArrayList<Country> countryList = new ArrayList<>();
             System.out.println("\n"+"All the countries in the world organised by largest population to smallest");
-            //System.out.println("Code" + "\t\t" + "Name"+ "\t\t\t\t\t"+ "Population"+ "\n");
-            System.out.println("-----------------------------------------------------------------------------");
-            System.out.printf("%5s %35s %20s", "Code", "Country Name", "Population");
-            System.out.println();
-            System.out.println("-----------------------------------------------------------------------------");
+
             while (rset.next())
             {
                 // get country data
@@ -54,44 +48,9 @@ public class countries_info {
                 ct.setCapital(rset.getInt("Capital"));
 
                 countryList.add(ct);
-               /* // display country information
-                String code = ct.getCountry_code();
-                String name = ct.getCountry_name();
-                String continent = ct.getContinent();
-                String region = ct.getRegion();
-                int population = ct.getPopulation();
-                int capital = ct.getCapital();
 
-                System.out.println(code + "\t\t\t" + name +"\t\t\t\t\t\t" + population);
-
-                System.out.println();
-                //db.disconnect(); // disconnect to the database
-
-               //return ct;
-*/
             }
-          /*  DefaultTableModel tableModel = (DefaultTableModel) countryTable.getModel();
-            tableModel.setRowCount(0);*/
-            for (Country ct : countryList) {
-                /*  Object rowData[] = {ct.getCountry_code(), ct.getCountry_name(), ct.getContinent(), ct.getRegion(), ct.getPopulation(), ct.getCapital()};
-                 *//* tableModel.addRow(rowData);*/
-                String code = ct.getCountry_code();
-                String name = ct.getCountry_name();
-                String continent = ct.getContinent();
-                String region = ct.getRegion();
-                int population = ct.getPopulation();
-                int capital = ct.getCapital();
-                System.out.format("%5s %35s %20d",
-                        code, name, population, region, capital, continent);
-
-                System.out.println();
-            }
-
-
-            System.out.println("-----------------------------------------------------------------------------");
-
-
-                return null;
+            return countryList;
         }
         catch (Exception e)
         {
@@ -101,7 +60,7 @@ public class countries_info {
         }
     }
 
-    public Country Country_inContinent(String continent_name)
+    public ArrayList<Country> getCountry_inContinent(String continent_name)
     {
         try
         {
@@ -118,13 +77,10 @@ public class countries_info {
                     "SELECT Code, Name, Continent, Region, Population, Capital FROM country WHERE Continent = '" + continent_name +"' ORDER BY Population DESC";
             // Execute SQL statement
             ResultSet rset1 = stmt.executeQuery(strSelect1);
-
+            //ArrayList Obj created
+            ArrayList<Country> countryList_con = new ArrayList<>();
             System.out.println("\n"+"All the countries in " + continent_name + " organised by largest population to smallest");
-            System.out.println("-----------------------------------------------------------------------------");
-            System.out.printf("%5s %35s %20s", "Code", "Country Name", "Population");
-            System.out.println();
-            System.out.println("-----------------------------------------------------------------------------");
-            while (rset1.next())
+           while (rset1.next())
             {
                 // get country data
                 Country ct = new Country();
@@ -135,25 +91,11 @@ public class countries_info {
                 ct.setPopulation(rset1.getInt("Population"));
                 ct.setCapital(rset1.getInt("Capital"));
 
-                // display country information
-                String code = ct.getCountry_code();
-                String name = ct.getCountry_name();
-                String continent = ct.getContinent();
-                String region = ct.getRegion();
-                int population = ct.getPopulation();
-                int capital = ct.getCapital();
-                System.out.format("%5s %35s %20d",
-                        code, name, population);
-                System.out.println();
-
-                //db.disconnect(); // disconnect to the database
+                countryList_con.add(ct);
 
             }
 
-            System.out.println("-----------------------------------------------------------------------------");
-
-
-            return null;
+            return countryList_con;
         }
         catch (Exception e)
         {
@@ -165,21 +107,27 @@ public class countries_info {
     /**
      * method to display country information
      */
-    public void displayCountry(Country ct)
+    public void displayCountry(ArrayList<Country> ArrayList)
     {
-        if (ct != null)
+        if (ArrayList != null)
         {
+            System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+            System.out.printf("%5s %45s %15s %30s %10s %20s", "Code", "Country Name", "Population","Region", "Capital","Continent");
+            System.out.println();
+            System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+            for (Country ct : ArrayList) {
+
             String code = ct.getCountry_code();
             String name = ct.getCountry_name();
             String continent = ct.getContinent();
             String region = ct.getRegion();
             int population = ct.getPopulation();
             int capital = ct.getCapital();
-            //System.out.println("ct is " + ct);
-           // System.out.println("Code" + "\t\t" + "Name"+ "\t\t\t"+ "Population"+ "\n");
-            System.out.format("%5s %35s %20d",
-                    code, name, population);
+            System.out.format("%5s %45s %15d %30s %10d %20s",
+                    code, name, population, region, capital, continent);
+
             System.out.println();
+        }
         }
     }
 }
