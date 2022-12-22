@@ -19,9 +19,14 @@ public class App
 
         //cities
         city_info city = new city_info();
-
         //get and display
-        city.displayCity(city.getCity());
+
+// ------------------------- CITY --------------------------------------------
+//        city.displayCity(city.getCity_inWorld());
+
+//        city.displayCity(city.getCity_inContinent("Asia"));
+
+        city.displayCity(city.getCity_inRegion("Caribbean"));
 
     }
 
