@@ -17,8 +17,10 @@ public class App
         ct.displayCountry(ct.getCountry_inContinent("Asia"));
         // all the countries in a region organized by largest to the smallest population
         ct.displayCountry(ct.getCountry_inRegion("Southeast Asia"));
-        // The top N populated cities in the world where N is provided by the user.
+        // The top N populated countries in the world where N is provided by the user.
         ct.displayCountry(ct.getTopNCountry_inWorld(10));
+        // The top N populated countries in a continent where N is provided by the user.
+        ct.displayCountry(ct.getTopNCountry_inContinent("Asia",10));
 
 
 
