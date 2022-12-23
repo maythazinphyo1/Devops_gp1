@@ -22,7 +22,7 @@ public class City {
 
 
     //-------------------------------- GET and Set method for CITY COUNTRY CODE ----------------------------------
-
+/*
     private String city_countryCode; // country code
 
     public String getCity_countryCode() {
@@ -34,7 +34,7 @@ public class City {
     }
 
     //--------------------------------END OF GET and Set method for CITY COUNTRY CODE ----------------------------------
-
+*/
 
     //-------------------------------- GET and Set method for CITY DISTRICT ----------------------------------
 
@@ -65,7 +65,7 @@ public class City {
 
 
     //-------------------------------- GET and Set method for CITY ID ----------------------------------
-
+/*
     private int city_id;
 
     public int getCity_id() { return city_id; }
@@ -74,7 +74,7 @@ public class City {
 
     //-------------------------------- END OF GET and Set method for CITY ID ----------------------------------
 
-
+*/
     //-------------------------------- GET and Set method for COUNTRY NAME ----------------------------------
 
     private String country_name; // country name
@@ -90,7 +90,7 @@ public class City {
 
 
     //-------------------------------- GET and Set method for COUNTRY CODE ----------------------------------
-
+/*
     private String country_code; // country code
 
     public String getCountry_code() {
@@ -100,12 +100,12 @@ public class City {
     public void setCountry_code(String country_code) {
         this.country_code = country_code;
     }
-
+*/
     //--------------------------------END OF GET and Set method for COUNTRY CODE ----------------------------------
 
 
     //-------------------------------- GET and Set method for CAPITAL ----------------------------------
-
+/*
     private int capital;
 
     public int getCapital() {
@@ -117,6 +117,6 @@ public class City {
     }
 
     //-------------------------------- GET and Set method for CAPITAL ----------------------------------
-
+*/
 
 }

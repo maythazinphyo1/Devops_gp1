@@ -97,15 +97,15 @@ public class Country {
 
     //-------------------------------- GET and Set method for Capital city id--------------------------------
     /*** Capital city id*/
-    private int city_id;
-
-    public int getCity_id() {
-        return city_id;
-    }
-
-    public void setCity_id(int city_id) {
-        this.city_id = city_id;
-    }
+//    private int city_id;
+//
+//    public int getCity_id() {
+//        return city_id;
+//    }
+//
+//    public void setCity_id(int city_id) {
+//        this.city_id = city_id;
+//    }
     //---------------------------End of GET and Set method for Capital city id------------------------------
 
 }
