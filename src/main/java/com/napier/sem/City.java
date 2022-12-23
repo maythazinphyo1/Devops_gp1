@@ -21,21 +21,6 @@ public class City {
     //--------------------------------END OF GET and Set method for COUNTRY CODE ----------------------------------
 
 
-    //-------------------------------- GET and Set method for CITY COUNTRY CODE ----------------------------------
-/*
-    private String city_countryCode; // country code
-
-    public String getCity_countryCode() {
-        return city_countryCode;
-    }
-
-    public void setCity_countryCode(String city_countryCode) {
-        this.city_countryCode = city_countryCode;
-    }
-
-    //--------------------------------END OF GET and Set method for CITY COUNTRY CODE ----------------------------------
-*/
-
     //-------------------------------- GET and Set method for CITY DISTRICT ----------------------------------
 
     private String city_district; // district name
@@ -64,17 +49,6 @@ public class City {
     //--------------------------------END OF GET and Set method for CITY POPULATION ----------------------------------
 
 
-    //-------------------------------- GET and Set method for CITY ID ----------------------------------
-/*
-    private int city_id;
-
-    public int getCity_id() { return city_id; }
-
-    public void setCity_id(int city_id) { this.city_id = city_id; }
-
-    //-------------------------------- END OF GET and Set method for CITY ID ----------------------------------
-
-*/
     //-------------------------------- GET and Set method for COUNTRY NAME ----------------------------------
 
     private String country_name; // country name
@@ -117,6 +91,33 @@ public class City {
     }
 
     //-------------------------------- GET and Set method for CAPITAL ----------------------------------
+*/
+
+    //-------------------------------- GET and Set method for CITY ID ----------------------------------
+/*
+    private int city_id;
+
+    public int getCity_id() { return city_id; }
+
+    public void setCity_id(int city_id) { this.city_id = city_id; }
+
+    //-------------------------------- END OF GET and Set method for CITY ID ----------------------------------
+
+*/
+
+    //-------------------------------- GET and Set method for CITY COUNTRY CODE ----------------------------------
+/*
+    private String city_countryCode; // country code
+
+    public String getCity_countryCode() {
+        return city_countryCode;
+    }
+
+    public void setCity_countryCode(String city_countryCode) {
+        this.city_countryCode = city_countryCode;
+    }
+
+    //--------------------------------END OF GET and Set method for CITY COUNTRY CODE ----------------------------------
 */
 
 }

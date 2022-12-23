@@ -229,7 +229,7 @@ public class countries_info {
 
             while (rset.next())
             {
-                // get country data
+
                 Country ct = new Country();
                 ct.setCountry_code(rset.getString("Code"));
                 ct.setCountry_name(rset.getString("Name"));

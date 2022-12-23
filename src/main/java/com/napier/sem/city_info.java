@@ -259,7 +259,7 @@ public class city_info {
             System.out.println("\n" + "The Top "+n+" populated cities in Continent: "+continent_name+".");
 
             while (rset.next()) {
-                // get city data
+
                 City ct = new City();
                 ct.setCity_name(rset.getString("city.Name"));
                 ct.setCountry_name(rset.getString("country.Name"));
@@ -380,7 +380,7 @@ public class city_info {
             System.out.println("\n" + "The Top "+n+" populated cities in district: "+district_name+".");
 
             while (rset.next()) {
-                // get city data
+
                 City ct = new City();
                 ct.setCity_name(rset.getString("city.Name"));
                 ct.setCountry_name(rset.getString("country.Name"));

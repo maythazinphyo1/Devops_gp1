@@ -67,7 +67,7 @@ public class CountryTest
         ct.setCountry_name("Japan");
         ct.setPopulation(126714000);
         ct.setRegion("Eastern Asia");
-        ct.setCapital(1532);
+        ct.setCity_name("Tokyo");
         ct.setContinent("Asia");
 
         countryList.add(ct);

@@ -69,19 +69,6 @@ public class Country {
     //-------------------------------- End Of GET and Set method for Continent ----------------------------------
 
 
-    //-------------------------------- GET and Set method for Capital -------------------------------------------
-    /*** Capital*/
-    private int capital;
-    public int getCapital() {
-        return capital;
-    }
-    public void setCapital(int capital) {
-        this.capital = capital;
-    }
-
-    //-------------------------------- End Of GET and Set method for Capital ----------------------------------
-
-
     //-------------------------------- GET and Set method for Capital city name--------------------------------
     /*** Capital city name*/
     private String city_name; // city name
@@ -107,5 +94,19 @@ public class Country {
 //        this.city_id = city_id;
 //    }
     //---------------------------End of GET and Set method for Capital city id------------------------------
+
+
+    //-------------------------------- GET and Set method for Capital -------------------------------------------
+    /*** Capital*/
+//    private int capital;
+//    public int getCapital() {
+//        return capital;
+//    }
+//    public void setCapital(int capital) {
+//        this.capital = capital;
+//    }
+
+    //-------------------------------- End Of GET and Set method for Capital ----------------------------------
+
 
 }
