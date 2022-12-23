@@ -26,8 +26,7 @@ public class DB_connect {
     /**
             * Connect to the MySQL database.
      */
-//    ---- updated file for integration testing -----------
-    public void connect(String location, int delay)
+    public void connect()
     {
         try
         {
@@ -47,9 +46,9 @@ public class DB_connect {
             try
             {
                 // Wait a bit for db to start
-                Thread.sleep(delay);
+                Thread.sleep(30000);
                 // Connect to database
-                con= DriverManager.getConnection("jdbc:mysql://"+ location+ "/world?allowPublicKeyRetrieval=true&useSSL=false", "root", "example");
+                con= DriverManager.getConnection("jdbc:mysql://db:3306/world?useSSL=false", "root", "example");
                 System.out.println("Successfully connected to world.sql");
                 break;
 
@@ -87,4 +86,4 @@ public class DB_connect {
     }
     //---------------------------- MYSQL DATABASE SECTION ENDED ---------------------------------------------
 }
-//------------ this is testing --------------
+//testing purpose
