@@ -77,4 +77,32 @@ public class Country {
     }
 
     //-------------------------------- End Of GET and Set method for Capital ----------------------------------
+
+
+    //-------------------------------- GET and Set method for Capital city name--------------------------------
+    /*** Capital city name*/
+    private String city_name; // city name
+    public String getCity_name() {
+        return city_name;
+    }
+
+    public void setCity_name(String city_name) {
+        this.city_name = city_name;
+    }
+    //---------------------- End of GET and Set method for Capital city name--------------------------------
+
+
+    //-------------------------------- GET and Set method for Capital city id--------------------------------
+    /*** Capital city id*/
+    private int city_id;
+
+    public int getCity_id() {
+        return city_id;
+    }
+
+    public void setCity_id(int city_id) {
+        this.city_id = city_id;
+    }
+    //---------------------------End of GET and Set method for Capital city id------------------------------
+
 }
