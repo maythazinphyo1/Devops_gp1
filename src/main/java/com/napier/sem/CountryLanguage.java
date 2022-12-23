@@ -1,5 +1,10 @@
 package com.napier.sem;
 
+/**
+ * CREATED ON 12.12.2022
+ * CREATED BY GROUP-1
+ * REPRESENT LANGUAGE DATA FOR LANGUAGE OBJECT
+ */
 public class CountryLanguage {
 
     private String language_code; //country code
