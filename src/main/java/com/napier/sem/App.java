@@ -10,9 +10,14 @@ public class App
      //SQL database connection connected
         DB_connect db = new DB_connect();
         Connection con1;
-        db.connect();
-        con1= db.getCon();
 
+
+        if(args.length < 1){
+            db.connect("localhost:33060", 30000);
+        }else{
+            db.connect(args[0], Integer.parseInt(args[1]));
+        }
+        con1= db.getCon();
 
 //------------------------------- START FOR COUNTRY INFO ------------------------------------------------------
 

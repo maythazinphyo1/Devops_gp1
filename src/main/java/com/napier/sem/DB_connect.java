@@ -26,7 +26,7 @@ public class DB_connect {
     /**
             * Connect to the MySQL database.
      */
-    public void connect()
+    public void connect(String location, int delay)
     {
         try
         {
@@ -46,9 +46,10 @@ public class DB_connect {
             try
             {
                 // Wait a bit for db to start
-                Thread.sleep(30000);
+                Thread.sleep(delay);
                 // Connect to database
-                con= DriverManager.getConnection("jdbc:mysql://db:3306/world?useSSL=false", "root", "example");
+                con= DriverManager.getConnection("jdbc:mysql://" + location
+                        + "/world?allowPublicKeyRetrieval=true&useSSL=false",  "root", "example");
                 System.out.println("Successfully connected to world.sql");
                 break;
 
