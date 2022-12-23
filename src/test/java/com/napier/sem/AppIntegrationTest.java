@@ -2,7 +2,6 @@ package com.napier.sem;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 
 import java.sql.Connection;
 import java.util.ArrayList;
@@ -17,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class AppIntegrationTest
 {
     static DB_connect app;
-    static countries_info country_ct = new countries_info();;
+    static countries_info country_ct = new countries_info();
     static capitalcity_info cap_ct = new capitalcity_info();
     static city_info ct = new city_info();
 
@@ -42,7 +41,7 @@ public class AppIntegrationTest
         assertEquals(country.get(0).getContinent(), "Asia");
         assertEquals(country.get(0).getRegion(), "Eastern Asia");
         assertEquals(country.get(0).getPopulation(), 1277558000);
-        assertEquals(country.get(0).getCapital(), 1891);
+        assertEquals(country.get(0).getCity_name(), "Peking");
 
     }
 
@@ -57,7 +56,7 @@ public class AppIntegrationTest
         assertEquals(country.get(0).getContinent(), "Asia");
         assertEquals(country.get(0).getRegion(), "Eastern Asia");
         assertEquals(country.get(0).getPopulation(), 1277558000);
-        assertEquals(country.get(0).getCapital(), 1891);
+        assertEquals(country.get(0).getCity_name(), "Peking");
 
     }
 
@@ -72,7 +71,7 @@ public class AppIntegrationTest
         assertEquals(country.get(0).getContinent(), "Asia");
         assertEquals(country.get(0).getRegion(), "Southeast Asia");
         assertEquals(country.get(0).getPopulation(), 212107000);
-        assertEquals(country.get(0).getCapital(), 939);
+        assertEquals(country.get(0).getCity_name(), "Jakarta");
 
     }
 
@@ -88,7 +87,7 @@ public class AppIntegrationTest
         assertEquals(country.get(0).getContinent(), "Asia");
         assertEquals(country.get(0).getRegion(), "Eastern Asia");
         assertEquals(country.get(0).getPopulation(), 1277558000);
-        assertEquals(country.get(0).getCapital(), 1891);
+        assertEquals(country.get(0).getCity_name(), "Peking");
 
     }
 
@@ -103,7 +102,7 @@ public class AppIntegrationTest
         assertEquals(country.get(0).getContinent(), "Asia");
         assertEquals(country.get(0).getRegion(), "Eastern Asia");
         assertEquals(country.get(0).getPopulation(), 1277558000);
-        assertEquals(country.get(0).getCapital(), 1891);
+        assertEquals(country.get(0).getCity_name(), "Peking");
 
     }
 
@@ -118,7 +117,7 @@ public class AppIntegrationTest
         assertEquals(country.get(0).getContinent(), "Asia");
         assertEquals(country.get(0).getRegion(), "Southeast Asia");
         assertEquals(country.get(0).getPopulation(), 212107000);
-        assertEquals(country.get(0).getCapital(), 939);
+        assertEquals(country.get(0).getCity_name(), "Jakarta");
 
     }
 

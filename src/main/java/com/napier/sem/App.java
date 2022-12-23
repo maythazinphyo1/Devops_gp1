@@ -82,7 +82,7 @@ public class App
 
 
         //SQL database disconnect
-        //db.disconnect();
+        db.disconnect();
 
 
     }//end of main method
