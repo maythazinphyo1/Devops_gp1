@@ -86,4 +86,4 @@ public class DB_connect {
     }
     //---------------------------- MYSQL DATABASE SECTION ENDED ---------------------------------------------
 }
-//------------ this is testing --------------\\
+//------------ this is testing --------------
