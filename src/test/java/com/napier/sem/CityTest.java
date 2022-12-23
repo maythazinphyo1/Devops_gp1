@@ -5,6 +5,11 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
+/**
+ * Author: Group1
+ * Created date: Dec.22.2022
+ * This class represents unit test for city
+ */
 public class CityTest {
 
 
@@ -39,6 +44,7 @@ public class CityTest {
         city.displayCity(cityList);
     }
 
+    // unit test for display city
     @Test
     void displayCity()
     {

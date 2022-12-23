@@ -9,6 +9,11 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Author: Group1
+ * Created date: Dec.23.2022
+ * This class represents integration test
+ */
 public class AppIntegrationTest
 {
     static DB_connect app;

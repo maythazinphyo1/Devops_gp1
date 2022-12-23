@@ -29,7 +29,7 @@ public class city_info {
             System.out.println("\n" + "All the cities in the world organised by largest population to smallest");
 
             while (rset.next()) {
-                // get country data
+                // create new obj
                 City ct = new City();
                 ct.setCity_name(rset.getString("city.Name"));
                 ct.setCountry_name(rset.getString("country.Name"));
@@ -64,17 +64,14 @@ public class city_info {
             ResultSet rset = stmt.executeQuery(strSelect);
             //ArrayList Obj created
             ArrayList<City> cityList = new ArrayList<>();
-            System.out.println("\n" + "All the cities in the " + continent_name + " organised by largest population to smallest");
+            System.out.println("\n" + "All the cities in Continent: " + continent_name + " organised by largest population to smallest");
 
             while (rset.next()) {
-                // get country data
                 City ct = new City();
                 ct.setCity_name(rset.getString("city.Name"));
                 ct.setCountry_name(rset.getString("country.Name"));
                 ct.setCity_district(rset.getString("city.District"));
                 ct.setCity_population(rset.getInt("city.population"));
-
-
                 cityList.add(ct);
 
             }
@@ -104,17 +101,15 @@ public class city_info {
             ResultSet rset = stmt.executeQuery(strSelect);
             //ArrayList Obj created
             ArrayList<City> cityList = new ArrayList<>();
-            System.out.println("\n" + "All the cities in the " + region_name + " organised by largest population to smallest");
+            System.out.println("\n" + "All the cities in Region: " + region_name + " organised by largest population to smallest");
 
             while (rset.next()) {
-                // get country data
+
                 City ct = new City();
                 ct.setCity_name(rset.getString("city.Name"));
                 ct.setCountry_name(rset.getString("country.Name"));
                 ct.setCity_district(rset.getString("city.District"));
                 ct.setCity_population(rset.getInt("city.population"));
-
-
                 cityList.add(ct);
 
             }
@@ -142,16 +137,15 @@ public class city_info {
             ResultSet rset = stmt.executeQuery(strSelect);
             //ArrayList Obj created
             ArrayList<City> cityList = new ArrayList<>();
-            System.out.println("\n" + "All the cities in " + country_name +" organised by largest population to smallest");
+            System.out.println("\n" + "All the cities in Country: " + country_name +" organised by largest population to smallest");
 
             while (rset.next()) {
-                // get country data
+
                 City ct = new City();
                 ct.setCity_name(rset.getString("city.Name"));
                 ct.setCountry_name(rset.getString("country.Name"));
                 ct.setCity_district(rset.getString("city.District"));
                 ct.setCity_population(rset.getInt("city.population"));
-
                 cityList.add(ct);
 
             }
@@ -179,10 +173,10 @@ public class city_info {
             ResultSet rset = stmt.executeQuery(strSelect);
             //ArrayList Obj created
             ArrayList<City> cityList = new ArrayList<>();
-            System.out.println("\n" + "All the cities in " + district_name +" organised by largest population to smallest");
+            System.out.println("\n" + "All the cities in District: " + district_name +" organised by largest population to smallest");
 
             while (rset.next()) {
-                // get country data
+
                 City ct = new City();
                 ct.setCity_name(rset.getString("city.Name"));
                 ct.setCountry_name(rset.getString("country.Name"));
@@ -223,7 +217,7 @@ public class city_info {
             ResultSet rset = stmt.executeQuery(strSelect);
             //ArrayList Obj created
             ArrayList<City> cityList = new ArrayList<>();
-            System.out.println("\n" + "The Top "+n+" populated cities in the world where N is provided by the user.");
+            System.out.println("\n" + "The Top "+n+" populated cities in the world.");
 
             while (rset.next()) {
                 // get country data
@@ -262,7 +256,7 @@ public class city_info {
             ResultSet rset = stmt.executeQuery(strSelect);
             //ArrayList Obj created
             ArrayList<City> cityList = new ArrayList<>();
-            System.out.println("\n" + "The Top "+n+" populated cities in "+continent_name+" where N is provided by the user.");
+            System.out.println("\n" + "The Top "+n+" populated cities in Continent: "+continent_name+".");
 
             while (rset.next()) {
                 // get city data
@@ -302,10 +296,10 @@ public class city_info {
             ResultSet rset = stmt.executeQuery(strSelect);
             //ArrayList Obj created
             ArrayList<City> cityList = new ArrayList<>();
-            System.out.println("\n" + "The Top "+n+" populated cities in Region: "+region_name+" where N is provided by the user.");
+            System.out.println("\n" + "The Top "+n+" populated cities in Region: "+region_name+"");
 
             while (rset.next()) {
-                // get city data
+
                 City ct = new City();
                 ct.setCity_name(rset.getString("city.Name"));
                 ct.setCountry_name(rset.getString("country.Name"));
@@ -342,10 +336,10 @@ public class city_info {
             ResultSet rset = stmt.executeQuery(strSelect);
             //ArrayList Obj created
             ArrayList<City> cityList = new ArrayList<>();
-            System.out.println("\n" + "The Top "+n+" populated cities in "+country_name+" where N is provided by the user.");
+            System.out.println("\n" + "The Top "+n+" populated cities in country: "+country_name+".");
 
             while (rset.next()) {
-                // get city data
+
                 City ct = new City();
                 ct.setCity_name(rset.getString("city.Name"));
                 ct.setCountry_name(rset.getString("country.Name"));
@@ -383,7 +377,7 @@ public class city_info {
             ResultSet rset = stmt.executeQuery(strSelect);
             //ArrayList Obj created
             ArrayList<City> cityList = new ArrayList<>();
-            System.out.println("\n" + "The Top "+n+" populated cities in "+district_name+" where N is provided by the user.");
+            System.out.println("\n" + "The Top "+n+" populated cities in district: "+district_name+".");
 
             while (rset.next()) {
                 // get city data

@@ -4,7 +4,11 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-
+/**
+ * Author: Group1
+ * Created date: Dec.22.2022
+ * This class represents unit test for capital
+ */
 public class CapitalTest {
     static capitalcity_info capital;
 

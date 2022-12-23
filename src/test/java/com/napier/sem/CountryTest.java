@@ -8,6 +8,11 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Author: Group1
+ * Created date: Dec.22.2022
+ * This class represents unit test for country
+ */
 public class CountryTest
 {
     static countries_info app;
@@ -20,14 +25,18 @@ public class CountryTest
 
     }
 
-    //Test display country method is not null
+    /**
+     * Test display country method is not null
+     */
     @Test
     void displayCountryNull()
     {
         app.displayCountry(null);
     }
 
-    //Test display country object is not null
+    /**
+     * Test display country object is not null
+     */
     @Test
     void displayCountryEmpty()
     {
@@ -35,7 +44,9 @@ public class CountryTest
         app.displayCountry(countryList);
     }
 
-    //
+    /**
+     * unit test for array list with null member in it
+     */
     @Test
     void displayCountryContainsNull()
     {
@@ -44,7 +55,9 @@ public class CountryTest
         app.displayCountry(countryList);
     }
 
-
+    /**
+     * unit test for display country information
+     */
     @Test
     void displayCountry()
     {
@@ -59,20 +72,6 @@ public class CountryTest
 
         countryList.add(ct);
         app.displayCountry(countryList);
-    }
-
-
-//    @Test
-//    void getTopNCountry_inRegionContainsNull()
-//    {
-//        ArrayList<Country> countryList = new ArrayList<>();
-//        countryList = app.getTopNCountry_inRegion("Southeast Asia",10);
-//        assertNotNull(countryList);
-//    }
-//End of countries info unit testing
-
-
-
-
+    } ///End of countries info unit testing
 
 }

@@ -25,7 +25,7 @@ public class App
         countries_info ct = new countries_info();
         // Get and display country information organized by largest to the smallest population in the world
         ct.displayCountry(ct.getCountry_inWorld(con1));
-/*
+
         // all the countries in a continent organized by largest to the smallest population
         ct.displayCountry(ct.getCountry_inContinent(con1, "Asia"));
         // all the countries in a region organized by largest to the smallest population
@@ -65,7 +65,7 @@ public class App
         // The top N populated cities in a district where N is provided by the user.
         city.displayCity(city.getTopNCity_inDistrict(con1, "England",10));
 // ----------------------------------- CITY AND TOP POPULATED END --------------------------------------------
-*/
+
 
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED START --------------------------------------------
         //capital cities
