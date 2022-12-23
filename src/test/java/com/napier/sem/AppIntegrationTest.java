@@ -14,9 +14,11 @@ public class AppIntegrationTest
     static DB_connect app;
     static countries_info ct;
 
+
     @BeforeAll
     static void init()
     {
+        ct = new countries_info();
         app = new DB_connect();
         app.connect("localhost:33060", 30000);
 
