@@ -1,3 +1,4 @@
+
 package com.napier.sem;
 
 import java.sql.Connection;
@@ -8,18 +9,16 @@ import java.util.ArrayList;
 public class city_info {
 
     // create instance for DB_connect
-    DB_connect db = new DB_connect();
 
-    Connection con1;
     //--------------------------------------- START GET CITY IN WORLD ------------------------------------------
-    /**
+
+/**
      * method to get city data
      */
-    public ArrayList<City> getCity_inWorld() {
+
+    public ArrayList<City> getCity_inWorld(Connection con1) {
         try {
             // connection to the database
-            db.connect();
-            con1 = db.getCon();
             if (con1 == null) {
                 System.out.println("con is null");
             }
@@ -52,7 +51,7 @@ public class city_info {
         }
     }
     //--------------------------------------- END GET CITY IN WORLD -------------------------------------
-
+/*
     //--------------------------------------- START SORT by CONTINENT -----------------------------------
 
     public ArrayList<City> getCity_inContinent(String continent_name) {
@@ -217,11 +216,13 @@ public class city_info {
 
     //--------------------------------------START OF TOP N CITIES IN THE WORLD----------------------------------------------------
 
-    /**
+    */
+/**
      *
      * Method for top N cities in the world.
      * This method returns cityList obj
-     */
+     *//*
+
     public ArrayList<City> getTopNCity_inWorld(int n) {
         try {
             // connection to the database
@@ -259,10 +260,12 @@ public class city_info {
     }
     //--------------------------------------- START OF TOP N POPULATED CITIES IN A CONTINENT ----------------------------------------------------
 
-    /**
+    */
+/**
      *
      * Method for Top N cities in a continent.
-     */
+     *//*
+
     public ArrayList<City> getTopNCity_inContinent(String continent_name, int n) {
         try {
             // connection to the database
@@ -301,10 +304,12 @@ public class city_info {
     //------------------------------------- END OF TOP N POPULATED CITIES IN A CONTINENT ---------------------------------------------------------
 
     //-------------------------------------START OF TOP N POPULATED CITIES IN A REGION ---------------------------------------------------------
-    /**
+    */
+/**
      *
      * Method for Top N populated cities in a region.
-     */
+     *//*
+
     public ArrayList<City> getTopNCity_inRegion(String region_name, int n) {
         try {
             // connection to the database
@@ -343,10 +348,12 @@ public class city_info {
     //-------------------------------------END OF TOP N POPULATED CITIES IN A REGION ---------------------------------------------------------
 
     //-------------------------------------START OF TOP N POPULATED CITIES IN A COUNTRY ---------------------------------------------------------
-    /**
+    */
+/**
      *
      * Method for Top N populated cities in a country.
-     */
+     *//*
+
     public ArrayList<City> getTopNCity_inCountry(String country_name, int n) {
         try {
             // connection to the database
@@ -386,10 +393,12 @@ public class city_info {
 
 
     //-------------------------------------START OF TOP N POPULATED CITIES IN A DISTRICT ---------------------------------------------------------
-    /**
+    */
+/**
      *
      * Method for Top N populated cities in a district.
-     */
+     *//*
+
     public ArrayList<City> getTopNCity_inDistrict(String district_name, int n) {
         try {
             // connection to the database
@@ -427,7 +436,7 @@ public class city_info {
     }
     //-------------------------------------END OF TOP N POPULATED CITIES IN A DISTRICT ---------------------------------------------------------
 
-
+*/
     //--------------------------------------- DISPLAY START ------------------------------------------------------------
         public void displayCity(ArrayList<City> cityList)
         {
@@ -453,5 +462,6 @@ public class city_info {
         }
     //    --------------------------------------- DISPLAY END ------------------------------------------------------------
     }
+
 
 

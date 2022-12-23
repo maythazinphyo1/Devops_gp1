@@ -8,20 +8,17 @@ import java.util.ArrayList;
 public class countries_info {
 
     // create instance for DB_connect
-    DB_connect db = new DB_connect();
 
-    Connection con1;
     //----------------------------------- SECTION FOR GET COUNTRY ------------------------------------------
     /**
      * method to get country data
      */
-    public ArrayList<Country> getCountry()
+    public ArrayList<Country> getCountry(Connection con1)
     {
         try
         {
             // connection to the database
-            db.connect();
-            con1= db.getCon();
+
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -61,14 +58,14 @@ public class countries_info {
     }
     //----------------------------------- SECTION FOR GET COUNTRY ENDED ------------------------------------------
 
+
     //----------------------------------- SECTION FOR CONTINENT NAME ---------------------------------------------
-    public ArrayList<Country> getCountry_inContinent(String continent_name)
+    public ArrayList<Country> getCountry_inContinent(Connection con1, String continent_name)
     {
         try
         {
             // connection to the database
-            db.connect();
-            con1= db.getCon();
+
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -107,6 +104,7 @@ public class countries_info {
         }
     }
     //----------------------------------- SECTION FOR CONTINENT NAME ENDED ------------------------------------------
+
 
     //----------------------------------- SECTION FOR GET DISPLAY ------------------------------------------
     /**
