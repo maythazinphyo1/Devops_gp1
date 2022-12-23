@@ -2,8 +2,11 @@ package com.napier.sem;
 import java.sql.*;
 
 /**
- * Represents a country
+ * CREATED ON 12.12.2022
+ * CREATED BY GROUP-1
+ * REPRESENT Country DATA FOR CITY OBJECT
  */
+
 public class Country {
     //-------------------------------- GET and Set method for COUNTRY CODE ----------------------------------
     /*** Country code*/
