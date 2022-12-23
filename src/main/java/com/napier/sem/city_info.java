@@ -7,19 +7,13 @@ import java.util.ArrayList;
 
 public class city_info {
 
-    // create instance for DB_connect
-    DB_connect db = new DB_connect();
-
-    Connection con1;
     //--------------------------------------- START GET CITY IN WORLD ------------------------------------------
     /**
      * method to get city data
      */
-    public ArrayList<City> getCity_inWorld() {
+    public ArrayList<City> getCity_inWorld(Connection con1) {
         try {
-            // connection to the database
-            db.connect();
-            con1 = db.getCon();
+
             if (con1 == null) {
                 System.out.println("con is null");
             }
@@ -47,7 +41,7 @@ public class city_info {
             return cityList;
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get city details");
             return null;
         }
     }
@@ -55,11 +49,9 @@ public class city_info {
 
     //--------------------------------------- START SORT by CONTINENT -----------------------------------
 
-    public ArrayList<City> getCity_inContinent(String continent_name) {
+    public ArrayList<City> getCity_inContinent(Connection con1, String continent_name) {
         try {
-            // connection to the database
-            db.connect();
-            con1 = db.getCon();
+
             if (con1 == null) {
                 System.out.println("con is null");
             }
@@ -89,7 +81,7 @@ public class city_info {
             return cityList;
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get city details");
             return null;
         }
     }
@@ -97,11 +89,9 @@ public class city_info {
 
     //--------------------------------------- START SORT by REGION ----------------------------------------
 
-    public ArrayList<City> getCity_inRegion(String region_name) {
+    public ArrayList<City> getCity_inRegion(Connection con1, String region_name) {
         try {
-            // connection to the database
-            db.connect();
-            con1 = db.getCon();
+
             if (con1 == null) {
                 System.out.println("con is null");
             }
@@ -131,17 +121,15 @@ public class city_info {
             return cityList;
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get city details");
             return null;
         }
     }
     //--------------------------------------- ENDED SORT by REGION ----------------------------------------------------
     //--------------------------------------- START SORT by COUNTRY ----------------------------------------------------
-    public ArrayList<City> getCity_inCountry(String country_name) {
+    public ArrayList<City> getCity_inCountry(Connection con1, String country_name) {
         try {
-            // connection to the database
-            db.connect();
-            con1 = db.getCon();
+
             if (con1 == null) {
                 System.out.println("con is null");
             }
@@ -170,17 +158,15 @@ public class city_info {
             return cityList;
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get city details");
             return null;
         }
     }
     //--------------------------------------- ENDED SORT by COUNTRY ----------------------------------------------------
     //--------------------------------------- START SORT by DISTRICT_NAME ----------------------------------------------------
-    public ArrayList<City> getCity_inDistrict(String district_name) {
+    public ArrayList<City> getCity_inDistrict(Connection con1, String district_name) {
         try {
-            // connection to the database
-            db.connect();
-            con1 = db.getCon();
+
             if (con1 == null) {
                 System.out.println("con is null");
             }
@@ -209,7 +195,7 @@ public class city_info {
             return cityList;
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get city details");
             return null;
         }
     }
@@ -222,11 +208,9 @@ public class city_info {
      * Method for top N cities in the world.
      * This method returns cityList obj
      */
-    public ArrayList<City> getTopNCity_inWorld(int n) {
+    public ArrayList<City> getTopNCity_inWorld(Connection con1, int n) {
         try {
-            // connection to the database
-            db.connect();
-            con1 = db.getCon();
+
             if (con1 == null) {
                 System.out.println("con is null");
             }
@@ -253,7 +237,7 @@ public class city_info {
             return cityList;
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get city details");
             return null;
         }
     }
@@ -263,11 +247,9 @@ public class city_info {
      *
      * Method for Top N cities in a continent.
      */
-    public ArrayList<City> getTopNCity_inContinent(String continent_name, int n) {
+    public ArrayList<City> getTopNCity_inContinent(Connection con1, String continent_name, int n) {
         try {
-            // connection to the database
-            db.connect();
-            con1 = db.getCon();
+
             if (con1 == null) {
                 System.out.println("con is null");
             }
@@ -294,7 +276,7 @@ public class city_info {
             return cityList;
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get city details");
             return null;
         }
     }
@@ -305,11 +287,9 @@ public class city_info {
      *
      * Method for Top N populated cities in a region.
      */
-    public ArrayList<City> getTopNCity_inRegion(String region_name, int n) {
+    public ArrayList<City> getTopNCity_inRegion(Connection con1, String region_name, int n) {
         try {
-            // connection to the database
-            db.connect();
-            con1 = db.getCon();
+
             if (con1 == null) {
                 System.out.println("con is null");
             }
@@ -336,7 +316,7 @@ public class city_info {
             return cityList;
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get city details");
             return null;
         }
     }
@@ -347,11 +327,9 @@ public class city_info {
      *
      * Method for Top N populated cities in a country.
      */
-    public ArrayList<City> getTopNCity_inCountry(String country_name, int n) {
+    public ArrayList<City> getTopNCity_inCountry(Connection con1, String country_name, int n) {
         try {
-            // connection to the database
-            db.connect();
-            con1 = db.getCon();
+
             if (con1 == null) {
                 System.out.println("con is null");
             }
@@ -378,7 +356,7 @@ public class city_info {
             return cityList;
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get city details");
             return null;
         }
     }
@@ -390,11 +368,9 @@ public class city_info {
      *
      * Method for Top N populated cities in a district.
      */
-    public ArrayList<City> getTopNCity_inDistrict(String district_name, int n) {
+    public ArrayList<City> getTopNCity_inDistrict(Connection con1, String district_name, int n) {
         try {
-            // connection to the database
-            db.connect();
-            con1 = db.getCon();
+
             if (con1 == null) {
                 System.out.println("con is null");
             }
@@ -421,7 +397,7 @@ public class city_info {
             return cityList;
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get city details");
             return null;
         }
     }

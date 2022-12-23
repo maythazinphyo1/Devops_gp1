@@ -8,21 +8,14 @@ import java.util.ArrayList;
 public class capitalcity_info {
 
 
-    // create instance for DB_connect
-    DB_connect db = new DB_connect();
-
-    Connection con1;
-
     /**
-     * method to get country data
+     * method to get capital city data in the world
      */
-    public ArrayList<City> getCapitalcity_inWorld()
+    public ArrayList<City> getCapitalcity_inWorld(Connection con1)
     {
         try
         {
-            // connection to the database
-            db.connect();
-            con1= db.getCon();
+
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -54,18 +47,19 @@ public class capitalcity_info {
         catch (Exception e)
         {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get capital city details");
             return null;
         }
     }
 
-    public ArrayList<City> getCapitalcity_inContinent(String continent_name)
+    /**
+     * method to display capital city information in continent
+     */
+    public ArrayList<City> getCapitalcity_inContinent(Connection con1, String continent_name)
     {
         try
         {
-            // connection to the database
-            db.connect();
-            con1= db.getCon();
+
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -96,7 +90,7 @@ public class capitalcity_info {
         catch (Exception e)
         {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get capital city details");
             return null;
         }
     }
@@ -104,15 +98,15 @@ public class capitalcity_info {
 
 
 
+    /**
+     * method to display capital city information in Region
+     */
 
-
-    public ArrayList<City> getCapitalcity_inRegion(String region_name)
+    public ArrayList<City> getCapitalcity_inRegion(Connection con1, String region_name)
     {
         try
         {
-            // connection to the database
-            db.connect();
-            con1= db.getCon();
+
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -143,7 +137,7 @@ public class capitalcity_info {
         catch (Exception e)
         {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            System.out.println("Failed to get capital city details");
             return null;
         }
     }
@@ -153,7 +147,7 @@ public class capitalcity_info {
 
 
     /**
-     * method to display country information
+     * method to display capital city information
      */
     public void displayCapitalcity(ArrayList<City> capitalcityList)
     {

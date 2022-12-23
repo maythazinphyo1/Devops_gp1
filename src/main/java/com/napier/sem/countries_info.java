@@ -7,23 +7,16 @@ import java.util.ArrayList;
 
 public class countries_info {
 
-    // create instance for DB_connect
-    DB_connect db = new DB_connect();
-
-    Connection con1;
-
-
     //----------------------------------------Start of Country Info in World---------------------------------------------
     /**
      * method to get country data
      */
-    public ArrayList<Country> getCountry_inWorld()
+    public ArrayList<Country> getCountry_inWorld(Connection con1)
     {
         try
         {
             // connection to the database
-            db.connect();
-            con1= db.getCon();
+
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -67,13 +60,11 @@ public class countries_info {
 
 
     //----------------------------------------Start of Country Info in Continent---------------------------------------------
-    public ArrayList<Country> getCountry_inContinent(String continent_name)
+    public ArrayList<Country> getCountry_inContinent(Connection con1, String continent_name)
     {
         try
         {
-            // connection to the database
-            db.connect();
-            con1= db.getCon();
+
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -117,13 +108,11 @@ public class countries_info {
 
 
     //----------------------------------------Start of Country Info in Region---------------------------------------------
-    public ArrayList<Country> getCountry_inRegion(String region_name)
+    public ArrayList<Country> getCountry_inRegion(Connection con1, String region_name)
     {
         try
         {
-            // connection to the database
-            db.connect();
-            con1= db.getCon();
+
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -169,13 +158,11 @@ public class countries_info {
      */
 
     //----------------------------------------Start of Top N Country Info in World---------------------------------------
-    public ArrayList<Country> getTopNCountry_inWorld(int n)
+    public ArrayList<Country> getTopNCountry_inWorld(Connection con1, int n)
     {
         try
         {
-            // connection to the database
-            db.connect();
-            con1= db.getCon();
+
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -224,13 +211,10 @@ public class countries_info {
      * * The top N populated cities in a continent
      *   where N is provided by the user.
      */
-    public ArrayList<Country> getTopNCountry_inContinent(String continent_name,int n)
+    public ArrayList<Country> getTopNCountry_inContinent(Connection con1, String continent_name,int n)
     {
         try
         {
-            // connection to the database
-            db.connect();
-            con1= db.getCon();
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -279,13 +263,11 @@ public class countries_info {
      * * The top N populated cities in a region
      *   where N is provided by the user.
      */
-    public ArrayList<Country> getTopNCountry_inRegion(String region_name,int n)
+    public ArrayList<Country> getTopNCountry_inRegion(Connection con1, String region_name,int n)
     {
         try
         {
-            // connection to the database
-            db.connect();
-            con1= db.getCon();
+
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -358,6 +340,8 @@ public class countries_info {
 
             System.out.println();
         }
+            System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
         }
     }
 }
