@@ -7,6 +7,8 @@ this is for code review1
 
 [![Releases](https://img.shields.io/github/release/maythazinphyo1/Devops_gp1/all.svg?style=flat-square)](https://github.com/maythazinphyo1/Devops_gp1/releases)
 
+[![codecov](https://codecov.io/gh/maythazinphyo1/Devops_gp1/branch/master/graph/badge.svg?token=FO9WIZ1OVR)](https://codecov.io/gh/maythazinphyo1/Devops_gp1)
+
 Code of Conduct
 1.	Try to attend the meeting regularly.
 2.	Don’t be afraid to talk to each other.
