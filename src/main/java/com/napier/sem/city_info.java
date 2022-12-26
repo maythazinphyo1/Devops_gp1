@@ -409,17 +409,24 @@ public class city_info {
                 System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
                 for (City ct : cityList) {
                     if (ct == null)
-                        continue;
-                    String city_name = ct.getCity_name();
-                    String name = ct.getCountry_name();
-                    String city_district = ct.getCity_district();
-                    int population = ct.getCity_population();
-                    System.out.format("%30s %40s %40s %15s",
-                            city_name, name, city_district, population);
+                    {
+                        System.out.println("ct object is null");
+                    }
+                    else{
+                        String city_name = ct.getCity_name();
+                        String name = ct.getCountry_name();
+                        String city_district = ct.getCity_district();
+                        int population = ct.getCity_population();
+                        System.out.format("%30s %40s %40s %15s",
+                                city_name, name, city_district, population);
 
-                    System.out.println();
+                        System.out.println();
+                    }
                 }
                 System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+            }
+            else{
+                System.out.println("The arraylist object is null");
             }
         }
     //    --------------------------------------- DISPLAY END ------------------------------------------------------------

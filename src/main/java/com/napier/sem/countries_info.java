@@ -324,22 +324,28 @@ public class countries_info {
             // Loop over all country in the list
             for (Country ct : countryList) {
 
-                if (ct == null)
-                    continue;
+                if (ct == null){
+                    System.out.println("The ct object is null.");
+                }
+                else{
+                    String code = ct.getCountry_code();
+                    String name = ct.getCountry_name();
+                    String continent = ct.getContinent();
+                    String region = ct.getRegion();
+                    int population = ct.getPopulation();
+                    String capital = ct.getCity_name();
+                    System.out.format("%5s %45s %15d %30s %20s %20s",
+                            code, name, population, region, capital, continent);
 
-            String code = ct.getCountry_code();
-            String name = ct.getCountry_name();
-            String continent = ct.getContinent();
-            String region = ct.getRegion();
-            int population = ct.getPopulation();
-            String capital = ct.getCity_name();
-            System.out.format("%5s %45s %15d %30s %20s %20s",
-                    code, name, population, region, capital, continent);
+                    System.out.println();
 
-            System.out.println();
+                }
         }
             System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
+        }
+        else {
+            System.out.println("The countryList object is null.");
         }
     }
 }

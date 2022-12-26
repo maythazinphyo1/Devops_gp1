@@ -106,7 +106,6 @@ public class capitalcity_info {
     {
         try
         {
-
             if (con1==null){
                 System.out.println("con is null");
             }
@@ -149,34 +148,37 @@ public class capitalcity_info {
     /**
      * method to display capital city information
      */
-    public void displayCapitalcity(ArrayList<City> capitalcityList)
-    {
-        if (capitalcityList != null)
-        {
-            System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-            System.out.printf("%30s %40s %10s ", "Capital City Name", "Country", "Population");
-            System.out.println();
-            System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+    public void displayCapitalcity(ArrayList<City> capitalcityList) {
 
-            // Loop over all capital city in the list
-            for (City ct : capitalcityList) {
-
-                if (ct == null)
-                    continue;
-
-                String captial_name = ct.getCity_name();
-                String country_name = ct.getCountry_name();
-                int population = ct.getCity_population();
-
-                System.out.format("%30s %40s %10d ",
-                        captial_name, country_name, population);
-
+            if (capitalcityList != null) {
+                //System.out.println(capitalcityList.size());
+                System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+                System.out.printf("%30s %40s %10s ", "Capital City Name", "Country", "Population");
                 System.out.println();
+                System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
+                // Loop over all capital city in the list
+                for (City ct : capitalcityList) {
+
+                    if (ct == null) {
+                        System.out.println("The ct object is null");
+                    } 
+                    else {
+                        String captial_name = ct.getCity_name();
+                        String country_name = ct.getCountry_name();
+                        int population = ct.getCity_population();
+
+                        System.out.format("%30s %40s %10d ",
+                                captial_name, country_name, population);
+
+                        System.out.println();
+                    }
+                }
+                System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
+            } else {
+                System.out.println("The array list object is null.");
             }
-
-            System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-
         }
-    }
 
 }

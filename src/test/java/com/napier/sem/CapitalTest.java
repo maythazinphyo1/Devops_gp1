@@ -20,20 +20,20 @@ public class CapitalTest {
 
     }
 
-    //Test displayCapitalCity method is not null
-    @Test
-    void displayCapitalCityNull()
-    {
-
-        capital.displayCapitalcity(null);
-    }
-
     //Test display capitalCity object is not null
     @Test
     void displayCapitalCityEmpty()
     {
         ArrayList<City> capitalcityList = new ArrayList<>();
         capital.displayCapitalcity(capitalcityList);
+    }
+
+    //Test displayCapitalCity method is not null
+    @Test
+    void displayCapitalCityNull()
+    {
+
+        capital.displayCapitalcity(null);
     }
 
     //
