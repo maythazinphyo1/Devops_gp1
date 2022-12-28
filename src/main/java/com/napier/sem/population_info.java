@@ -54,9 +54,9 @@ public class population_info {
 //                System.out.format("%20s %30d %30f %30d %30f",
 //                        continent, cities_pop, cities_population_per, population_not, not_cities_population_per);
 
-                System.out.println();
-                System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------");
 
+                System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------");
+                System.out.println();
             }
 
         }

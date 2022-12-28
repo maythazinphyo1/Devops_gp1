@@ -82,6 +82,10 @@ public class App
 
         population_info pop = new population_info();
         pop.getCities_population_con(con1, "Asia");
+
+        population_info1 pop1 = new population_info1();
+        pop1.getCities_population_con1(con1);
+
         //SQL database disconnect
         db.disconnect();
 
