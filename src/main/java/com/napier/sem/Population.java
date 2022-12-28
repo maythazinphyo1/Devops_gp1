@@ -7,7 +7,7 @@ import java.sql.*;
  * REPRESENT Country DATA FOR CITY OBJECT
  */
 
-public class Country {
+public class Population {
     //-------------------------------- GET and Set method for COUNTRY CODE ----------------------------------
     /*** Country code*/
     private String country_code; // country code
@@ -47,11 +47,11 @@ public class Country {
 
     //-------------------------------- GET and Set method for Population ----------------------------------
     /*** Country Population*/
-    private int population;
-    public int getPopulation() {
+    private long population;
+    public long getPopulation() {
         return population;
     }
-    public void setPopulation(int population) {this.population = population;}
+    public void setPopulation(long population) {this.population = population;}
 
     //-------------------------------- End Of GET and Set method for Population -------------------------------
 
@@ -83,12 +83,12 @@ public class Country {
 
     //-------------------------------- GET and Set method for CITY POPULATION ----------------------------------
 
-    private int city_population; // city population
-    public int getCity_population() {
+    private long city_population; // city population
+    public long getCity_population() {
         return city_population;
     }
 
-    public void setCity_population(int city_population) {
+    public void setCity_population(long city_population) {
         this.city_population = city_population;
     }
 
