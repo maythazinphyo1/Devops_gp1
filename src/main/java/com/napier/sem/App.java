@@ -20,7 +20,7 @@ public class App
         con1= db.getCon();
 
 //------------------------------- START FOR COUNTRY INFO ------------------------------------------------------
-
+    /*
         // Create instance for countries_info class
         countries_info ct = new countries_info();
         // Get and display country information organized by largest to the smallest population in the world
@@ -65,17 +65,23 @@ public class App
         // The top N populated cities in a district where N is provided by the user.
         city.displayCity(city.getTopNCity_inDistrict(con1, "England",10));
 // ----------------------------------- CITY AND TOP POPULATED END --------------------------------------------
-
+*/
 
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED START --------------------------------------------
         //capital cities
         capitalcity_info capitalcity = new capitalcity_info();
-        //All the capital cities in the world organised by largest population to smallest.
+     /*   //All the capital cities in the world organised by largest population to smallest.
         capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inWorld(con1));
         ////All the capital cities in a continent organised by largest population to smallest.
         capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inContinent(con1, "Asia"));
         //All the capital cities in a region organised by largest population to smallest.
         capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inRegion(con1, "Southeast Asia"));
+     */   //the top N populated capital cities in the world organised by largest population to smallest.
+        capitalcity.displayCapitalcity(capitalcity.getTopNCapitalcity_inWorld(con1, 10));
+        //the top N populated capital cities in a continent organised by largest population to smallest.
+        capitalcity.displayCapitalcity(capitalcity.getTopNCapitalcity_inContinent(con1, "Asia", 10));
+        //the top N populated capital cities in a region organised by largest population to smallest.
+        capitalcity.displayCapitalcity(capitalcity.getTopNCapitalcity_inRegion(con1, "Southeast Asia", 10));
 
 
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED END --------------------------------------------

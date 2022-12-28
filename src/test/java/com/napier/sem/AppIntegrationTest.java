@@ -294,7 +294,41 @@ public class AppIntegrationTest
 
     }
 
+    //Top N Capital city in the world by population test
+    @Test
+    void testGetTopNCapitalcity_inWorld()
+    {
+        Connection con1 = app.getCon();
+        ArrayList<City> cap_city = cap_ct.getTopNCapitalcity_inWorld(con1, 10);
+        assertEquals(cap_city.get(0).getCity_name(), "Seoul");
+        assertEquals(cap_city.get(0).getCountry_name() , "South Korea");
+        assertEquals(cap_city.get(0).getCity_population(), 9981619);
 
+    }
+
+    //Top N Capital city in a continent by population test
+    @Test
+    void testGetTopNCapitalcity_inContinent()
+    {
+        Connection con1 = app.getCon();
+        ArrayList<City> cap_city = cap_ct.getTopNCapitalcity_inContinent(con1,"Asia", 10);
+        assertEquals(cap_city.get(0).getCity_name(), "Seoul");
+        assertEquals(cap_city.get(0).getCountry_name() , "South Korea");
+        assertEquals(cap_city.get(0).getCity_population(), 9981619);
+
+    }
+
+    //Top N Capital city in a region by population test
+    @Test
+    void testGetTopNCapitalcity_inRegion()
+    {
+        Connection con1 = app.getCon();
+        ArrayList<City> cap_city = cap_ct.getTopNCapitalcity_inRegion(con1,"Southeast Asia", 10);
+        assertEquals(cap_city.get(0).getCity_name(), "Jakarta");
+        assertEquals(cap_city.get(0).getCountry_name() , "Indonesia");
+        assertEquals(cap_city.get(0).getCity_population(), 9604900);
+
+    }
 }
 
 
