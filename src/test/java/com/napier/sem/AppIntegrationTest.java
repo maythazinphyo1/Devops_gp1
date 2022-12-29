@@ -331,6 +331,65 @@ public class AppIntegrationTest
 
     }
 
+    //World Population report test
+    @Test
+    void testgetWorld_Population()
+    {
+        Connection con1 = app.getCon();
+        Population world_pop = popinfo.getWorld_Population(con1);
+        assertEquals(world_pop.getPopulation(),6078749450L);
+    }
+
+    //Continent Population report test
+    @Test
+    void testgetContinent_Population()
+    {
+        Connection con1 = app.getCon();
+        Population continent_pop = popinfo.getContinent_Population(con1,"Asia");
+        assertEquals(continent_pop.getPopulation(),3705025700L);
+    }
+
+    //Region Population report test
+    @Test
+    void testgetRegion_Population()
+    {
+        Connection con1 = app.getCon();
+        Population region_pop = popinfo.getRegion_Population(con1,"Southeast Asia");
+        assertEquals(region_pop.getPopulation(),518541000L);
+    }
+
+
+    //Country Population report test
+    @Test
+    void testgetCountry_Population()
+    {
+        Connection con1 = app.getCon();
+        Population country_pop = popinfo.getCountry_Population(con1,"China");
+        assertEquals(country_pop.getPopulation(),1277558000L);
+    }
+
+
+    //District Population report test
+    @Test
+    void testgetDistrict_Population()
+    {
+        Connection con1 = app.getCon();
+        Population district_pop = popinfo.getDistrict_Population(con1,"England");
+        assertEquals(district_pop.getPopulation(),19978543L);
+
+    }
+
+
+    //City Population report test
+    @Test
+    void testgetCity_Population()
+    {
+        Connection con1 = app.getCon();
+        Population city_pop = popinfo.getCity_Population(con1,"Tokyo");
+        assertEquals(city_pop.getPopulation(),7980230);
+
+    }
+
 }
 
 
