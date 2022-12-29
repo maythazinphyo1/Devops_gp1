@@ -87,6 +87,8 @@ public class App
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED END --------------------------------------------
 
 
+
+// ----------------------------------- POPULATION REPORT AND SPOKEN LANGUAGE START --------------------------------------
         population_info populationInCity = new population_info();
         //The population of people, people living in cities, and people not living in cities in each continent
 //        populationInCity.getCities_population_continent(con1);
@@ -96,11 +98,18 @@ public class App
         // populationInCity.getCities_population_country(con1);
 
         langugae_query language = new langugae_query();
+        //The population of the world
         Population world_population = language.getWorld_Population(con1);
+
+
+
+
+
+        //Spoken languages population and percentage in the world
         language.getChinese_lan_population(con1, world_population);
 
 
-
+// ----------------------------------- POPULATION REPORT AND SPOKEN LANGUAGE END  --------------------------------------
 
         //SQL database disconnect
         db.disconnect();
