@@ -20,6 +20,7 @@ public class App
         con1= db.getCon();
 
 //------------------------------- START FOR COUNTRY INFO ------------------------------------------------------
+/*
 
         // Create instance for countries_info class
         countries_info ct = new countries_info();
@@ -83,6 +84,7 @@ public class App
         //the top N populated capital cities in a region organised by largest population to smallest.
         capitalcity.displayCapitalcity(capitalcity.getTopNCapitalcity_inRegion(con1, "Southeast Asia", 10));
 
+*/
 
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED END --------------------------------------------
 
@@ -100,6 +102,16 @@ public class App
         langugae_query language = new langugae_query();
         //The population of the world
         Population world_population = language.getWorld_Population(con1);
+        //The population of the continent
+        language.getContinent_Population(con1, "Asia");
+        //The population of the region
+        language.getRegion_Population(con1, "Southeast Asia");
+        //The population of the country
+        language.getCountry_Population(con1, "China");
+        //The population of the district
+        language.getDistrict_Population(con1, "England");
+        //The population of the city
+        language.getCity_Population(con1, "Tokyo");
 
 
 
