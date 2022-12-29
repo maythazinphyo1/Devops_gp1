@@ -83,11 +83,16 @@ public class App
 
         population_info populationInCity = new population_info();
         //The population of people, people living in cities, and people not living in cities in each continent
-        populationInCity.getCities_population_continent(con1);
+//        populationInCity.getCities_population_continent(con1);
         //The population of people, people living in cities, and people not living in cities in each region
-        populationInCity.getCities_population_region(con1);
+//        populationInCity.getCities_population_region(con1);
         //The population of people, people living in cities, and people not living in cities in each country
-        populationInCity.getCities_population_country(con1);
+        // populationInCity.getCities_population_country(con1);
+
+        langugae_query language = new langugae_query();
+        Population world_population = language.getWorld_Population(con1);
+        language.getChinese_lan_population(con1, world_population);
+
 
 
 

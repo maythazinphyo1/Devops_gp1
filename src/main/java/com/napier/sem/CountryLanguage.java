@@ -7,12 +7,45 @@ package com.napier.sem;
  */
 public class CountryLanguage {
 
-    private String language_code; //country code
-
+    //-------------------------------- GET and Set method for language ----------------------------------
+    /*** langugae */
     private String language;  // country language
 
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+    //-------------------------------- GET and Set method for language ----------------------------------
+
+
+    //-------------------------------- GET and Set method for language percentage ----------------------------------
+    /*** langugae percentage*/
     private float language_percentage;   // language percentage
 
-    private String language_official; // is official
+    public float getLanguage_percentage() {
+        return language_percentage;
+    }
+
+    public void setLanguage_percentage(float language_percentage) {
+        this.language_percentage = language_percentage;
+    }
+
+    //-------------------------------- GET and Set method for language percentage ----------------------------------
+
+    //-------------------------------- GET and Set method for Population ----------------------------------
+    /*** Country Population*/
+    private long population;
+    public long getPopulation() {
+        return population;
+    }
+    public void setPopulation(long population) {this.population = population;}
+
+    //-------------------------------- End Of GET and Set method for Population -------------------------------
+
+
+
 
 }
