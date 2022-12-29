@@ -8,7 +8,7 @@ assignees: Banyar-Po2, maythazinphyo1, KoKoWin40524303, saiphyozinko123
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+Integration testing for get cities population
 
 **To Reproduce**
 Steps to reproduce the behavior:
