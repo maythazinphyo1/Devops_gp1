@@ -8,17 +8,16 @@ assignees: Banyar-Po2, maythazinphyo1, KoKoWin40524303, saiphyozinko123
 ---
 
 **Describe the bug**
-Integration testing for get cities population
+Integration testing for get cities population in country
 
 **To Reproduce**
 Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+1. Choose the method you want to test
+2. Submit integration test on chosen method
+3. See error
 
 **Expected behavior**
-A clear and concise description of what you expected to happen.
+Information for cities population in country is displayed.
 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
