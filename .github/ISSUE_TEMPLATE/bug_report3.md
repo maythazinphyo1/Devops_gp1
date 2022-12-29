@@ -7,7 +7,7 @@ assignees: Banyar-Po2, maythazinphyo1, KoKoWin40524303, saiphyozinko123
 
 ---
 
-**Describe the bug**
+**Describe the issue**
 The output of people living in Cocos (Keeling) Islands country and not living in that country is nonsense since the used dataset contains few errors.
 The population of country should be greater than that of cities but the displayed output shows population of cities is greater than that of country so percentage result is nonsense as well.
 
