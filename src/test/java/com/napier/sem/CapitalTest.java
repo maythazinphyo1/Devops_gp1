@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * Created date: Dec.22.2022
  * This class represents unit test for capital
  */
-public class CapitalTest {
+class CapitalTest {
     static capitalcity_info capital;
 
 

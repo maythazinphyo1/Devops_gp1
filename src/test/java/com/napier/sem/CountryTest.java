@@ -3,17 +3,17 @@ package com.napier.sem;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.sql.Connection;
+
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.*;
+
 
 /**
  * Author: Group1
  * Created date: Dec.22.2022
  * This class represents unit test for country
  */
-public class CountryTest
+class CountryTest
 {
     static countries_info app;
 

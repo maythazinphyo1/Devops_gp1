@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * Created date: Dec.22.2022
  * This class represents unit test for city
  */
-public class CityTest {
+class CityTest {
 
 
     static city_info city;
