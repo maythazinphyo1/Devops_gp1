@@ -301,7 +301,6 @@ public class population_info {
                 ct.setPopulation(rset.getLong("continent_population"));
 
                 long continent_population = ct.getPopulation();
-                String con_name =  ct.getContinent();
 
                 System.out.println("The population of a continent '" + continent_name +"': " + continent_population);
             }

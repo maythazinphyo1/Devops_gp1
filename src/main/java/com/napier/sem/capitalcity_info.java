@@ -17,7 +17,7 @@ public class capitalcity_info {
         {
 
             if (con1==null){
-                System.out.println("con is null");
+                System.out.println("con is null");//NOPMD
             }
             // Create an SQL statement
             Statement stmt = con1.createStatement();
