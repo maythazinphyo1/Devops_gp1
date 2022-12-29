@@ -235,10 +235,10 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<City> city = ct.getTopNCity_inCountry(con1, "Japan", 10);
-        assertEquals(city.get(0).getCity_name(), "Tokyo");
-        assertEquals(city.get(0).getCountry_name(), "Japan");
-        assertEquals(city.get(0).getCity_district(), "Tokyo-to");
-        assertEquals(city.get(0).getCity_population(), 7980230);
+        assertEquals(city.get(0).getCity_name(), "Tokyo", "City Name does not match expected value");
+        assertEquals(city.get(0).getCountry_name(), "Japan","Country name does not match expected value");
+        assertEquals(city.get(0).getCity_district(), "Tokyo-to","District does not match expected value");
+        assertEquals(city.get(0).getCity_population(), 7980230,"Population does not match expected value");
 
     }
 
@@ -248,10 +248,10 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<City> city = ct.getTopNCity_inDistrict(con1, "England", 10);
-        assertEquals(city.get(0).getCity_name(), "London");
-        assertEquals(city.get(0).getCountry_name(), "United Kingdom");
-        assertEquals(city.get(0).getCity_district(), "England");
-        assertEquals(city.get(0).getCity_population(), 7285000);
+        assertEquals(city.get(0).getCity_name(), "London", "City Name does not match expected value");
+        assertEquals(city.get(0).getCountry_name(), "United Kingdom", "Country name does not match expected value");
+        assertEquals(city.get(0).getCity_district(), "England", "District does not match expected value");
+        assertEquals(city.get(0).getCity_population(), 7285000, "Population does not match expected value");
 
     }
 
@@ -263,9 +263,9 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<City> cap_city = cap_ct.getCapitalcity_inWorld(con1);
-        assertEquals(cap_city.get(0).getCity_name(), "Seoul");
-        assertEquals(cap_city.get(0).getCountry_name() , "South Korea");
-        assertEquals(cap_city.get(0).getCity_population(), 9981619);
+        assertEquals(cap_city.get(0).getCity_name(), "Seoul","City Name does not match expected value");
+        assertEquals(cap_city.get(0).getCountry_name() , "South Korea","Country Name does not match expected value");
+        assertEquals(cap_city.get(0).getCity_population(), 9981619,"Population does not match expected value");
 
     }
 
@@ -276,9 +276,9 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<City> cap_city = cap_ct.getCapitalcity_inContinent(con1, "Asia");
-        assertEquals(cap_city.get(0).getCity_name(), "Seoul");
-        assertEquals(cap_city.get(0).getCountry_name() , "South Korea");
-        assertEquals(cap_city.get(0).getCity_population(), 9981619);
+        assertEquals(cap_city.get(0).getCity_name(), "Seoul","City Name does not match expected value");
+        assertEquals(cap_city.get(0).getCountry_name() , "South Korea","Country Name does not match expected value");
+        assertEquals(cap_city.get(0).getCity_population(), 9981619,"Population does not match expected value");
 
     }
 
@@ -289,9 +289,9 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<City> cap_city = cap_ct.getCapitalcity_inRegion(con1, "Southeast Asia");
-        assertEquals(cap_city.get(0).getCity_name(), "Jakarta");
-        assertEquals(cap_city.get(0).getCountry_name() , "Indonesia");
-        assertEquals(cap_city.get(0).getCity_population(), 9604900);
+        assertEquals(cap_city.get(0).getCity_name(), "Jakarta","City Name does not match expected value");
+        assertEquals(cap_city.get(0).getCountry_name() , "Indonesia","Country Name does not match expected value");
+        assertEquals(cap_city.get(0).getCity_population(), 9604900,"Population does not match expected value");
 
     }
 
@@ -301,9 +301,9 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<City> cap_city = cap_ct.getTopNCapitalcity_inWorld(con1, 10);
-        assertEquals(cap_city.get(0).getCity_name(), "Seoul");
-        assertEquals(cap_city.get(0).getCountry_name() , "South Korea");
-        assertEquals(cap_city.get(0).getCity_population(), 9981619);
+        assertEquals(cap_city.get(0).getCity_name(), "Seoul","City Name does not match expected value");
+        assertEquals(cap_city.get(0).getCountry_name() , "South Korea","Country Name does not match expected value");
+        assertEquals(cap_city.get(0).getCity_population(), 9981619,"Population does not match expected value");
 
     }
 
@@ -313,9 +313,9 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<City> cap_city = cap_ct.getTopNCapitalcity_inContinent(con1,"Asia", 10);
-        assertEquals(cap_city.get(0).getCity_name(), "Seoul");
-        assertEquals(cap_city.get(0).getCountry_name() , "South Korea");
-        assertEquals(cap_city.get(0).getCity_population(), 9981619);
+        assertEquals(cap_city.get(0).getCity_name(), "Seoul","City Name does not match expected value");
+        assertEquals(cap_city.get(0).getCountry_name() , "South Korea","Country Name does not match expected value");
+        assertEquals(cap_city.get(0).getCity_population(), 9981619,"Population does not match expected value");
 
     }
 
@@ -325,9 +325,9 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<City> cap_city = cap_ct.getTopNCapitalcity_inRegion(con1,"Southeast Asia", 10);
-        assertEquals(cap_city.get(0).getCity_name(), "Jakarta");
-        assertEquals(cap_city.get(0).getCountry_name() , "Indonesia");
-        assertEquals(cap_city.get(0).getCity_population(), 9604900);
+        assertEquals(cap_city.get(0).getCity_name(), "Jakarta","City Name does not match expected value");
+        assertEquals(cap_city.get(0).getCountry_name() , "Indonesia","Country Name does not match expected value");
+        assertEquals(cap_city.get(0).getCity_population(), 9604900,"Population does not match expected value");
 
     }
 
@@ -339,12 +339,12 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<Population> city_population = popinfo.getCities_population_continent(con1);
-        assertEquals(city_population.get(0).getContinent(), "Asia");
-        assertEquals(city_population.get(0).getPopulation() , 3705025700L);
-        assertEquals(city_population.get(0).getCity_population(), 697604103L);
-        assertEquals(city_population.get(0).getCities_population_percentage(), 18.828588F);
-        assertEquals(city_population.get(0).getPopulation_not_city(), 3007421597L);
-        assertEquals(city_population.get(0).getNot_cities_population_percentage(), 81.17141F);
+        assertEquals(city_population.get(0).getContinent(), "Asia","Continent does not match expected value");
+        assertEquals(city_population.get(0).getPopulation() , 3705025700L,"Population does not match expected value");
+        assertEquals(city_population.get(0).getCity_population(), 697604103L,"Population does not match expected value");
+        assertEquals(city_population.get(0).getCities_population_percentage(), 18.828588F,"Population Percent does not match expected value");
+        assertEquals(city_population.get(0).getPopulation_not_city(), 3007421597L,"Population does not match expected value");
+        assertEquals(city_population.get(0).getNot_cities_population_percentage(), 81.17141F,"Population Percent does not match expected value");
 
     }
 
@@ -355,12 +355,12 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<Population> city_population = popinfo.getCities_population_region(con1);
-        assertEquals(city_population.get(0).getRegion(), "Eastern Asia");
-        assertEquals(city_population.get(0).getPopulation() , 1507328000L);
-        assertEquals(city_population.get(0).getCity_population(), 317476534L);
-        assertEquals(city_population.get(0).getCities_population_percentage(), 21.062206F);
-        assertEquals(city_population.get(0).getPopulation_not_city(), 1189851466L);
-        assertEquals(city_population.get(0).getNot_cities_population_percentage(), 78.93779F);
+        assertEquals(city_population.get(0).getRegion(), "Eastern Asia","Continent does not match expected value");
+        assertEquals(city_population.get(0).getPopulation() , 1507328000L,"Population does not match expected value");
+        assertEquals(city_population.get(0).getCity_population(), 317476534L,"Population does not match expected value");
+        assertEquals(city_population.get(0).getCities_population_percentage(), 21.062206F,"Population Percent does not match expected value");
+        assertEquals(city_population.get(0).getPopulation_not_city(), 1189851466L,"Population does not match expected value");
+        assertEquals(city_population.get(0).getNot_cities_population_percentage(), 78.93779F, "Population Percent does not match expected value");
 
     }
 
@@ -372,12 +372,12 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<Population> city_population = popinfo.getCities_population_country(con1);
-        assertEquals(city_population.get(0).getCountry_name(), "China");
-        assertEquals(city_population.get(0).getPopulation() , 1277558000L);
-        assertEquals(city_population.get(0).getCity_population(), 175953614L);
-        assertEquals(city_population.get(0).getCities_population_percentage(), 13.772652F);
-        assertEquals(city_population.get(0).getPopulation_not_city(), 1101604386L);
-        assertEquals(city_population.get(0).getNot_cities_population_percentage(), 86.22735F);
+        assertEquals(city_population.get(0).getCountry_name(), "China","Continent does not match expected value");
+        assertEquals(city_population.get(0).getPopulation() , 1277558000L, "Population does not match expected value");
+        assertEquals(city_population.get(0).getCity_population(), 175953614L,"Population does not match expected value");
+        assertEquals(city_population.get(0).getCities_population_percentage(), 13.772652F,"Population Percent does not match expected value");
+        assertEquals(city_population.get(0).getPopulation_not_city(), 1101604386L,"Population does not match expected value");
+        assertEquals(city_population.get(0).getNot_cities_population_percentage(), 86.22735F,"Population Percent does not match expected value");
 
     }
 
