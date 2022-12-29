@@ -22,9 +22,9 @@ public class App
 //------------------------------- START FOR COUNTRY INFO ------------------------------------------------------
 
 //        // Create instance for countries_info class
-//        countries_info ct = new countries_info();
+          //countries_info ct = new countries_info();
 //        // Get and display country information organized by largest to the smallest population in the world
-//        ct.displayCountry(ct.getCountry_inWorld(con1));
+          //ct.displayCountry(ct.getCountry_inWorld(con1));
 //
 //        // all the countries in a continent organized by largest to the smallest population
 //        ct.displayCountry(ct.getCountry_inContinent(con1, "Asia"));
@@ -80,11 +80,16 @@ public class App
 
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED END --------------------------------------------
 
-        population_info pop = new population_info();
-        pop.getCities_population_con(con1, "Asia");
 
-        population_info1 pop1 = new population_info1();
-        pop1.getCities_population_con1(con1);
+        population_info populationInCity = new population_info();
+        //The population of people, people living in cities, and people not living in cities in each continent
+        populationInCity.getCities_population_continent(con1);
+        //The population of people, people living in cities, and people not living in cities in each region
+        populationInCity.getCities_population_region(con1);
+        //The population of people, people living in cities, and people not living in cities in each country
+        populationInCity.getCities_population_country(con1);
+
+
 
         //SQL database disconnect
         db.disconnect();
