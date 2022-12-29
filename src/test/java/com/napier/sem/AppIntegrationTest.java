@@ -19,6 +19,7 @@ public class AppIntegrationTest
     static countries_info country_ct = new countries_info();
     static capitalcity_info cap_ct = new capitalcity_info();
     static city_info ct = new city_info();
+    static population_info popinfo = new population_info();
 
 
     @BeforeAll
@@ -329,6 +330,7 @@ public class AppIntegrationTest
         assertEquals(cap_city.get(0).getCity_population(), 9604900);
 
     }
+
 }
 
 

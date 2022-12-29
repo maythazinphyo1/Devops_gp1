@@ -99,26 +99,26 @@ public class App
         //The population of people, people living in cities, and people not living in cities in each country
         // populationInCity.getCities_population_country(con1);
 
-        langugae_query language = new langugae_query();
+
         //The population of the world
-        Population world_population = language.getWorld_Population(con1);
+        Population world_population = populationInCity.getWorld_Population(con1);
         //The population of the continent
-        language.getContinent_Population(con1, "Asia");
+        populationInCity.getContinent_Population(con1, "Asia");
         //The population of the region
-        language.getRegion_Population(con1, "Southeast Asia");
+        populationInCity.getRegion_Population(con1, "Southeast Asia");
         //The population of the country
-        language.getCountry_Population(con1, "China");
+        populationInCity.getCountry_Population(con1, "China");
         //The population of the district
-        language.getDistrict_Population(con1, "England");
+        populationInCity.getDistrict_Population(con1, "England");
         //The population of the city
-        language.getCity_Population(con1, "Tokyo");
+        populationInCity.getCity_Population(con1, "Tokyo");
 
 
 
 
 
         //Spoken languages population and percentage in the world
-        language.getChinese_lan_population(con1, world_population);
+        populationInCity.getChinese_lan_population(con1, world_population);
 
 
 // ----------------------------------- POPULATION REPORT AND SPOKEN LANGUAGE END  --------------------------------------
