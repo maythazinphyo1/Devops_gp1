@@ -8,13 +8,14 @@ package com.napier.sem;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 
 public class population_info {
     /**
      * METHOD TO GET PEOPLE POPULATION WHO LIVE IN CITIES, NOT LIVING IN CITIES IN EACH CONTINENT
      */
-    public void getCities_population_continent(Connection con1)
+    public ArrayList<Population> getCities_population_continent(Connection con1)
     {
         try
         {
@@ -29,6 +30,8 @@ public class population_info {
                     "SELECT country.Continent, SUM(DISTINCT country.Population) AS con_population, SUM(city.Population) AS city_population FROM city INNER JOIN country ON city.CountryCode = country.Code GROUP BY Continent ORDER BY con_population DESC";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
+            //ArrayList Obj created
+            ArrayList<Population> populationList_con = new ArrayList<>();
             // Print header
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
@@ -46,6 +49,8 @@ public class population_info {
                 ct.setCity_population(rset.getLong("city_population"));
                 ct.setContinent(rset.getString("country.Continent"));
 
+                populationList_con.add(ct);
+
                 String continent = ct.getContinent();
                 long cities_population = ct.getCity_population();
                 long con_population = ct.getPopulation();
@@ -58,12 +63,13 @@ public class population_info {
                 System.out.println();
             }
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-
+            return populationList_con;
         }
         catch (Exception e)
         {
             System.out.println(e.getMessage());
             System.out.println("Failed to get population details");
+            return null;
         }
     }
 
@@ -73,7 +79,7 @@ public class population_info {
     /**
      * METHOD TO GET PEOPLE POPULATION WHO LIVE IN CITIES, NOT LIVING IN CITIES IN EACH REGION
      */
-    public void getCities_population_region(Connection con1)
+    public ArrayList<Population> getCities_population_region(Connection con1)
     {
         try
         {
@@ -88,6 +94,8 @@ public class population_info {
                     "SELECT country.Region, SUM(DISTINCT country.Population) AS region_population, SUM(city.Population) AS city_population FROM city INNER JOIN country ON city.CountryCode = country.Code GROUP BY country.Region ORDER BY region_population DESC";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
+            //ArrayList Obj created
+            ArrayList<Population> populationList_region = new ArrayList<>();
             // Print header
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
@@ -104,6 +112,7 @@ public class population_info {
                 ct.setPopulation(rset.getLong("region_population"));
                 ct.setCity_population(rset.getLong("city_population"));
 
+                populationList_region.add(ct);
 
                 String region_name = ct.getRegion();
                 long cities_population = ct.getCity_population();
@@ -120,12 +129,13 @@ public class population_info {
 
             }
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-
+            return populationList_region;
         }
         catch (Exception e)
         {
             System.out.println(e.getMessage());
             System.out.println("Failed to get population details");
+            return null;
         }
     }
 
@@ -135,7 +145,7 @@ public class population_info {
     /**
      * METHOD TO GET PEOPLE POPULATION WHO LIVE IN CITIES, NOT LIVING IN CITIES IN EACH COUNTRY
      */
-    public void getCities_population_country(Connection con1)
+    public ArrayList<Population> getCities_population_country(Connection con1)
     {
         try
         {
@@ -150,6 +160,8 @@ public class population_info {
                     "SELECT country.Name, SUM(DISTINCT country.Population) AS country_population, SUM(city.Population) AS city_population FROM city INNER JOIN country ON city.CountryCode = country.Code GROUP BY country.Name ORDER BY country_population DESC";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
+            //ArrayList Obj created
+            ArrayList<Population> populationList_country = new ArrayList<>();
             // Print header
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
@@ -166,6 +178,7 @@ public class population_info {
                 ct.setPopulation(rset.getLong("country_population"));
                 ct.setCity_population(rset.getLong("city_population"));
 
+                populationList_country.add(ct);
 
                 String country_name = ct.getCountry_name();
                 long cities_population = ct.getCity_population();
@@ -182,12 +195,13 @@ public class population_info {
 
             }
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-
+            return populationList_country;
         }
         catch (Exception e)
         {
             System.out.println(e.getMessage());
             System.out.println("Failed to get population details");
+            return null;
         }
     }
 
@@ -435,7 +449,7 @@ public class population_info {
      * METHOD TO GET PEOPLE POPULATION WHO LIVE IN CITIES, NOT LIVING IN CITIES IN EACH CONTINENT
      */
 
-    public void getChinese_lan_population(Connection con1, Population ctp)
+    public ArrayList<CountryLanguage> get_language_population(Connection con1, Population ctp)
     {
         try
         {
@@ -450,6 +464,8 @@ public class population_info {
                     "SELECT (SUM(countrylanguage.Percentage*country.Population/100)) AS Language_Population, (SUM(countrylanguage.Percentage*country.Population/100)*100/'"+ctp.getPopulation()+"') AS Language_Population_Percent, countrylanguage.Language FROM `countrylanguage` INNER JOIN country ON countrylanguage.CountryCode = country.Code WHERE countrylanguage.Language IN ('Chinese', 'English', 'Hindi', 'Spanish', 'Arabic') GROUP BY LANGUAGE";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
+            //ArrayList Obj created
+            ArrayList<CountryLanguage> populationList_language = new ArrayList<>();
             // Print header
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
@@ -466,6 +482,8 @@ public class population_info {
                 ct.setPopulation(rset.getLong("Language_Population"));
                 float language_population_percent = rset.getFloat("Language_Population_Percent");
 
+                populationList_language.add(ct);
+
                 String language = ct.getLanguage();
                 long language_population = ct.getPopulation();
                 System.out.format("%10s %35d %,40.2f",
@@ -473,12 +491,13 @@ public class population_info {
                 System.out.println();
             }
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-
+            return populationList_language;
         }
         catch (Exception e)
         {
             System.out.println(e.getMessage());
             System.out.println("Failed to get population details");
+            return null;
         }
     }
 

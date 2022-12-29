@@ -118,7 +118,7 @@ public class App
 
 
         //Spoken languages population and percentage in the world
-        populationInCity.getChinese_lan_population(con1, world_population);
+        populationInCity.get_language_population(con1, world_population);
 
 
 // ----------------------------------- POPULATION REPORT AND SPOKEN LANGUAGE END  --------------------------------------
