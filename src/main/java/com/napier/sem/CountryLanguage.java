@@ -23,15 +23,15 @@ public class CountryLanguage {
 
     //-------------------------------- GET and Set method for language percentage ----------------------------------
     /*** langugae percentage*/
-    private float language_percentage;   // language percentage
-
-    public float getLanguage_percentage() {
-        return language_percentage;
-    }
-
-    public void setLanguage_percentage(float language_percentage) {
-        this.language_percentage = language_percentage;
-    }
+//    private float language_percentage;   // language percentage
+//
+//    public float getLanguage_percentage() {
+//        return language_percentage;
+//    }
+//
+//    public void setLanguage_percentage(float language_percentage) {
+//        this.language_percentage = language_percentage;
+//    }
 
     //-------------------------------- GET and Set method for language percentage ----------------------------------
 

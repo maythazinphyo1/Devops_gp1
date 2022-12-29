@@ -93,11 +93,11 @@ public class App
 // ----------------------------------- POPULATION REPORT AND SPOKEN LANGUAGE START --------------------------------------
         population_info populationInCity = new population_info();
         //The population of people, people living in cities, and people not living in cities in each continent
-//        populationInCity.getCities_population_continent(con1);
+        populationInCity.getCities_population_continent(con1);
         //The population of people, people living in cities, and people not living in cities in each region
-//        populationInCity.getCities_population_region(con1);
+        populationInCity.getCities_population_region(con1);
         //The population of people, people living in cities, and people not living in cities in each country
-        // populationInCity.getCities_population_country(con1);
+        populationInCity.getCities_population_country(con1);
 
 
         //The population of the world

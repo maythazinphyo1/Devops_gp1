@@ -81,44 +81,5 @@ public class Country {
     }
     //---------------------- End of GET and Set method for Capital city name--------------------------------
 
-    //-------------------------------- GET and Set method for CITY POPULATION ----------------------------------
-
-    private int city_population; // city population
-    public int getCity_population() {
-        return city_population;
-    }
-
-    public void setCity_population(int city_population) {
-        this.city_population = city_population;
-    }
-
-    //--------------------------------END OF GET and Set method for CITY POPULATION ----------------------------------
-
-    //-------------------------------- GET and Set method for Capital city id--------------------------------
-    /*** Capital city id*/
-//    private int city_id;
-//
-//    public int getCity_id() {
-//        return city_id;
-//    }
-//
-//    public void setCity_id(int city_id) {
-//        this.city_id = city_id;
-//    }
-    //---------------------------End of GET and Set method for Capital city id------------------------------
-
-
-    //-------------------------------- GET and Set method for Capital -------------------------------------------
-    /*** Capital*/
-//    private int capital;
-//    public int getCapital() {
-//        return capital;
-//    }
-//    public void setCapital(int capital) {
-//        this.capital = capital;
-//    }
-
-    //-------------------------------- End Of GET and Set method for Capital ----------------------------------
-
 
 }

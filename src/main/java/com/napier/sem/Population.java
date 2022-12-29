@@ -8,18 +8,6 @@ import java.sql.*;
  */
 
 public class Population {
-    //-------------------------------- GET and Set method for COUNTRY CODE ----------------------------------
-    /*** Country code*/
-    private String country_code; // country code
-    public String getCountry_code() {
-        return country_code;
-    }
-    public void setCountry_code(String country_code) {
-        this.country_code = country_code;
-    }
-
-    //-------------------------------- END OF GET and Set method for COUNTRY CODE ----------------------------------
-
 
     //-------------------------------- GET and Set method for COUNTRY NAME ----------------------------------------
     /*** Country name*/
@@ -71,14 +59,14 @@ public class Population {
 
     //-------------------------------- GET and Set method for Capital city name--------------------------------
     /*** Capital city name*/
-    private String city_name; // city name
-    public String getCity_name() {
-        return city_name;
-    }
-
-    public void setCity_name(String city_name) {
-        this.city_name = city_name;
-    }
+//    private String city_name; // city name
+//    public String getCity_name() {
+//        return city_name;
+//    }
+//
+//    public void setCity_name(String city_name) {
+//        this.city_name = city_name;
+//    }
     //---------------------- End of GET and Set method for Capital city name--------------------------------
 
     //-------------------------------- GET and Set method for CITY POPULATION ----------------------------------
@@ -93,32 +81,5 @@ public class Population {
     }
 
     //--------------------------------END OF GET and Set method for CITY POPULATION ----------------------------------
-
-    //-------------------------------- GET and Set method for Capital city id--------------------------------
-    /*** Capital city id*/
-//    private int city_id;
-//
-//    public int getCity_id() {
-//        return city_id;
-//    }
-//
-//    public void setCity_id(int city_id) {
-//        this.city_id = city_id;
-//    }
-    //---------------------------End of GET and Set method for Capital city id------------------------------
-
-
-    //-------------------------------- GET and Set method for Capital -------------------------------------------
-    /*** Capital*/
-//    private int capital;
-//    public int getCapital() {
-//        return capital;
-//    }
-//    public void setCapital(int capital) {
-//        this.capital = capital;
-//    }
-
-    //-------------------------------- End Of GET and Set method for Capital ----------------------------------
-
 
 }
