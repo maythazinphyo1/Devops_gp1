@@ -205,10 +205,11 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<City> city = ct.getTopNCity_inWorld(con1, 10);
-        assertEquals(city.get(0).getCity_name(), "Mumbai (Bombay)");
-        assertEquals(city.get(0).getCountry_name(), "India");
-        assertEquals(city.get(0).getCity_district(), "Maharashtra");
-        assertEquals(city.get(0).getCity_population(), 10500000);
+        assertEquals(city.get(0).getCity_name(), "Mumbai (Bombay)", "City name does not match expected value");
+        assertEquals(city.get(0).getCountry_name(), "India", "Country name does not match expected value");
+        assertEquals(city.get(0).getCity_district(), "Maharashtra", "City district does not match expected value");
+        assertEquals(city.get(0).getCity_population(), 10500000, "City population does not match expected value");
+
 
     }
 
@@ -218,10 +219,10 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<City> city = ct.getTopNCity_inContinent(con1, "Asia", 10);
-        assertEquals(city.get(1).getCity_name(), "Seoul");
-        assertEquals(city.get(1).getCountry_name(), "South Korea");
-        assertEquals(city.get(1).getCity_district(), "Seoul");
-        assertEquals(city.get(1).getCity_population(), 9981619);
+        assertEquals(city.get(1).getCity_name(), "Seoul", "City name does not match expected value");
+        assertEquals(city.get(1).getCountry_name(), "South Korea", "Country name does not match expected value");
+        assertEquals(city.get(1).getCity_district(), "Seoul", "City district does not match expected value");
+        assertEquals(city.get(1).getCity_population(), 9981619, "City population does not match expected value");
 
     }
 
@@ -231,10 +232,11 @@ class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<City> city = ct.getTopNCity_inRegion(con1, "Caribbean", 10);
-        assertEquals(city.get(0).getCity_name(), "La Habana");
-        assertEquals(city.get(0).getCountry_name(), "Cuba");
-        assertEquals(city.get(0).getCity_district(), "La Habana");
-        assertEquals(city.get(0).getCity_population(), 2256000);
+        assertEquals(city.get(0).getCity_name(), "La Habana", "City name does not match expected value");
+        assertEquals(city.get(0).getCountry_name(), "Cuba", "Country name does not match expected value");
+        assertEquals(city.get(0).getCity_district(), "La Habana", "City district does not match expected value");
+        assertEquals(city.get(0).getCity_population(), 2256000, "City population does not match expected value");
+
 
     }
 
