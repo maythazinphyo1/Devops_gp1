@@ -20,17 +20,17 @@ public class App
         con1= db.getCon();
 
 //------------------------------- START FOR COUNTRY INFO ------------------------------------------------------
-/*
 
         // Create instance for countries_info class
         countries_info ct = new countries_info();
+
         // Get and display country information organized by largest to the smallest population in the world
         ct.displayCountry(ct.getCountry_inWorld(con1));
-
         // all the countries in a continent organized by largest to the smallest population
         ct.displayCountry(ct.getCountry_inContinent(con1, "Asia"));
         // all the countries in a region organized by largest to the smallest population
         ct.displayCountry(ct.getCountry_inRegion(con1, "Southeast Asia"));
+
         // The top N populated countries in the world where N is provided by the user.
         ct.displayCountry(ct.getTopNCountry_inWorld(con1, 10));
         // The top N populated countries in a continent where N is provided by the user.
@@ -44,6 +44,7 @@ public class App
 // ----------------------------------- START OF CITY AND TOP POPULATED CITY--------------------------------------------
         //cities
         city_info city = new city_info();
+
         // All the cities in the world organised by largest population to smallest.
         city.displayCity(city.getCity_inWorld(con1));
         //All the cities in a continent organised by largest population to smallest.
@@ -65,18 +66,22 @@ public class App
         city.displayCity(city.getTopNCity_inCountry(con1, "Japan", 10));
         // The top N populated cities in a district where N is provided by the user.
         city.displayCity(city.getTopNCity_inDistrict(con1, "England",10));
+
 // ----------------------------------- CITY AND TOP POPULATED END --------------------------------------------
 
 
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED START --------------------------------------------
+
         //capital cities
         capitalcity_info capitalcity = new capitalcity_info();
+
         //All the capital cities in the world organised by largest population to smallest.
         capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inWorld(con1));
         ////All the capital cities in a continent organised by largest population to smallest.
         capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inContinent(con1, "Asia"));
         //All the capital cities in a region organised by largest population to smallest.
         capitalcity.displayCapitalcity(capitalcity.getCapitalcity_inRegion(con1, "Southeast Asia"));
+
         //the top N populated capital cities in the world organised by largest population to smallest.
         capitalcity.displayCapitalcity(capitalcity.getTopNCapitalcity_inWorld(con1, 10));
         //the top N populated capital cities in a continent organised by largest population to smallest.
@@ -84,14 +89,15 @@ public class App
         //the top N populated capital cities in a region organised by largest population to smallest.
         capitalcity.displayCapitalcity(capitalcity.getTopNCapitalcity_inRegion(con1, "Southeast Asia", 10));
 
-*/
 
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED END --------------------------------------------
 
 
 
 // ----------------------------------- POPULATION REPORT AND SPOKEN LANGUAGE START --------------------------------------
+
         population_info populationInCity = new population_info();
+
         //The population of people, people living in cities, and people not living in cities in each continent
         populationInCity.getCities_population_continent(con1);
         //The population of people, people living in cities, and people not living in cities in each region
@@ -112,9 +118,6 @@ public class App
         populationInCity.getDistrict_Population(con1, "England");
         //The population of the city
         populationInCity.getCity_Population(con1, "Tokyo");
-
-
-
 
 
         //Spoken languages population and percentage in the world
