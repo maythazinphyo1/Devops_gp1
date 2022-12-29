@@ -8,12 +8,12 @@ assignees: Banyar-Po2, maythazinphyo1, KoKoWin40524303, saiphyozinko123
 ---
 
 **Describe the bug**
-Integration testing for get cities population in country
+Integration testing for get cities population in country fails. 
 
 **To Reproduce**
 Steps to reproduce the behavior:
 1. Choose the method you want to test
-2. Submit integration test on chosen method
+2. Run integration test on chosen method
 3. See error
 
 **Expected behavior**
