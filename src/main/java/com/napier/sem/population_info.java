@@ -255,7 +255,6 @@ public class population_info {
             Population ct = new Population();
             while (rset.next())
             {
-                ct.setContinent(rset.getString("Continent"));
                 ct.setPopulation(rset.getLong("continent_population"));
 
                 long continent_population = ct.getPopulation();
