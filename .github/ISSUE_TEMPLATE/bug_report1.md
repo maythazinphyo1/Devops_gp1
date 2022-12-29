@@ -20,7 +20,10 @@ Steps to reproduce the behavior:
 Information for cities population in country is displayed.
 
 **Screenshots**
-If applicable, add screenshots to help explain your problem.
+| Bug Description                                                                                                               | Image                |
+| ------------------------------------------------------------------------------------------------------------------------------| ---------------------|
+| Un expected in integration test for testGetCities_population_country                                                          | [Link](img/bug1.PNG) |
+
 
 **Desktop (please complete the following information):**
  - OS: [e.g. iOS]

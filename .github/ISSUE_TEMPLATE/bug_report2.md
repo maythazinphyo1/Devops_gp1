@@ -22,7 +22,7 @@ Correct population information of people not living in cities in each continent 
 **Screenshots**
 | Bug Description                                                                                                               | Image                |
 | ------------------------------------------------------------------------------------------------------------------------------| ---------------------|
-| Population outside of cities is outlier which is 9 billion though the world population is only 6 billions in used database    | [Link](img/bug1.PNG) |
+| Population outside of cities is outlier which is 9 billion though the world population is only 6 billions in used database    | [Link](img/bug2.PNG) |
 
 **Desktop (please complete the following information):**
  - OS: [e.g. iOS]
