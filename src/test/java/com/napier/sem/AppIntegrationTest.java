@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Created date: Dec.23.2022
  * This class represents integration test
  */
-public class AppIntegrationTest
+class AppIntegrationTest
 {
     static DB_connect app;
     static countries_info country_ct = new countries_info();
@@ -37,7 +37,7 @@ public class AppIntegrationTest
     {
         Connection con1 = app.getCon();
         ArrayList<Country> country = country_ct.getCountry_inWorld(con1);
-        assertEquals(country.get(0).getCountry_code(), "CHN");
+        assertEquals(country.get(0).getCountry_code(), "CHN","country name True");
         assertEquals(country.get(0).getCountry_name(), "China");
         assertEquals(country.get(0).getContinent(), "Asia");
         assertEquals(country.get(0).getRegion(), "Eastern Asia");
