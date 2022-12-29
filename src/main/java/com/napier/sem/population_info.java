@@ -33,6 +33,7 @@ public class population_info {
             //ArrayList Obj created
             ArrayList<Population> populationList_con = new ArrayList<>();
             // Print header
+            System.out.println("POPULATION WHO LIVE IN CITIES AND NOT LIVING IN CITIES IN EACH CONTINENT");
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
             System.out.format("%20s %25s %25s %25s %30s %30s",
@@ -44,12 +45,10 @@ public class population_info {
             while (rset.next())
             {
                 Population ct = new Population();
-                ct.setContinent(rset.getString("Continent"));
+
                 ct.setPopulation(rset.getLong("con_population"));
                 ct.setCity_population(rset.getLong("city_population"));
                 ct.setContinent(rset.getString("country.Continent"));
-
-                populationList_con.add(ct);
 
                 String continent = ct.getContinent();
                 long cities_population = ct.getCity_population();
@@ -58,8 +57,18 @@ public class population_info {
                 float cities_population_per = ((float) cities_population / (float)con_population) * 100;
                 float not_cities_population_per = 100 - cities_population_per;
 
+                ct.setPopulation_not_city(population_not);
+                ct.setCities_population_percentage(cities_population_per);
+                ct.setNot_cities_population_percentage(not_cities_population_per);
+                long get_population_not_city = ct.getPopulation_not_city();
+                float get_cities_population_per = ct.getCities_population_percentage();
+                float get_not_cities_population_per = ct.getNot_cities_population_percentage();
+
+
+                populationList_con.add(ct);
+
                 System.out.format("%20s %25d %25d %,25.2f %30d %,30.2f",
-                        continent, con_population, cities_population, cities_population_per, population_not, not_cities_population_per);
+                        continent, con_population, cities_population, get_cities_population_per, get_population_not_city, get_not_cities_population_per);
                 System.out.println();
             }
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
@@ -97,6 +106,8 @@ public class population_info {
             //ArrayList Obj created
             ArrayList<Population> populationList_region = new ArrayList<>();
             // Print header
+            System.out.println("POPULATION WHO LIVE IN CITIES AND NOT LIVING IN CITIES IN EACH REGION");
+
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
             System.out.format("%40s %25s %25s %25s %30s %30s",
@@ -112,7 +123,7 @@ public class population_info {
                 ct.setPopulation(rset.getLong("region_population"));
                 ct.setCity_population(rset.getLong("city_population"));
 
-                populationList_region.add(ct);
+
 
                 String region_name = ct.getRegion();
                 long cities_population = ct.getCity_population();
@@ -121,9 +132,17 @@ public class population_info {
                 float cities_population_per = ((float) cities_population / (float)region_population) * 100;
                 float not_cities_population_per = 100 - cities_population_per;
 
+                ct.setPopulation_not_city(population_not);
+                ct.setCities_population_percentage(cities_population_per);
+                ct.setNot_cities_population_percentage(not_cities_population_per);
+                long get_population_not_city = ct.getPopulation_not_city();
+                float get_cities_population_per = ct.getCities_population_percentage();
+                float get_not_cities_population_per = ct.getNot_cities_population_percentage();
+
+                populationList_region.add(ct);
 
                 System.out.format("%40s %25d %25d %,25.2f %30d %,30.2f",
-                        region_name, region_population, cities_population, cities_population_per, population_not, not_cities_population_per);
+                        region_name, region_population, cities_population, get_cities_population_per, get_population_not_city, get_not_cities_population_per);
 
                 System.out.println();
 
@@ -163,6 +182,7 @@ public class population_info {
             //ArrayList Obj created
             ArrayList<Population> populationList_country = new ArrayList<>();
             // Print header
+            System.out.println("POPULATION WHO LIVE IN CITIES AND NOT LIVING IN CITIES IN EACH COUNTRY");
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
             System.out.format("%40s %25s %25s %25s %30s %30s",
@@ -178,7 +198,7 @@ public class population_info {
                 ct.setPopulation(rset.getLong("country_population"));
                 ct.setCity_population(rset.getLong("city_population"));
 
-                populationList_country.add(ct);
+
 
                 String country_name = ct.getCountry_name();
                 long cities_population = ct.getCity_population();
@@ -187,9 +207,17 @@ public class population_info {
                 float cities_population_per = ((float) cities_population / (float)country_population) * 100;
                 float not_cities_population_per = 100 - cities_population_per;
 
+                ct.setPopulation_not_city(population_not);
+                ct.setCities_population_percentage(cities_population_per);
+                ct.setNot_cities_population_percentage(not_cities_population_per);
+                long get_population_not_city = ct.getPopulation_not_city();
+                float get_cities_population_per = ct.getCities_population_percentage();
+                float get_not_cities_population_per = ct.getNot_cities_population_percentage();
+
+                populationList_country.add(ct);
 
                 System.out.format("%40s %25d %25d %,25.2f %30d %,30.2f",
-                        country_name, country_population, cities_population, cities_population_per, population_not, not_cities_population_per);
+                        country_name, country_population, cities_population, get_cities_population_per, get_population_not_city, get_not_cities_population_per);
 
                 System.out.println();
 
@@ -225,6 +253,7 @@ public class population_info {
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Print header
+            System.out.println("TOTAL POPULATION WHO LIVE IN WORLD, A CONTINENT, A REGION, A COUNTRY, A DISTRICT, A CITY");
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
             //create population obj
             Population ct = new Population();
@@ -446,7 +475,7 @@ public class population_info {
 
 
     /**
-     * METHOD TO GET PEOPLE POPULATION WHO LIVE IN CITIES, NOT LIVING IN CITIES IN EACH CONTINENT
+     * METHOD TO GET PEOPLE POPULATION WHO SPEAK Chinese, English, Hindi, Spanish, Arabic
      */
 
     public ArrayList<CountryLanguage> get_language_population(Connection con1, Population ctp)
@@ -467,6 +496,7 @@ public class population_info {
             //ArrayList Obj created
             ArrayList<CountryLanguage> populationList_language = new ArrayList<>();
             // Print header
+            System.out.println("POPULATION WHO SPEAK Chinese, English, Hindi, Spanish, Arabic");
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
             System.out.format("%10s %35s %40s",
@@ -480,12 +510,14 @@ public class population_info {
                 CountryLanguage ct = new CountryLanguage();
                 ct.setLanguage(rset.getString("countrylanguage.Language"));
                 ct.setPopulation(rset.getLong("Language_Population"));
-                float language_population_percent = rset.getFloat("Language_Population_Percent");
+                ct.setLanguage_population_percent(rset.getFloat("Language_Population_Percent"));
 
                 populationList_language.add(ct);
 
                 String language = ct.getLanguage();
                 long language_population = ct.getPopulation();
+                float language_population_percent = ct.getLanguage_population_percent();
+
                 System.out.format("%10s %35d %,40.2f",
                         language, language_population, language_population_percent);
                 System.out.println();

@@ -331,6 +331,58 @@ public class AppIntegrationTest
 
     }
 
+
+
+    //The population of people living in cities and people not living in cities in each continent
+    @Test
+    void testGetCities_population_continent()
+    {
+        Connection con1 = app.getCon();
+        ArrayList<Population> city_population = popinfo.getCities_population_continent(con1);
+        assertEquals(city_population.get(0).getContinent(), "Asia");
+        assertEquals(city_population.get(0).getPopulation() , 3705025700L);
+        assertEquals(city_population.get(0).getCity_population(), 697604103L);
+        assertEquals(city_population.get(0).getCities_population_percentage(), 18.828588F);
+        assertEquals(city_population.get(0).getPopulation_not_city(), 3007421597L);
+        assertEquals(city_population.get(0).getNot_cities_population_percentage(), 81.17141F);
+
+    }
+
+
+    //The population of people living in cities and people not living in cities in each region
+    @Test
+    void testGetCities_population_region()
+    {
+        Connection con1 = app.getCon();
+        ArrayList<Population> city_population = popinfo.getCities_population_region(con1);
+        assertEquals(city_population.get(0).getRegion(), "Eastern Asia");
+        assertEquals(city_population.get(0).getPopulation() , 1507328000L);
+        assertEquals(city_population.get(0).getCity_population(), 317476534L);
+        assertEquals(city_population.get(0).getCities_population_percentage(), 21.062206F);
+        assertEquals(city_population.get(0).getPopulation_not_city(), 1189851466L);
+        assertEquals(city_population.get(0).getNot_cities_population_percentage(), 78.93779F);
+
+    }
+
+
+
+    //The population of people living in cities and people not living in cities in each country
+    @Test
+    void testGetCities_population_country()
+    {
+        Connection con1 = app.getCon();
+        ArrayList<Population> city_population = popinfo.getCities_population_country(con1);
+        assertEquals(city_population.get(0).getCountry_name(), "China");
+        assertEquals(city_population.get(0).getPopulation() , 1277558000L);
+        assertEquals(city_population.get(0).getCity_population(), 175953614L);
+        assertEquals(city_population.get(0).getCities_population_percentage(), 13.772652F);
+        assertEquals(city_population.get(0).getPopulation_not_city(), 1101604386L);
+        assertEquals(city_population.get(0).getNot_cities_population_percentage(), 86.22735F);
+
+    }
+
+
+
     //World Population report test
     @Test
     void testgetWorld_Population()
@@ -389,6 +441,23 @@ public class AppIntegrationTest
         assertEquals(city_pop.getPopulation(),7980230);
 
     }
+
+
+    //The population of people who speak Chinese, English, Hindi, Spanish, Arabic.
+    @Test
+    void testGet_language_population()
+    {
+        Connection con1 = app.getCon();
+        Population ctp = new Population();
+        ctp.setPopulation(6078749450L);
+        ArrayList<CountryLanguage> language_population = popinfo.get_language_population(con1, ctp);
+        assertEquals(language_population.get(0).getLanguage(), "English");
+        assertEquals(language_population.get(0).getPopulation() , 347077867L);
+        assertEquals(language_population.get(0).getLanguage_population_percent(), 5.709692F);
+
+    }
+
+
 
 }
 

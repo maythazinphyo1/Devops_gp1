@@ -47,5 +47,19 @@ public class CountryLanguage {
 
 
 
+    //-------------------------------- GET and Set method for SPOKEN LANGUAGE POPULATION PERCENTAGE----------------------------------
+    private float language_population_percent;
+
+    public float getLanguage_population_percent() {
+        return language_population_percent;
+    }
+
+    public void setLanguage_population_percent(float language_population_percent) {
+        this.language_population_percent = language_population_percent;
+    }
+
+    //-------------------------------- END of GET and Set method for SPOKEN LANGUAGE POPULATION PERCENTAGE----------------------------------
+
+
 
 }

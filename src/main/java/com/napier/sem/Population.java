@@ -82,4 +82,44 @@ public class Population {
 
     //--------------------------------END OF GET and Set method for CITY POPULATION ----------------------------------
 
+
+    //-------------------------------- GET and Set method for NOT CITY POPULATION ----------------------------------
+    private long population_not_city;
+
+    public long getPopulation_not_city() {
+        return population_not_city;
+    }
+
+    public void setPopulation_not_city(long population_not_city) {
+        this.population_not_city = population_not_city;
+    }
+    //-------------------------------- END of GET and Set method for NOT CITY POPULATION ----------------------------------
+
+    //-------------------------------- GET and Set method for CITY POPULATION PERCENTAGE----------------------------------
+    private float cities_population_percentage;
+
+    public float getCities_population_percentage() {
+        return cities_population_percentage;
+    }
+
+    public void setCities_population_percentage(float cities_population_percentage) {
+        this.cities_population_percentage = cities_population_percentage;
+    }
+    //-------------------------------- END of GET and Set method for CITY POPULATION PERCENTAGE----------------------------------
+
+    //-------------------------------- GET and Set method for NOT CITY POPULATION PERCENTAGE----------------------------------
+    private float not_cities_population_percentage;
+    public float getNot_cities_population_percentage() {
+        return not_cities_population_percentage;
+    }
+
+    public void setNot_cities_population_percentage(float not_cities_population_percentage) {
+        this.not_cities_population_percentage = not_cities_population_percentage;
+    }
+
+    //-------------------------------- END of GET and Set method for NOT CITY POPULATION PERCENTAGE----------------------------------
+
+
+
+
 }
