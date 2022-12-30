@@ -51,7 +51,7 @@ Code of Conduct
 1.	Try to attend the meeting regularly.
 2.	Don’t be afraid to talk to each other.
 3.	Respect other team members.
-4.	Try to finish your tasks on time.
+4.	Try to finish your assigned tasks on time.
 5.	Cooperate with other team members.
 6.	Keep in touch with other members about the current progress.
 7.	Report your issues on GitHub or in group chats.
