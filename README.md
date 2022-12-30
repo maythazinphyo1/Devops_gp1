@@ -10,7 +10,7 @@
 
 ## Features
 
-32 requirements of 32 have been implemented, which is 100%.
+All 32 query requirements have been implemented, which is 100%.
 
 | ID  | Query Name                                                                                            | Met | Screenshot               |
 |-----|-------------------------------------------------------------------------------------------------------|-----|--------------------------|
