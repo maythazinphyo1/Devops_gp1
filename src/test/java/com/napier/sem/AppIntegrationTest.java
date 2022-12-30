@@ -464,9 +464,9 @@ class AppIntegrationTest
         Population ctp = new Population();
         ctp.setPopulation(6078749450L);
         ArrayList<CountryLanguage> language_population = popinfo.get_language_population(con1, ctp);
-        assertEquals(language_population.get(0).getLanguage(), "English", "Language does not match expected value");
-        assertEquals(language_population.get(0).getPopulation(), 347077867L, "Population does not match expected value");
-        assertEquals(language_population.get(0).getLanguage_population_percent(), 5.709692F, "Language population percent does not match expected value");
+        assertEquals(language_population.get(0).getLanguage(), "Chinese", "Language does not match expected value");
+        assertEquals(language_population.get(0).getPopulation(), 1191843539L, "Population does not match expected value");
+        assertEquals(language_population.get(0).getLanguage_population_percent(), 19.606722F, "Language population percent does not match expected value");
 
 
     }

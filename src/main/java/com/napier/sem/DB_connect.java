@@ -35,14 +35,14 @@ public class DB_connect {
         }
         catch (ClassNotFoundException e)
         {
-            System.out.println("Could not load SQL driver");//NOPMD
+            System.out.println("Could not load SQL driver");
             System.exit(-1);
         }
 
         int retries = 10;
         for (int i = 0; i < retries; ++i)
         {
-            System.out.println("Connecting to SQL database...");//NOPMD
+            System.out.println("Connecting to SQL database...");
             try
             {
                 // Wait a bit for db to start
@@ -50,18 +50,18 @@ public class DB_connect {
                 // Connect to database
                 con= DriverManager.getConnection("jdbc:mysql://" + location
                         + "/world?allowPublicKeyRetrieval=true&useSSL=false",  "root", "example");
-                System.out.println("Successfully connected to world.sql");//NOPMD
+                System.out.println("Successfully connected to world.sql");
                 break;
 
             }
             catch (SQLException sqle)
             {
-                System.out.println("Failed to connect to database attempt " + Integer.toString(i));//NOPMD
-                System.out.println(sqle.getMessage());//NOPMD
+                System.out.println("Failed to connect to database attempt " + Integer.toString(i));
+                System.out.println(sqle.getMessage());
             }
             catch (InterruptedException ie)
             {
-                System.out.println("Thread interrupted? Should not happen.");//NOPMD
+                System.out.println("Thread interrupted? Should not happen.");
             }
         }
 
@@ -81,7 +81,7 @@ public class DB_connect {
             }
             catch (Exception e)
             {
-                System.out.println("Error closing connection to database");//NOPMD
+                System.out.println("Error closing connection to database");
             }
         }
     }
