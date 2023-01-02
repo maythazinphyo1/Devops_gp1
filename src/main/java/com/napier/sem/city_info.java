@@ -3,6 +3,7 @@ package com.napier.sem;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class city_info {
@@ -416,9 +417,12 @@ public class city_info {
                         String city_name = ct.getCity_name();
                         String name = ct.getCountry_name();
                         String city_district = ct.getCity_district();
-                        int population = ct.getCity_population();
+                        //int population = ct.getCity_population();
+                        //population number in commas format
+                        DecimalFormat decFormat = new DecimalFormat("###,###");
+                        String population_comma_str = decFormat.format(ct.getCity_population());
                         System.out.format("%30s %40s %40s %15s",
-                                city_name, name, city_district, population);
+                                city_name, name, city_district, population_comma_str);
 
                         System.out.println();
                     }

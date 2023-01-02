@@ -3,9 +3,12 @@ package com.napier.sem;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class countries_info {
+
+
 
     //----------------------------------------Start of Country Info in World---------------------------------------------
     /**
@@ -328,14 +331,19 @@ public class countries_info {
                     System.out.println("The ct object is null.");
                 }
                 else{
+
                     String code = ct.getCountry_code();
                     String name = ct.getCountry_name();
                     String continent = ct.getContinent();
                     String region = ct.getRegion();
-                    int population = ct.getPopulation();
+                    //int population = ct.getPopulation();
+                    //population number in commas format
+                    DecimalFormat decFormat = new DecimalFormat("###,###");
+                    String population_comma_str = decFormat.format(ct.getPopulation());
+
                     String capital = ct.getCity_name();
-                    System.out.format("%5s %45s %15d %30s %20s %20s",
-                            code, name, population, region, capital, continent);
+                    System.out.format("%5s %45s %15s %30s %20s %20s",
+                            code, name, population_comma_str, region, capital, continent);
 
                     System.out.println();
 

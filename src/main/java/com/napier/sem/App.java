@@ -20,7 +20,7 @@ public class App
         con1= db.getCon();
 
 //------------------------------- START FOR COUNTRY INFO ------------------------------------------------------
-/*
+
         // Create instance for countries_info class
         countries_info ct = new countries_info();
 
@@ -93,7 +93,7 @@ public class App
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED END --------------------------------------------
 
 
-*/
+
 // ----------------------------------- POPULATION REPORT AND SPOKEN LANGUAGE START --------------------------------------
 
         population_info populationInCity = new population_info();

@@ -8,6 +8,7 @@ package com.napier.sem;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 
@@ -15,6 +16,10 @@ public class population_info {
     /**
      * METHOD TO GET PEOPLE POPULATION WHO LIVE IN CITIES, NOT LIVING IN CITIES IN EACH CONTINENT
      */
+
+    //population number in commas format
+    DecimalFormat decFormat = new DecimalFormat("###,###");//comma format for population digit
+
     public ArrayList<Population> getCities_population_continent(Connection con1)
     {
         try
@@ -60,15 +65,19 @@ public class population_info {
                 ct.setPopulation_not_city(population_not);
                 ct.setCities_population_percentage(cities_population_per);
                 ct.setNot_cities_population_percentage(not_cities_population_per);
-                long get_population_not_city = ct.getPopulation_not_city();
+                //long get_population_not_city = ct.getPopulation_not_city();
+                String con_population_comma_str = decFormat.format(con_population); //continent population comma format
+                String cities_population_comma_str = decFormat.format(cities_population); //cities population comma format
+                String population_not_city_comma_str = decFormat.format(ct.getPopulation_not_city()); //not cities population comma format
+
                 float get_cities_population_per = ct.getCities_population_percentage();
                 float get_not_cities_population_per = ct.getNot_cities_population_percentage();
 
 
                 populationList_con.add(ct);
 
-                System.out.format("%20s %25d %25d %,25.2f %30d %,30.2f",
-                        continent, con_population, cities_population, get_cities_population_per, get_population_not_city, get_not_cities_population_per);
+                System.out.format("%20s %25s %25s %,25.2f %30s %,30.2f",
+                        continent, con_population_comma_str, cities_population_comma_str, get_cities_population_per, population_not_city_comma_str, get_not_cities_population_per);
                 System.out.println();
             }
             System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
@@ -135,14 +144,19 @@ public class population_info {
                 ct.setPopulation_not_city(population_not);
                 ct.setCities_population_percentage(cities_population_per);
                 ct.setNot_cities_population_percentage(not_cities_population_per);
-                long get_population_not_city = ct.getPopulation_not_city();
+                //long get_population_not_city = ct.getPopulation_not_city();
+                String region_population_comma_str = decFormat.format(region_population); //region population comma format
+                String cities_population_comma_str = decFormat.format(cities_population); //cities population comma format
+                String population_not_city_comma_str = decFormat.format(ct.getPopulation_not_city()); //not cities population comma format
+
+
                 float get_cities_population_per = ct.getCities_population_percentage();
                 float get_not_cities_population_per = ct.getNot_cities_population_percentage();
 
                 populationList_region.add(ct);
 
-                System.out.format("%40s %25d %25d %,25.2f %30d %,30.2f",
-                        region_name, region_population, cities_population, get_cities_population_per, get_population_not_city, get_not_cities_population_per);
+                System.out.format("%40s %25s %25s %,25.2f %30s %,30.2f",
+                        region_name, region_population_comma_str, cities_population_comma_str, get_cities_population_per, population_not_city_comma_str, get_not_cities_population_per);
 
                 System.out.println();
 
@@ -210,14 +224,19 @@ public class population_info {
                 ct.setPopulation_not_city(population_not);
                 ct.setCities_population_percentage(cities_population_per);
                 ct.setNot_cities_population_percentage(not_cities_population_per);
-                long get_population_not_city = ct.getPopulation_not_city();
+                //long get_population_not_city = ct.getPopulation_not_city();
+                String country_population_comma_str = decFormat.format(country_population); //country population comma format
+                String cities_population_comma_str = decFormat.format(cities_population); //cities population comma format
+                String population_not_city_comma_str = decFormat.format(ct.getPopulation_not_city()); //not cities population comma format
+
+
                 float get_cities_population_per = ct.getCities_population_percentage();
                 float get_not_cities_population_per = ct.getNot_cities_population_percentage();
 
                 populationList_country.add(ct);
 
-                System.out.format("%40s %25d %25d %,25.2f %30d %,30.2f",
-                        country_name, country_population, cities_population, get_cities_population_per, get_population_not_city, get_not_cities_population_per);
+                System.out.format("%40s %25s %25s %,25.2f %30s %,30.2f",
+                        country_name, country_population_comma_str, cities_population_comma_str, get_cities_population_per, population_not_city_comma_str, get_not_cities_population_per);
 
                 System.out.println();
 
@@ -262,7 +281,8 @@ public class population_info {
 
                 ct.setPopulation(rset.getLong("world_population"));
 
-                long world_population = ct.getPopulation();
+                //long world_population = ct.getPopulation();
+                String world_population = decFormat.format(ct.getPopulation()); //world population comma format
 
                 System.out.println("The population of the world : " + world_population);
             }
@@ -300,7 +320,9 @@ public class population_info {
             {
                 ct.setPopulation(rset.getLong("continent_population"));
 
-                long continent_population = ct.getPopulation();
+                //long continent_population = ct.getPopulation();
+                String continent_population = decFormat.format(ct.getPopulation()); //continent population comma format
+
 
                 System.out.println("The population of a continent '" + continent_name +"': " + continent_population);
             }
@@ -339,7 +361,9 @@ public class population_info {
             {
                 ct.setPopulation(rset.getLong("region_population"));
 
-                long region_population = ct.getPopulation();
+                //long region_population = ct.getPopulation();
+                String region_population = decFormat.format(ct.getPopulation()); //region population comma format
+
 
                 System.out.println("The population of a region '" + region_name +"': " + region_population);
             }
@@ -378,7 +402,9 @@ public class population_info {
             {
                 ct.setPopulation(rset.getLong("Population"));
 
-                long country_population = ct.getPopulation();
+                //long country_population = ct.getPopulation();
+                String country_population = decFormat.format(ct.getPopulation()); //country population comma format
+
 
                 System.out.println("The population of a country '" + country_name +"': " + country_population);
             }
@@ -417,7 +443,9 @@ public class population_info {
             {
                 ct.setPopulation(rset.getLong("district_population"));
 
-                long district_population = ct.getPopulation();
+                //long district_population = ct.getPopulation();
+                String district_population = decFormat.format(ct.getPopulation()); //district population comma format
+
 
                 System.out.println("The population of a district '" + district_name +"': " + district_population);
             }
@@ -456,7 +484,9 @@ public class population_info {
             {
                 ct.setPopulation(rset.getLong("city.Population"));
 
-                long city_population = ct.getPopulation();
+                //long city_population = ct.getPopulation();
+                String city_population = decFormat.format(ct.getPopulation()); //city population comma format
+
 
                 System.out.println("The population of a city '" + city_name +"': " + city_population);
             }
@@ -514,10 +544,12 @@ public class population_info {
                 populationList_language.add(ct);
 
                 String language = ct.getLanguage();
-                long language_population = ct.getPopulation();
+                //long language_population = ct.getPopulation();
+                String language_population = decFormat.format(ct.getPopulation()); //language population comma format
+
                 float language_population_percent = ct.getLanguage_population_percent();
 
-                System.out.format("%10s %35d %,40.2f",
+                System.out.format("%10s %35s %,40.2f",
                         language, language_population, language_population_percent);
                 System.out.println();
             }
