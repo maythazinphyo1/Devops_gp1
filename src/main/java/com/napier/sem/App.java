@@ -23,6 +23,7 @@ public class App
         con1= db.getCon();
 
 //------------------------------- START FOR COUNTRY INFO ------------------------------------------------------
+/*
 
         // Create instance for countries_info class
         countries_info ct = new countries_info();
@@ -92,6 +93,7 @@ public class App
         //the top N populated capital cities in a region organised by largest population to smallest.
         capitalcity.displayCapitalcity(capitalcity.getTopNCapitalcity_inRegion(con1, "Southeast Asia", 10));
 
+*/
 
 // ----------------------------------- CAPITAL CITY AND TOP POPULATED END --------------------------------------------
 
