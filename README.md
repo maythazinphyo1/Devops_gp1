@@ -2,9 +2,13 @@
 
 ![workflow](https://github.com/maythazinphyo1/Devops_gp1/actions/workflows/main.yml/badge.svg)
 
-![LICENSE](https://img.shields.io/github/license/maythazinphyo1/sem.svg?style=flat-square)
+Master Build Status ![GitHub Workflow Status (master)](https://img.shields.io/github/actions/workflow/status/maythazinphyo1/Devops_gp1/main.yml?branch=master)
 
-[![Releases](https://img.shields.io/github/release/maythazinphyo1/Devops_gp1/all.svg?style=flat-square)](https://github.com/maythazinphyo1/Devops_gp1/releases)
+Develop Build Status ![GitHub Workflow Status (develop)](https://img.shields.io/github/actions/workflow/status/maythazinphyo1/Devops_gp1/main.yml?branch=develop)
+
+License ![LICENSE](https://img.shields.io/github/license/maythazinphyo1/sem.svg?style=flat-square)
+
+Release [![Releases](https://img.shields.io/github/release/maythazinphyo1/Devops_gp1/all.svg?style=flat-square)](https://github.com/maythazinphyo1/Devops_gp1/releases)
 
 [![codecov](https://codecov.io/gh/maythazinphyo1/Devops_gp1/branch/develop/graph/badge.svg?token=FO9WIZ1OVR)](https://codecov.io/gh/maythazinphyo1/Devops_gp1)
 
