@@ -12,7 +12,6 @@ import java.util.ArrayList;
  */
 class CityTest {
 
-
     static city_info city;
 
     @BeforeAll
@@ -21,14 +20,20 @@ class CityTest {
 
         city = new city_info();
     }
-    //Test display city method is not null
+
+    /**
+     * This method is to test displayCity method is not null
+     */
     @Test
     void displayCityNull()
     {
         city.displayCity(null);
     }
 
-    //Test display country object is not null
+
+    /**
+     * This method is to test displayCity object is not null
+     */
     @Test
     void displayCityEmpty()
     {
@@ -36,6 +41,9 @@ class CityTest {
         city.displayCity(cityList);
     }
 
+    /**
+     * unit testing for array list with null member in it
+     */
     @Test
     void displayCityContainsNull()
     {
@@ -44,7 +52,9 @@ class CityTest {
         city.displayCity(cityList);
     }
 
-    // unit test for display city
+    /**
+     * This is the unit testing for displayCity method
+     */
     @Test
     void displayCity()
     {

@@ -20,7 +20,9 @@ class CapitalTest {
 
     }
 
-    //Test display capitalCity object is not null
+    /**
+     * This method tests the object is not null
+     */
     @Test
     void displayCapitalCityEmpty()
     {
@@ -28,7 +30,10 @@ class CapitalTest {
         capital.displayCapitalcity(capitalcityList);
     }
 
-    //Test displayCapitalCity method is not null
+
+    /**
+     * This method tests displayCapitalCity method is not null
+     */
     @Test
     void displayCapitalCityNull()
     {
@@ -36,7 +41,9 @@ class CapitalTest {
         capital.displayCapitalcity(null);
     }
 
-    //
+    /**
+     * unit testing for array list with null member in it
+     */
     @Test
     void displayCapitalCityContainsNull()
     {
@@ -45,7 +52,9 @@ class CapitalTest {
         capital.displayCapitalcity(capitalcityList);
     }
 
-
+    /**
+     * This is the unit testing for displayCapitalCity method.
+     */
     @Test
     void displayCapitalCity()
     {

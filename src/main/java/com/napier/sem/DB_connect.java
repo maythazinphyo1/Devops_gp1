@@ -16,10 +16,6 @@ public class DB_connect {
         return this.con;
     }
 
-    public void setCon(Connection con) {
-
-        this.con = con;
-    }
     //---------------------------- GETTER AND SETTER SECTION ENDED ----------------------------------
 
     //----------------------------  MYSQL DATABASE SECTION -----------------------------------------

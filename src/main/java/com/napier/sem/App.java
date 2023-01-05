@@ -5,9 +5,12 @@ import java.sql.Connection;
 
 public class App
 {
+    /**
+     * This is the main method which runs all the required methods.
+     */
     public static void main(String[] args)
     {
-     //SQL database connection connected
+        //SQL database connection connected
         DB_connect db = new DB_connect();
         Connection con1;
 

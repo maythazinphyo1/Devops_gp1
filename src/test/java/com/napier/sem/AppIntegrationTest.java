@@ -31,7 +31,9 @@ class AppIntegrationTest
 
     }
 
-    //Country in world by population test
+    /**
+     * Integration Testing for country in world by population
+     */
     @Test
     void testGetCountry_inWorld()
     {
@@ -47,7 +49,9 @@ class AppIntegrationTest
 
     }
 
-    //Country in continent by population test
+    /**
+     * Integration testing for country in continent by population method
+     */
     @Test
     void testGetCountry_inContinent()
     {
@@ -63,7 +67,9 @@ class AppIntegrationTest
 
     }
 
-    //Country in region by population test
+    /**
+     * Integration testing for country in region by population method
+     */
     @Test
     void testGetCountry_inRegion()
     {
@@ -74,12 +80,12 @@ class AppIntegrationTest
         assertEquals(country.get(0).getRegion(), "Southeast Asia", "Region does not match expected value");
         assertEquals(country.get(0).getPopulation(), 212107000, "Population does not match expected value");
         assertEquals(country.get(0).getCity_name(), "Jakarta", "City name does not match expected value");
-
-
     }
 
 
-    //Top N Country in world by population test
+    /**
+     * Integration testing for Top N Countries in the world by population method
+     */
     @Test
     void testGetTopNCountry_inWorld()
     {
@@ -91,11 +97,12 @@ class AppIntegrationTest
         assertEquals(country.get(0).getRegion(), "Eastern Asia", "Region does not match expected value");
         assertEquals(country.get(0).getPopulation(), 1277558000, "Population does not match expected value");
         assertEquals(country.get(0).getCity_name(), "Peking", "City name does not match expected value");
-
-
     }
 
-    //Top N Country in continent by population test
+
+    /**
+     * Integration testing for getTopNCountry_inContinent method
+     */
     @Test
     void testGetTopNCountry_inContinent()
     {
@@ -108,10 +115,12 @@ class AppIntegrationTest
         assertEquals(country.get(0).getPopulation(), 1277558000, "Population does not match expected value");
         assertEquals(country.get(0).getCity_name(), "Peking", "City name does not match expected value");
 
-
     }
 
-    //Top N Country in region by population test
+
+    /**
+     * Integration testing for getTopNCountry_inRegion method
+     */
     @Test
     void testGetTopNCountry_inRegion()
     {
@@ -124,13 +133,11 @@ class AppIntegrationTest
         assertEquals(country.get(0).getPopulation(), 212107000, "Population does not match expected value");
         assertEquals(country.get(0).getCity_name(), "Jakarta", "City name does not match expected value");
 
-
     }
 
-
-
-
-    //city in world by population test
+    /**
+     * Integration testing for getCity_inWorld by population method
+     */
     @Test
     void testGetCity_inWorld()
     {
@@ -140,11 +147,11 @@ class AppIntegrationTest
         assertEquals(city.get(0).getCountry_name(), "India", "Country name does not match expected value");
         assertEquals(city.get(0).getCity_district(), "Maharashtra", "City district does not match expected value");
         assertEquals(city.get(0).getCity_population(), 10500000, "City population does not match expected value");
-
-
     }
 
-    //city in continent by population test
+    /**
+     * Integration test for city in continent by population
+     */
     @Test
     void testGetCity_inContinent()
     {
@@ -154,11 +161,11 @@ class AppIntegrationTest
         assertEquals(city.get(1).getCountry_name(), "South Korea", "Country name does not match expected value");
         assertEquals(city.get(1).getCity_district(), "Seoul", "City district does not match expected value");
         assertEquals(city.get(1).getCity_population(), 9981619, "City population does not match expected value");
-
-
     }
 
-    //city in region by population test
+    /**
+     * city in region by population test
+     */
     @Test
     void testGetCity_inRegion()
     {
@@ -171,7 +178,9 @@ class AppIntegrationTest
 
     }
 
-    //city in country by population test
+    /**
+     * city in country by population test
+     */
     @Test
     void testGetCity_inCountry()
     {
@@ -181,11 +190,11 @@ class AppIntegrationTest
         assertEquals(city.get(0).getCountry_name(), "Japan", "Country name does not match expected value");
         assertEquals(city.get(0).getCity_district(), "Tokyo-to", "City district does not match expected value");
         assertEquals(city.get(0).getCity_population(), 7980230, "City population does not match expected value");
-
-
     }
 
-    //city in district by population test
+    /**
+     * city in district by population test
+     */
     @Test
     void testGetCity_inDistrict()
     {
@@ -195,11 +204,11 @@ class AppIntegrationTest
         assertEquals(city.get(0).getCountry_name(), "United Kingdom", "Country name does not match expected value");
         assertEquals(city.get(0).getCity_district(), "England", "City district does not match expected value");
         assertEquals(city.get(0).getCity_population(), 7285000, "City population does not match expected value");
-
-
     }
 
-    //top N city in world by population test
+    /**
+     * top N city in world by population test
+     */
     @Test
     void testGetTopNCity_inWorld()
     {
@@ -209,11 +218,11 @@ class AppIntegrationTest
         assertEquals(city.get(0).getCountry_name(), "India", "Country name does not match expected value");
         assertEquals(city.get(0).getCity_district(), "Maharashtra", "City district does not match expected value");
         assertEquals(city.get(0).getCity_population(), 10500000, "City population does not match expected value");
-
-
     }
 
-    //top N city in continent by population test
+    /**
+     * top N city in continent by population test
+     */
     @Test
     void testGetTopNCity_inContinent()
     {
@@ -226,7 +235,9 @@ class AppIntegrationTest
 
     }
 
-    //top N city in region by population test
+    /**
+     * test for top N city in region by population
+     */
     @Test
     void testGetTopNCity_inRegion()
     {
@@ -236,11 +247,11 @@ class AppIntegrationTest
         assertEquals(city.get(0).getCountry_name(), "Cuba", "Country name does not match expected value");
         assertEquals(city.get(0).getCity_district(), "La Habana", "City district does not match expected value");
         assertEquals(city.get(0).getCity_population(), 2256000, "City population does not match expected value");
-
-
     }
 
-    //top N city in country by population test
+    /**
+     * top N city in country by population test
+     */
     @Test
     void testGetTopNCity_inCountry()
     {
@@ -253,7 +264,9 @@ class AppIntegrationTest
 
     }
 
-    //top N city in district by population test
+    /**
+     * top N city in district by population test
+     */
     @Test
     void testGetTopNCity_inDistrict()
     {
@@ -263,12 +276,11 @@ class AppIntegrationTest
         assertEquals(city.get(0).getCountry_name(), "United Kingdom", "Country name does not match expected value");
         assertEquals(city.get(0).getCity_district(), "England", "District does not match expected value");
         assertEquals(city.get(0).getCity_population(), 7285000, "Population does not match expected value");
-
     }
 
-
-
-    //Capital city in world by population test
+    /**
+     * Capital city in world by population testing
+     */
     @Test
     void testGetCapitalcity_inWorld()
     {
@@ -280,8 +292,9 @@ class AppIntegrationTest
 
     }
 
-
-    //Capital city in continent by population test
+    /**
+     * Capital city in continent by population test
+     */
     @Test
     void testGetCapitalcity_inContinent()
     {
@@ -290,11 +303,11 @@ class AppIntegrationTest
         assertEquals(cap_city.get(0).getCity_name(), "Seoul","City Name does not match expected value");
         assertEquals(cap_city.get(0).getCountry_name() , "South Korea","Country Name does not match expected value");
         assertEquals(cap_city.get(0).getCity_population(), 9981619,"Population does not match expected value");
-
     }
 
-
-    //Capital city in region by population test
+    /**
+     * Capital city in region by population test
+     */
     @Test
     void testGetCapitalcity_inRegion()
     {
@@ -306,7 +319,9 @@ class AppIntegrationTest
 
     }
 
-    //Top N Capital city in the world by population test
+    /**
+     * Testing for Top N Capital city in the world by population
+     */
     @Test
     void testGetTopNCapitalcity_inWorld()
     {
@@ -318,7 +333,9 @@ class AppIntegrationTest
 
     }
 
-    //Top N Capital city in a continent by population test
+    /**
+     * Testing for Top N Capital city in a continent by population
+     */
     @Test
     void testGetTopNCapitalcity_inContinent()
     {
@@ -330,7 +347,9 @@ class AppIntegrationTest
 
     }
 
-    //Top N Capital city in a region by population test
+    /**
+     * Top N Capital city in a region by population testing
+     */
     @Test
     void testGetTopNCapitalcity_inRegion()
     {
@@ -339,12 +358,12 @@ class AppIntegrationTest
         assertEquals(cap_city.get(0).getCity_name(), "Jakarta","City Name does not match expected value");
         assertEquals(cap_city.get(0).getCountry_name() , "Indonesia","Country Name does not match expected value");
         assertEquals(cap_city.get(0).getCity_population(), 9604900,"Population does not match expected value");
-
     }
 
 
-
-    //The population of people living in cities and people not living in cities in each continent
+    /**
+     * Testing for the method of the population of people living in cities and people not living in cities in each continent
+     */
     @Test
     void testGetCities_population_continent()
     {
@@ -359,8 +378,9 @@ class AppIntegrationTest
 
     }
 
-
-    //The population of people living in cities and people not living in cities in each region
+    /**
+     * Testing for the population of people living in cities and people not living in cities in each region
+     */
     @Test
     void testGetCities_population_region()
     {
@@ -375,9 +395,9 @@ class AppIntegrationTest
 
     }
 
-
-
-    //The population of people living in cities and people not living in cities in each country
+    /**
+     * Testing for the population of people living in cities and people not living in cities in each country
+     */
     @Test
     void testGetCities_population_country()
     {
@@ -392,9 +412,9 @@ class AppIntegrationTest
 
     }
 
-
-
-    //World Population report test
+    /**
+     * Testing for getWorld_Population method for world population report
+     */
     @Test
     void testgetWorld_Population()
     {
@@ -403,7 +423,9 @@ class AppIntegrationTest
         assertEquals(world_pop.getPopulation(),6078749450L, "World Population does not match expected value");
     }
 
-    //Continent Population report test
+    /**
+     * Testing for getContinent_Population method for continent population report
+     */
     @Test
     void testgetContinent_Population()
     {
@@ -412,7 +434,9 @@ class AppIntegrationTest
         assertEquals(continent_pop.getPopulation(),3705025700L, "Continent Population does not match expected value");
     }
 
-    //Region Population report test
+    /**
+     * Testing for getRegion_Population method for region population report
+     */
     @Test
     void testgetRegion_Population()
     {
@@ -422,8 +446,9 @@ class AppIntegrationTest
 
     }
 
-
-    //Country Population report test
+    /**
+     * Testing for getCountry_Population method for country population report
+     */
     @Test
     void testgetCountry_Population()
     {
@@ -433,8 +458,9 @@ class AppIntegrationTest
 
     }
 
-
-    //District Population report test
+    /**
+     * Testing for getDistrict_Population method for district population report
+     */
     @Test
     void testgetDistrict_Population()
     {
@@ -444,8 +470,9 @@ class AppIntegrationTest
 
     }
 
-
-    //City Population report test
+    /**
+     * Testing for getCity_Population method for city population report
+     */
     @Test
     void testgetCity_Population()
     {
@@ -455,8 +482,9 @@ class AppIntegrationTest
 
     }
 
-
-    //The population of people who speak Chinese, English, Hindi, Spanish, Arabic.
+    /**
+     * Testing for get_language_population method
+     */
     @Test
     void testGet_language_population()
     {
@@ -467,11 +495,7 @@ class AppIntegrationTest
         assertEquals(language_population.get(0).getLanguage(), "Chinese", "Language does not match expected value");
         assertEquals(language_population.get(0).getPopulation(), 1191843539L, "Population does not match expected value");
         assertEquals(language_population.get(0).getLanguage_population_percent(), 19.606722F, "Language population percent does not match expected value");
-
-
     }
-
-
 
 }
 

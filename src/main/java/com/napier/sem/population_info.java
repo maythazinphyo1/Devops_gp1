@@ -1,8 +1,3 @@
-/**
- * CREATED ON Dec.28.2022
- * CREATED BY GROUP-1
- * JAVA CLASS FILE TO GENERATE QUERY FOR POPULATION REPORT
- */
 package com.napier.sem;
 
 import java.sql.Connection;
@@ -11,7 +6,11 @@ import java.sql.Statement;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-
+/**
+ * CREATED ON Dec.28.2022
+ * CREATED BY GROUP-1
+ * JAVA CLASS FILE TO GENERATE QUERY FOR POPULATION REPORT
+ */
 public class population_info {
     /**
      * METHOD TO GET PEOPLE POPULATION WHO LIVE IN CITIES, NOT LIVING IN CITIES IN EACH CONTINENT

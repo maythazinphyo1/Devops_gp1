@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
-
-
 /**
  * Author: Group1
  * Created date: Dec.22.2022
@@ -17,7 +15,6 @@ class CountryTest
 {
     static countries_info app;
 
-
     @BeforeAll
     static void init()
     {
@@ -26,7 +23,7 @@ class CountryTest
     }
 
     /**
-     * Test display country method is not null
+     * Testing for display country method is not null
      */
     @Test
     void displayCountryNull()
@@ -35,7 +32,7 @@ class CountryTest
     }
 
     /**
-     * Test display country object is not null
+     * Testing for display country object is not null
      */
     @Test
     void displayCountryEmpty()
@@ -45,7 +42,7 @@ class CountryTest
     }
 
     /**
-     * unit test for array list with null member in it
+     * unit testing for array list with null member in it
      */
     @Test
     void displayCountryContainsNull()
@@ -56,7 +53,7 @@ class CountryTest
     }
 
     /**
-     * unit test for display country information
+     * unit testing for display country information
      */
     @Test
     void displayCountry()
