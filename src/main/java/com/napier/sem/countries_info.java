@@ -151,7 +151,7 @@ public class countries_info {
             return null;
         }
     }
-    //----------------------------------------Start of Country Info in Continent---------------------------------------------
+    //----------------------------------------End of Country Info in Region---------------------------------------------
 
     /**
      * The top N populated cities in the world
