@@ -4,13 +4,13 @@ package com.napier.sem;
 /**
  * CREATED ON 12.12.2022
  * CREATED BY GROUP-1
- * REPRESENT Country DATA FOR CITY OBJECT
+ * REPRESENT Country DATA FOR COUNTRY OBJECT
  */
 
 public class Country {
     //-------------------------------- GET and Set method for COUNTRY CODE ----------------------------------
-    /*** Country code*/
-    private String country_code; // country code
+
+    private String country_code;
     public String getCountry_code() {
         return country_code;
     }
@@ -22,8 +22,8 @@ public class Country {
 
 
     //-------------------------------- GET and Set method for COUNTRY NAME ----------------------------------------
-    /*** Country name*/
-    private String country_name; // country name
+
+    private String country_name;
     public String getCountry_name() {
         return country_name;
     }
@@ -35,7 +35,7 @@ public class Country {
 
 
     //-------------------------------- GET and Set method for REGION ----------------------------------
-    /*** Region*/
+
     private String region;
     public String getRegion() {
         return region;
@@ -46,7 +46,7 @@ public class Country {
 
 
     //-------------------------------- GET and Set method for Population ----------------------------------
-    /*** Country Population*/
+
     private int population;
     public int getPopulation() {
         return population;
@@ -57,7 +57,7 @@ public class Country {
 
 
     //-------------------------------- GET and Set method for Continent ---------------------------------------
-    /*** Continent*/
+
     private String continent;
     public String getContinent() {
         return continent;
@@ -70,8 +70,8 @@ public class Country {
 
 
     //-------------------------------- GET and Set method for Capital city name--------------------------------
-    /*** Capital city name*/
-    private String city_name; // city name
+
+    private String city_name;
     public String getCity_name() {
         return city_name;
     }

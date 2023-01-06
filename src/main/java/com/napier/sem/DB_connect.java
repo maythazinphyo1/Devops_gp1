@@ -3,6 +3,11 @@ package com.napier.sem;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+/**
+ * CREATED ON 12.12.2022
+ * CREATED BY GROUP-1
+ * REPRESENT DATABASE CONNECTION
+ */
 
 public class DB_connect {
 
@@ -16,7 +21,7 @@ public class DB_connect {
         return this.con;
     }
 
-    //---------------------------- GETTER AND SETTER SECTION ENDED ----------------------------------
+    //---------------------------- GETTER SECTION ENDED ----------------------------------
 
     //----------------------------  MYSQL DATABASE SECTION -----------------------------------------
     /**
@@ -83,4 +88,4 @@ public class DB_connect {
     }
     //---------------------------- MYSQL DATABASE SECTION ENDED ---------------------------------------------
 }
-//testing purpose
+

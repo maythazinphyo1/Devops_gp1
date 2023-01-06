@@ -9,7 +9,7 @@ public class City {
 
     //-------------------------------- GET and Set method for CITY NAME ----------------------------------
 
-    private String city_name; // city name
+    private String city_name;
     public String getCity_name() {
         return city_name;
     }
@@ -23,7 +23,7 @@ public class City {
 
     //-------------------------------- GET and Set method for CITY DISTRICT ----------------------------------
 
-    private String city_district; // district name
+    private String city_district;
     public String getCity_district() {
         return city_district;
     }
@@ -37,7 +37,7 @@ public class City {
 
     //-------------------------------- GET and Set method for CITY POPULATION ----------------------------------
 
-    private int city_population; // city population
+    private int city_population;
     public int getCity_population() {
         return city_population;
     }
@@ -51,7 +51,7 @@ public class City {
 
     //-------------------------------- GET and Set method for COUNTRY NAME ----------------------------------
 
-    private String country_name; // country name
+    private String country_name;
     public String getCountry_name() {
         return country_name;
     }
@@ -61,63 +61,5 @@ public class City {
     }
 
     //--------------------------------END OF GET and Set method for COUNTRY NAME ----------------------------------
-
-
-    //-------------------------------- GET and Set method for COUNTRY CODE ----------------------------------
-/*
-    private String country_code; // country code
-
-    public String getCountry_code() {
-        return country_code;
-    }
-
-    public void setCountry_code(String country_code) {
-        this.country_code = country_code;
-    }
-*/
-    //--------------------------------END OF GET and Set method for COUNTRY CODE ----------------------------------
-
-
-    //-------------------------------- GET and Set method for CAPITAL ----------------------------------
-/*
-    private int capital;
-
-    public int getCapital() {
-        return capital;
-    }
-
-    public void setCapital(int capital) {
-        this.capital = capital;
-    }
-
-    //-------------------------------- GET and Set method for CAPITAL ----------------------------------
-*/
-
-    //-------------------------------- GET and Set method for CITY ID ----------------------------------
-/*
-    private int city_id;
-
-    public int getCity_id() { return city_id; }
-
-    public void setCity_id(int city_id) { this.city_id = city_id; }
-
-    //-------------------------------- END OF GET and Set method for CITY ID ----------------------------------
-
-*/
-
-    //-------------------------------- GET and Set method for CITY COUNTRY CODE ----------------------------------
-/*
-    private String city_countryCode; // country code
-
-    public String getCity_countryCode() {
-        return city_countryCode;
-    }
-
-    public void setCity_countryCode(String city_countryCode) {
-        this.city_countryCode = city_countryCode;
-    }
-
-    //--------------------------------END OF GET and Set method for CITY COUNTRY CODE ----------------------------------
-*/
 
 }
