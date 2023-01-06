@@ -51,6 +51,8 @@ All 32 query requirements have been implemented, which is 100%.
 | 31  | The population of a city.                                                                             | Yes | [Link](img/result31.PNG) |
 | 32  | The number of people who speak Chinese, English, Hindi, Spanish or Arabic in the world.               | Yes | [Link](img/result32.PNG) |
 
+IntelliJ Code Coverage -  [Link](img/CodeCov.PNG)
+
 Code of Conduct
 1.	Try to attend the meeting regularly.
 2.	Don’t be afraid to talk to each other.
