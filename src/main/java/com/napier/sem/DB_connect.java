@@ -14,7 +14,7 @@ public class DB_connect {
     private Connection con;
 //---------------------------- GETTER AND SETTER SECTION ----------------------------------
     /**
-        *Generate getter and setter
+        *Generate getter method for connection
     */
     public Connection getCon() {
 
